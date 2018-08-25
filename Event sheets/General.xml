@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>General</name>
+    <events>
+        <event-group description="" sid="147629887889136" title="Personaje">
+            <sub-events>
+                <event-group description="" sid="622560098594838" title="Animaciones">
+                    <sub-events>
+                        <event-block sid="978785465258149">
+                            <conditions>
+                                <condition behavior="8Direction" id="0" name="Is moving" sid="506610629877681" type="Player1" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="237576628779130">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="169212569148499" type="System">
+                                            <param id="0" name="First value">abs( Player1.8Direction.VectorX )</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">abs( Player1.8Direction.VectorY )</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="416542732952278">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="296431777226991" type="System">
+                                                    <param id="0" name="First value">Player1.8Direction.VectorX</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="238770817818463" type="Player1">
+                                                    <param id="0" name="Animation">&quot;East&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="517891848471816">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="139321872649168" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="115482796918729" type="Player1">
+                                                    <param id="0" name="Animation">&quot;West&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="149297753249519">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="645191245517181" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="875931950418401">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="172261235145845" type="System">
+                                                    <param id="0" name="First value">Player1.8Direction.VectorY</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="780672097099482" type="Player1">
+                                                    <param id="0" name="Animation">&quot;South&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="264741764544744">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="169874726521818" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="666541602214999" type="Player1">
+                                                    <param id="0" name="Animation">&quot;North&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="147246394226457">
+                            <conditions>
+                                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="225441244594621" type="Player1" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="525646768589259" type="Player1" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

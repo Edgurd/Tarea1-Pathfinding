@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>31w011tx9anx8</unique-id>
+    <saved-with-version>25900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Player">
+            <object-type name="Player1" sid="829905532487569">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="8Direction" sid="126719848026083">
+                        <behavior id="EightDir" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="4" loop="0" name="East" pingpong="0" repeatcount="1" repeatto="0" sid="440870184746187" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\000.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\001.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\002.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\003.png" />
+                    </animation>
+                    <animation framecount="4" loop="0" name="West" pingpong="0" repeatcount="1" repeatto="0" sid="961697777521463" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\000.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\001.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\002.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\003.png" />
+                    </animation>
+                    <animation framecount="4" loop="0" name="North" pingpong="0" repeatcount="1" repeatto="0" sid="665956786030159" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\000.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\001.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\002.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\003.png" />
+                    </animation>
+                    <animation framecount="4" loop="0" name="South" pingpong="0" repeatcount="1" repeatto="0" sid="638669922531917" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\000.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\001.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\002.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\003.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Test.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>General.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
