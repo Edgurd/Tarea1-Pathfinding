@@ -7,6 +7,7 @@
             <sub-events>
                 <event-group description="" sid="622560098594838" title="Animaciones">
                     <sub-events>
+                        <comment>asdasf</comment>
                         <event-block sid="978785465258149">
                             <conditions>
                                 <condition behavior="8Direction" id="0" name="Is moving" sid="506610629877681" type="Player1" />
@@ -93,6 +94,14 @@
                             </conditions>
                             <actions>
                                 <action id="2" name="Stop" sid="525646768589259" type="Player1" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="586188704796991">
+                            <conditions>
+                                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="491060460690466" type="Player1" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="783769450358649" type="Player1" />
                             </actions>
                         </event-block>
                     </sub-events>
