@@ -5,6 +5,94 @@
     <events>
         <event-group description="" sid="147629887889136" title="Personaje">
             <sub-events>
+                <event-group description="" sid="248783358915612" title="Funciones">
+                    <sub-events>
+                        <event-block sid="397740256663404">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="293948613903183" type="Player1">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Box.X</param>
+                                </condition>
+                                <condition id="9" name="Is overlapping at offset" sid="773594711977009" type="Player1">
+                                    <param id="0" name="Object">Box</param>
+                                    <param id="1" name="Offset X">-3</param>
+                                    <param id="2" name="Offset Y">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" disabled="1" id="3" name="Set speed" sid="578577698912086" type="Box">
+                                    <param id="0" name="Speed">Player1.8Direction.Speed</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="131624919019171" type="Box">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="537634556402147">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="942957076194839" type="Player1">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="X co-ordinate">Box.X</param>
+                                </condition>
+                                <condition id="9" name="Is overlapping at offset" sid="836115368344944" type="Player1">
+                                    <param id="0" name="Object">Box</param>
+                                    <param id="1" name="Offset X">3</param>
+                                    <param id="2" name="Offset Y">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" disabled="1" id="3" name="Set speed" sid="509127853158720" type="Box">
+                                    <param id="0" name="Speed">Player1.8Direction.Speed</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="972926376836052" type="Box">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="725732991443826">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="601891865574274" type="Player1">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">Box.Y</param>
+                                </condition>
+                                <condition id="9" name="Is overlapping at offset" sid="456726577149292" type="Player1">
+                                    <param id="0" name="Object">Box</param>
+                                    <param id="1" name="Offset X">0</param>
+                                    <param id="2" name="Offset Y">-3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" disabled="1" id="3" name="Set speed" sid="453388302325083" type="Box">
+                                    <param id="0" name="Speed">Player1.8Direction.Speed</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="237884524224244" type="Box">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="628813656950982">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="422172940417475" type="Player1">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">Box.Y</param>
+                                </condition>
+                                <condition id="9" name="Is overlapping at offset" sid="610442858250731" type="Player1">
+                                    <param id="0" name="Object">Box</param>
+                                    <param id="1" name="Offset X">0</param>
+                                    <param id="2" name="Offset Y">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" disabled="1" id="3" name="Set speed" sid="896200446929750" type="Box">
+                                    <param id="0" name="Speed">Player1.8Direction.Speed</param>
+                                </action>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="937125139186490" type="Box">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="622560098594838" title="Animaciones">
                     <sub-events>
                         <comment>asdasf</comment>

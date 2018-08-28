@@ -14,14 +14,15 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>500</width>
+        <height>500</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -49,35 +50,51 @@
                     <behavior-type name="8Direction" sid="126719848026083">
                         <behavior id="EightDir" />
                     </behavior-type>
+                    <behavior-type name="ScrollTo" sid="119466408908893">
+                        <behavior id="scrollto" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="4" loop="0" name="East" pingpong="0" repeatcount="1" repeatto="0" sid="440870184746187" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\000.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\001.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\002.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\003.png" />
                     </animation>
                     <animation framecount="4" loop="0" name="West" pingpong="0" repeatcount="1" repeatto="0" sid="961697777521463" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\000.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\001.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\002.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\003.png" />
                     </animation>
                     <animation framecount="4" loop="0" name="North" pingpong="0" repeatcount="1" repeatto="0" sid="665956786030159" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\000.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\001.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\002.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\003.png" />
                     </animation>
                     <animation framecount="4" loop="0" name="South" pingpong="0" repeatcount="1" repeatto="0" sid="638669922531917" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\000.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\001.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\002.png" />
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\003.png" />
                     </animation>
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-type name="Box" sid="317489157156849">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="180253859195638">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="723442599102391" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
