@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>General</name>
     <events>
+        <variable constant="1" name="SEPARATOR" sid="486038743436352" static="0" type="text">|</variable>
         <event-group description="" sid="147629887889136" title="Personaje">
             <sub-events>
                 <event-group description="" sid="248783358915612" title="Funciones">
@@ -66,49 +67,6 @@
                                     <actions>
                                         <action behavior="8Direction" id="7" name="Simulate control" sid="937125139186490" type="Box">
                                             <param id="0" name="Control">2</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="585273818803465">
-                                    <conditions>
-                                        <condition id="-18" name="On created" sid="607560965434713" type="Box" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="145402805152084" type="Box">
-                                            <param id="0" name="Object">BoxUp</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">1</param>
-                                        </action>
-                                        <action behavior="Pin" id="0" name="Pin to object" sid="951736487665570" type="BoxUp">
-                                            <param id="0" name="Pin to">Box</param>
-                                            <param id="1" name="Mode">1</param>
-                                        </action>
-                                        <action id="0" name="Spawn another object" sid="753545512495174" type="Box">
-                                            <param id="0" name="Object">BoxRight</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">2</param>
-                                        </action>
-                                        <action behavior="Pin" id="0" name="Pin to object" sid="981068758403085" type="BoxRight">
-                                            <param id="0" name="Pin to">Box</param>
-                                            <param id="1" name="Mode">0</param>
-                                        </action>
-                                        <action id="0" name="Spawn another object" sid="762305260928600" type="Box">
-                                            <param id="0" name="Object">BoxLeft</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">3</param>
-                                        </action>
-                                        <action behavior="Pin" id="0" name="Pin to object" sid="487247161478501" type="BoxLeft">
-                                            <param id="0" name="Pin to">Box</param>
-                                            <param id="1" name="Mode">1</param>
-                                        </action>
-                                        <action id="0" name="Spawn another object" sid="484270807496647" type="Box">
-                                            <param id="0" name="Object">BoxDown</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">4</param>
-                                        </action>
-                                        <action behavior="Pin" id="0" name="Pin to object" sid="942010566107230" type="BoxDown">
-                                            <param id="0" name="Pin to">Box</param>
-                                            <param id="1" name="Mode">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -217,6 +175,216 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="402251187691027" title="Enemigos">
+            <sub-events>
+                <event-group description="" sid="276647914306872" title="Buscador">
+                    <sub-events>
+                        <event-block sid="573078419333006">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="718718598408321" type="Buscador" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="312785782724157" type="Buscador">
+                                    <param id="0" name="Object">BuscadorVision</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="807213766620253" type="BuscadorVision">
+                                    <param id="0" name="Pin to">Buscador</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="454413975577884" type="Buscador">
+                                    <param id="0" name="Instance variable">MaxCo</param>
+                                    <param id="1" name="Value">int(tokenat(Self.Coordenadas,0,SEPARATOR))</param>
+                                </action>
+                                <action id="0" name="Call function" sid="529828181686242" type="Function">
+                                    <param id="0" name="Name">&quot;BuscadorMain&quot;</param>
+                                    <param id="1" name="Parameter {n}">Buscador.ActualCo</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="396283391249191">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="0" name="On path found" sid="449006547307707" type="Buscador" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="1" name="Move along path" sid="971205874070602" type="Buscador" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="393984969448552">
+                            <conditions>
+                                <condition id="0" name="On function" sid="370564459489168" type="Function">
+                                    <param id="0" name="Name">&quot;BuscadorMain&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="0" name="Find path" sid="952284286431293" type="Buscador">
+                                    <param id="0" name="X">int(tokenat(Self.Coordenadas,((int(Function.Param(0)))*2)-1,SEPARATOR))</param>
+                                    <param id="1" name="Y">int(tokenat(Self.Coordenadas,(int(Function.Param(0)))*2,SEPARATOR))</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="651868180714628">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="317038626922709" type="Buscador">
+                                            <param id="0" name="Instance variable">ActualCo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Self.MaxCo</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="767982629208401" type="Buscador">
+                                            <param id="0" name="Instance variable">ActualCo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="726107819195545">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="475789210752730" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="880941635706216" type="Buscador">
+                                            <param id="0" name="Instance variable">ActualCo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="929421005805057">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="948276536964628" type="Buscador">
+                                    <param id="0" name="Instance variable">Estado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="225891498480286">
+                                    <conditions>
+                                        <condition behavior="Pathfinding" id="5" name="On arrived" sid="234131102706563" type="Buscador" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="711285667103741" type="Function">
+                                            <param id="0" name="Name">&quot;BuscadorMain&quot;</param>
+                                            <param id="1" name="Parameter {n}">Buscador.ActualCo</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="511598473760652">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="222194323537136" type="BuscadorVision">
+                                            <param id="0" name="Object">Player1</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="333428932494533" type="BuscadorVision">
+                                            <param id="0" name="Object">Buscador</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="791673885629595" type="Buscador">
+                                            <param id="0" name="Instance variable">Estado</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action behavior="Timer" id="0" name="Start timer" sid="824417029909181" type="Buscador">
+                                            <param id="0" name="Duration">Self.TiempoFollow</param>
+                                            <param id="1" name="Type">0</param>
+                                            <param id="2" name="Tag">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="104414433313054">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="894338231143209" type="Buscador">
+                                    <param id="0" name="Instance variable">Estado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="501593735353328">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="721341644582280" type="System">
+                                            <param id="0" name="Interval (seconds)">0.7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="0" name="Find path" sid="322826121177379" type="Buscador">
+                                            <param id="0" name="X">Player1.X</param>
+                                            <param id="1" name="Y">Player1.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="630469146044730">
+                                    <conditions>
+                                        <condition behavior="Timer" id="0" name="On timer" sid="528555612218993" type="Buscador">
+                                            <param id="0" name="Tag">&quot;&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="240803135015749" type="Buscador">
+                                            <param id="0" name="Instance variable">Estado</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="631876321000592" title="Objetos Interactuables">
+            <sub-events>
+                <event-block sid="585273818803465">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="607560965434713" type="Box" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="145402805152084" type="Box">
+                            <param id="0" name="Object">BoxUp</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="951736487665570" type="BoxUp">
+                            <param id="0" name="Pin to">Box</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="753545512495174" type="Box">
+                            <param id="0" name="Object">BoxRight</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="981068758403085" type="BoxRight">
+                            <param id="0" name="Pin to">Box</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="762305260928600" type="Box">
+                            <param id="0" name="Object">BoxLeft</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">3</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="487247161478501" type="BoxLeft">
+                            <param id="0" name="Pin to">Box</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="484270807496647" type="Box">
+                            <param id="0" name="Object">BoxDown</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="Image point">4</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="942010566107230" type="BoxDown">
+                            <param id="0" name="Pin to">Box</param>
+                            <param id="1" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
     </events>
