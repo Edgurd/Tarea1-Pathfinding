@@ -186,6 +186,7 @@
                     <instance-variable name="MaxCo" sid="557393427732683" type="number" />
                     <instance-variable comment="0:Recorrido 1:SiguiendoPlayer" name="Estado" sid="445171462118962" type="number" />
                     <instance-variable comment="Tiempo que describe la cantidad de segundos que seguira al jugador una vez visto por este" name="TiempoFollow" sid="208483166720869" type="number" />
+                    <instance-variable comment="Tiempo en segundos" name="Watch" sid="171510516455544" type="number" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Pathfinding" sid="306388195615201">

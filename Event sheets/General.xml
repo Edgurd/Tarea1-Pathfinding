@@ -292,7 +292,7 @@
                                         <action behavior="Timer" id="0" name="Start timer" sid="824417029909181" type="Buscador">
                                             <param id="0" name="Duration">Self.TiempoFollow</param>
                                             <param id="1" name="Type">0</param>
-                                            <param id="2" name="Tag">&quot;&quot;</param>
+                                            <param id="2" name="Tag">&quot;SeguirPlayer&quot;</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -324,7 +324,7 @@
                                 <event-block sid="630469146044730">
                                     <conditions>
                                         <condition behavior="Timer" id="0" name="On timer" sid="528555612218993" type="Buscador">
-                                            <param id="0" name="Tag">&quot;&quot;</param>
+                                            <param id="0" name="Tag">&quot;SeguirPlayer&quot;</param>
                                         </condition>
                                     </conditions>
                                     <actions>
