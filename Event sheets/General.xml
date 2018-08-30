@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>General</name>
     <events>
+        <variable constant="1" name="SIZE" sid="983877313057910" static="0" type="number">16</variable>
         <variable constant="1" name="SEPARATOR" sid="486038743436352" static="0" type="text">|</variable>
         <event-group description="" sid="147629887889136" title="Personaje">
             <sub-events>
@@ -76,7 +77,6 @@
                 </event-group>
                 <event-group description="" sid="622560098594838" title="Animaciones">
                     <sub-events>
-                        <comment>asdasf</comment>
                         <event-block sid="978785465258149">
                             <conditions>
                                 <condition behavior="8Direction" id="0" name="Is moving" sid="506610629877681" type="Player1" />
@@ -179,6 +179,312 @@
         </event-group>
         <event-group description="" sid="402251187691027" title="Enemigos">
             <sub-events>
+                <event-group description="" sid="356088155694971" title="Bird" />
+                <event-group description="" sid="616459963968297" title="Calabaza" />
+                <event-group description="" sid="490032821945475" title="Turret">
+                    <sub-events>
+                        <event-block sid="971379134246921">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="651933548877576" type="Turret">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Y co-ordinate">Player1.Y +SIZE*0.5</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="787122256159518" type="Turret">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">Player1.Y  - SIZE*0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="451330003898375">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="143779252053221" type="System">
+                                            <param id="0" name="First value">Turret.X - Player1.X</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="587384956055577" type="Turret">
+                                            <param id="0" name="Object">TurretBullet</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="940025647715825" type="TurretBullet">
+                                            <param id="0" name="Angle">180</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="619615976765436">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="212276355953731" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="906272135431905" type="Turret">
+                                            <param id="0" name="Object">TurretBullet</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="473859352625359" type="TurretBullet">
+                                            <param id="0" name="Angle">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="181499352765368">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="999324075310922" type="Turret">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">Player1.X -SIZE*0.5</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="522717644475165" type="Turret">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Player1.X + SIZE*0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="187448833078724">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="856766177389909" type="System">
+                                            <param id="0" name="First value">Turret.Y - Player1.Y</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="177260243618724" type="Turret">
+                                            <param id="0" name="Object">TurretBullet</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="802613292792470" type="TurretBullet">
+                                            <param id="0" name="Angle">270</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="687685411148120">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="691538243994418" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="729372531426144" type="Turret">
+                                            <param id="0" name="Object">TurretBullet</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">1</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="461308103123584" type="TurretBullet">
+                                            <param id="0" name="Angle">90</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="625652822316233">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="368276515763048" type="TurretBullet">
+                                    <param id="0" name="Object">Solid</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="161957206980422" type="TurretBullet" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="416563651004172" title="DittoType">
+                    <sub-events>
+                        <event-block sid="898804793950001">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="0" name="On path found" sid="687423646268254" type="DittoType" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="1" name="Move along path" sid="919509174876758" type="DittoType" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="265820768992029">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="463559992859689" type="DittoType">
+                                    <param id="0" name="Instance variable">Estado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="940035129420373">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="629736816743300" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="964859286387035" type="System">
+                                            <param id="0" name="Tag">&quot;ActivarDittos&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="980113257286610" type="DittoType">
+                                            <param id="0" name="Instance variable">Estado</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="473981923044742">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="452303191422219" type="DittoType">
+                                    <param id="0" name="Instance variable">Estado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="267209015721789">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="878113059127989" type="System">
+                                            <param id="0" name="Interval (seconds)">0.7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="0" name="Find path" sid="439491414588980" type="DittoType">
+                                            <param id="0" name="X">Player1.X</param>
+                                            <param id="1" name="Y">Player1.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="441206142882926">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="819177996689122" type="DittoType">
+                                            <param id="0" name="Object">Player1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="382890682048130" type="DittoType">
+                                            <param id="0" name="Instance variable">Estado</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="714464134444826">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="355305015700595" type="DittoType">
+                                    <param id="0" name="Instance variable">Estado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Solid" id="0" name="Set enabled" sid="517349368019952" type="DittoType">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="489452607690338" title="Inicial">
+                    <sub-events>
+                        <event-block sid="232695190195406">
+                            <conditions>
+                                <condition behavior="Pathfinding" id="0" name="On path found" sid="146221658565528" type="Inicial" />
+                            </conditions>
+                            <actions>
+                                <action behavior="Pathfinding" id="1" name="Move along path" sid="105919624779426" type="Inicial" />
+                            </actions>
+                        </event-block>
+                        <comment>0: Busca al jugador</comment>
+                        <event-block sid="293472916601572">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="779748544888919" type="Inicial">
+                                    <param id="0" name="Instance variable">Estado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="807350867421336">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="674548521422645" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Timer" id="0" name="Start timer" sid="609721904087763" type="Inicial">
+                                            <param id="0" name="Duration">Self.SearchTime</param>
+                                            <param id="1" name="Type">0</param>
+                                            <param id="2" name="Tag">&quot;Buscando&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="758328754568445">
+                                    <conditions>
+                                        <condition id="-6" name="Every X seconds" sid="673426086590548" type="System">
+                                            <param id="0" name="Interval (seconds)">0.7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="0" name="Find path" sid="210717040299938" type="Inicial">
+                                            <param id="0" name="X">Player1.X</param>
+                                            <param id="1" name="Y">Player1.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="100519607208783">
+                                    <conditions>
+                                        <condition behavior="Timer" id="0" name="On timer" sid="310428418287608" type="Inicial">
+                                            <param id="0" name="Tag">&quot;Buscando&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="754716001131277" type="Inicial">
+                                            <param id="0" name="Instance variable">Estado</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>1: Duerme y no hace ningun movimiento</comment>
+                        <event-block sid="629897307698368">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="590302641291617" type="Inicial">
+                                    <param id="0" name="Instance variable">Estado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="892300382854919">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="812665163291066" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="2" name="Stop" sid="995780597649239" type="Inicial" />
+                                        <action behavior="Timer" id="0" name="Start timer" sid="159821818883257" type="Inicial">
+                                            <param id="0" name="Duration">Self.SleepTime</param>
+                                            <param id="1" name="Type">0</param>
+                                            <param id="2" name="Tag">&quot;Durmiendo&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="400167834491292">
+                                    <conditions>
+                                        <condition behavior="Timer" id="0" name="On timer" sid="529006820566684" type="Inicial">
+                                            <param id="0" name="Tag">&quot;Durmiendo&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="754604451870586" type="Inicial">
+                                            <param id="0" name="Instance variable">Estado</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="276647914306872" title="Buscador">
                     <sub-events>
                         <event-block sid="573078419333006">
@@ -213,6 +519,7 @@
                                 <action behavior="Pathfinding" id="1" name="Move along path" sid="971205874070602" type="Buscador" />
                             </actions>
                         </event-block>
+                        <comment>Funcion para convertir el Self.Coordenadas</comment>
                         <event-block sid="393984969448552">
                             <conditions>
                                 <condition id="0" name="On function" sid="370564459489168" type="Function">
@@ -254,6 +561,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>0: Haciendo su recorrido normal</comment>
                         <event-block sid="929421005805057">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="948276536964628" type="Buscador">
@@ -298,6 +606,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>1: Buscando al jugador</comment>
                         <event-block sid="104414433313054">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="894338231143209" type="Buscador">

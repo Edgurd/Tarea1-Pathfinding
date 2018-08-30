@@ -16,7 +16,9 @@
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
@@ -63,28 +65,28 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="4" loop="0" name="East" pingpong="0" repeatcount="1" repeatto="0" sid="440870184746187" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\000.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\001.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\002.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\003.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\000.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\001.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\002.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\003.png" />
                     </animation>
                     <animation framecount="4" loop="0" name="West" pingpong="0" repeatcount="1" repeatto="0" sid="961697777521463" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\000.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\001.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\002.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\003.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\000.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\001.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\002.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\003.png" />
                     </animation>
                     <animation framecount="4" loop="0" name="North" pingpong="0" repeatcount="1" repeatto="0" sid="665956786030159" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\000.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\001.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\002.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\003.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\000.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\001.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\002.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\003.png" />
                     </animation>
                     <animation framecount="4" loop="0" name="South" pingpong="0" repeatcount="1" repeatto="0" sid="638669922531917" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\000.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\001.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\002.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\003.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\000.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\001.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\002.png" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\003.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -97,9 +99,6 @@
                         <behavior-type name="8Direction" sid="180253859195638">
                             <behavior id="EightDir" />
                         </behavior-type>
-                        <behavior-type name="Solid" sid="285451547240609">
-                            <behavior id="solid" />
-                        </behavior-type>
                     </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="723442599102391" speed="5">
@@ -108,6 +107,12 @@
                                 <image-point name="Right" x="1" y="0.5" />
                                 <image-point name="Left" x="0" y="0.5" />
                                 <image-point name="Down" x="0.5" y="1" />
+                                <collision-poly>
+                                    <point x="0.0625" y="0.0625" />
+                                    <point x="0.9375" y="0.0625" />
+                                    <point x="0.9375" y="0.9375" />
+                                    <point x="0.0625" y="0.9375" />
+                                </collision-poly>
                             </frame>
                         </animation>
                     </animation-folder>
@@ -165,6 +170,21 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
+            <object-type name="SolidTest" sid="142122577336849">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="710064538267772" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.0625" y="0.0546875" />
+                                <point x="0.960938" y="0.0546875" />
+                                <point x="0.914063" y="0.960938" />
+                                <point x="0.101563" y="0.960938" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Miscelaneos">
             <object-type name="Function" sid="556681935937973">
@@ -210,6 +230,9 @@
                     <behavior-type name="Pin" sid="218243523573802">
                         <behavior id="Pin" />
                     </behavior-type>
+                    <behavior-type name="Bullet" sid="983589405350240">
+                        <behavior id="Bullet" />
+                    </behavior-type>
                 </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="118005799731154" speed="5">
@@ -217,9 +240,96 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Inicial" sid="240791422617973">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable comment="Tiempo en segundos, en los que descansa luego de buscar al jugador" name="SleepTime" sid="168279243296813" type="number" />
+                    <instance-variable comment="Tiempo en segundos, los cuales se dedica a buscar al jugador" name="SearchTime" sid="834210007550975" type="number" />
+                    <instance-variable comment="0 Buscar, 1 Dormir" name="Estado" sid="732463699066338" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Timer" sid="597050728465120">
+                        <behavior id="Timer" />
+                    </behavior-type>
+                    <behavior-type name="Pathfinding" sid="775885506415389">
+                        <behavior id="Pathfinding" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846371747439105" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Calabaza" sid="880204884107345">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="233015351552233" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Turret" sid="314885028405262">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Flash" sid="897380949659446">
+                        <behavior id="Flash" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492707754589083" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TurretBullet" sid="367148397239348">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="542957192211477">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="723738546896504" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DittoType" sid="316323903660468">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable comment="0: Inactivo, 1:Activo, 2:Pared" name="Estado" sid="703970330032695" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Pathfinding" sid="225870501299722">
+                        <behavior id="Pathfinding" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="823108937559149" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
     </object-folder>
-    <families />
+    <families>
+        <family name="Solid" plugin-id="Sprite" sid="768448478169401">
+            <members>
+                <member>Box</member>
+                <member>Calabaza</member>
+                <member>DittoType</member>
+                <member>SolidTest</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Solid" sid="231880557025019">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+        </family>
+    </families>
     <layout-folder>
         <layout>Test.xml</layout>
     </layout-folder>
