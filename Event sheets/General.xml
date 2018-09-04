@@ -887,7 +887,7 @@
                                             </conditions>
                                             <actions>
                                                 <action behavior="Pathfinding" id="0" name="Find path" sid="210717040299938" type="Inicial">
-                                                    <param id="0" name="X">Player1.X</param>
+                                                    <param id="0" name="X">Player1.X </param>
                                                     <param id="1" name="Y">Player1.Y</param>
                                                 </action>
                                             </actions>
