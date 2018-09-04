@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
@@ -32,8 +33,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>250</width>
-        <height>250</height>
+        <width>160</width>
+        <height>160</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -50,7 +51,7 @@
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">(default)</prop>
-        <prop name="Sampling">Linear</prop>
+        <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
@@ -373,6 +374,288 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Escenario">
+            <object-folder name="Sprites">
+                <object-type name="Bush_1" sid="290712071399300">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="268656051847986" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\bush_1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Bush_2" sid="932928763672159">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="346462767439259" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\bush_2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Door" sid="841982322169600">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="182459341852329" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\Door.png">
+                                <collision-poly>
+                                    <point x="0" y="0.428571" />
+                                    <point x="1" y="0.428571" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="FrontFence_1" sid="336121682365278">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="605923416011166" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\FrontFence_1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="FrontFence_2" sid="807201119384803">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309050397019839" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\FrontFence_2.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="FrontWall_1" sid="910400636629527">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="839502097070412" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\FrontWall_1.png">
+                                <collision-poly>
+                                    <point x="0" y="0.428571" />
+                                    <point x="1" y="0.428571" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="FrontWall_2" sid="332181291582882">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542021386007105" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\FrontWall_2.png">
+                                <collision-poly>
+                                    <point x="0" y="0.428571" />
+                                    <point x="1" y="0.428571" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="HalfWall_1" sid="782808426166092">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="359527655944014" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\HalfWall.png">
+                                <collision-poly>
+                                    <point x="0" y="0.428571" />
+                                    <point x="0.5" y="0.428571" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Sidefence_1" sid="877241075161860">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231045527625620" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\Side Fence.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Rock" sid="656667953323482">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="225466774766384" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\Rock.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Sidefence_2" sid="633497705996323">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581460763054328" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\Side Fence.png">
+                                <collision-poly>
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="SideWall_1" sid="708941087989954">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="967420282608975" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\SideWall_1.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.272727" />
+                                    <point x="1" y="0.272727" />
+                                    <point x="1" y="1" />
+                                    <point x="0.5" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="SideWall_2" sid="180069441003218">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228328709605663" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\SideWall_2.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.272727" />
+                                    <point x="1" y="0.272727" />
+                                    <point x="1" y="1" />
+                                    <point x="0.5" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Tree" sid="266326835647383">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621068744636520" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\Tree.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Trunk" sid="502050789409744">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="136856316719217" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\trunk_1.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Water_1" sid="567860972954239">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="15" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="553393943072253" speed="10">
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Water_2" sid="890843824152318">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="22" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341944335249929" speed="10">
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Water_3" sid="205473501508748">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="738566645039957" speed="12">
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="SideWall_3" sid="119425637103700">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="288871657873196" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\SideWall_2.png">
+                                <collision-poly>
+                                    <point x="0.5" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.272727" />
+                                    <point x="0.5" y="0.272727" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="SideWall_4" sid="726883270803443">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="453457707753548" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\SideWall_1.png">
+                                <collision-poly>
+                                    <point x="0.5" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.272727" />
+                                    <point x="0.5" y="0.272727" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="Tilemap" sid="729597721983212">
+                <plugin id="Tilemap" />
+                <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\TileMap\TileMap.png" />
+                <tiles />
+            </object-type>
+        </object-folder>
     </object-folder>
     <families>
         <family name="Solid" plugin-id="Sprite" sid="768448478169401">
@@ -421,6 +704,7 @@
     </families>
     <layout-folder>
         <layout>Test.xml</layout>
+        <layout>Assets.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>General.xml</event-sheet>
