@@ -33,8 +33,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>250</width>
-        <height>250</height>
+        <width>512</width>
+        <height>768</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -676,7 +676,50 @@
                 <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\TileMap\TileMap.png" />
                 <tiles />
             </object-type>
+            <object-type name="Tilemap_nivel1" sid="327935651593370">
+                <plugin id="Tilemap" />
+                <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\TileMap\TileMap.png" />
+                <tiles />
+            </object-type>
         </object-folder>
+        <object-type name="Door_R" sid="350733974124090">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="431341281649610" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\Door.png">
+                        <collision-poly>
+                            <point x="0" y="0.428571" />
+                            <point x="1" y="0.428571" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door_L" sid="983631055137187">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="755391796378398" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\Door.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.428571" />
+                            <point x="1" y="0.428571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Trunk_2" sid="416448515826804">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145557569972074" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\trunk_2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Solid" plugin-id="Sprite" sid="768448478169401">
@@ -728,6 +771,7 @@
     <layout-folder>
         <layout>Test.xml</layout>
         <layout>Assets.xml</layout>
+        <layout>Nivel_1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>General.xml</event-sheet>
