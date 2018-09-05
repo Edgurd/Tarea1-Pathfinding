@@ -670,6 +670,31 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="Button_1" sid="291960232381298">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="off" pingpong="0" repeatcount="1" repeatto="0" sid="751278417835490" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\button_1.png">
+                                <collision-poly>
+                                    <point x="0.125" y="0.125" />
+                                    <point x="0.875" y="0.125" />
+                                    <point x="0.875" y="0.875" />
+                                    <point x="0.125" y="0.875" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="on" pingpong="0" repeatcount="1" repeatto="0" sid="949327012092322" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\button_2.png">
+                                <collision-poly>
+                                    <point x="0.125" y="0.125" />
+                                    <point x="0.875" y="0.125" />
+                                    <point x="0.875" y="0.875" />
+                                    <point x="0.125" y="0.875" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-type name="Tilemap" sid="729597721983212">
                 <plugin id="Tilemap" />
