@@ -2441,6 +2441,93 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="138565976638973" title="Miscelaneos" />
+        <event-group description="" sid="138565976638973" title="Miscelaneos">
+            <sub-events>
+                <event-group description="" sid="951203184566939" title="Camera">
+                    <sub-events>
+                        <event-group description="" sid="103806611830698" title="Camera 1">
+                            <sub-events>
+                                <event-block sid="772341474780339">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="672852596381002" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Clear Canvas" sid="838553573207846" type="ScreenP1" />
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="489592744531910">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="958850249471935" type="ScreenP1">
+                                                    <param id="0" name="X">clamp(player1.X,self.Width/2,layoutwidth-self.Width/2)</param>
+                                                    <param id="1" name="Y">clamp(player1.Y,self.Height/2,layoutheight-self.Height/2)</param>
+                                                </action>
+                                                <action id="21" name="Paste Layer" sid="445996972723362" type="ScreenP1">
+                                                    <param id="0" name="Layer">0</param>
+                                                </action>
+                                                <action id="21" name="Paste Layer" sid="499055218705416" type="ScreenP1">
+                                                    <param id="0" name="Layer">1</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="722995811763240">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="282363798337318" type="ScreenP1">
+                                                            <param id="0" name="X">Sprite.BBoxLeft</param>
+                                                            <param id="1" name="Y">Sprite.BBoxTop</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="789731633564870" title="Camera 2">
+                            <sub-events>
+                                <event-block sid="303168948515641">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="275740015469682" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="7" name="Clear Canvas" sid="661311990343559" type="ScreenP2" />
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="332397060578358">
+                                            <conditions />
+                                            <actions>
+                                                <action id="-3" name="Set position" sid="442095935073416" type="ScreenP2">
+                                                    <param id="0" name="X">clamp(Player2.X,self.Width/2,layoutwidth-self.Width/2)</param>
+                                                    <param id="1" name="Y">clamp(Player2.Y,self.Height/2,layoutheight-self.Height/2)</param>
+                                                </action>
+                                                <action id="21" name="Paste Layer" sid="346507607414381" type="ScreenP2">
+                                                    <param id="0" name="Layer">0</param>
+                                                </action>
+                                                <action id="21" name="Paste Layer" sid="230894941100304" type="ScreenP2">
+                                                    <param id="0" name="Layer">1</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="785172200961281">
+                                                    <conditions />
+                                                    <actions>
+                                                        <action id="-3" name="Set position" sid="258293024377435" type="ScreenP2">
+                                                            <param id="0" name="X">Sprite.BBoxRight</param>
+                                                            <param id="1" name="Y">Sprite.BBoxTop</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+        <plugin author="R0J0hound" id="c2canvas" version="2">Canvas</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
@@ -23,7 +24,6 @@
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
-        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
@@ -33,8 +33,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>250</width>
-        <height>250</height>
+        <width>512</width>
+        <height>224</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -58,11 +58,6 @@
         <object-folder name="Player">
             <object-type name="Player1" sid="829905532487569">
                 <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="ScrollTo" sid="119466408908893">
-                        <behavior id="scrollto" />
-                    </behavior-type>
-                </behaviors>
                 <effects>
                     <effect-type name="Tint">
                         <effect id="tint" />
@@ -129,11 +124,6 @@
             </object-type>
             <object-type name="Player2" sid="421173631473826">
                 <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="ScrollTo" sid="882820320521647">
-                        <behavior id="scrollto" />
-                    </behavior-type>
-                </behaviors>
                 <effects>
                     <effect-type name="Tint">
                         <effect id="tint" />
@@ -353,6 +343,14 @@
             </object-type>
             <object-type name="Keyboard" sid="828470562131561">
                 <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="ScreenP1" sid="421704491864934">
+                <plugin id="c2canvas" />
+                <texture />
+            </object-type>
+            <object-type name="ScreenP2" sid="612528241897906">
+                <plugin id="c2canvas" />
+                <texture />
             </object-type>
         </object-folder>
         <object-folder name="Enemigos">
@@ -1006,6 +1004,14 @@
                 <tiles />
             </object-type>
         </object-folder>
+        <object-type name="Sprite" sid="699980309050608">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234568492508110" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Solid" plugin-id="Sprite" sid="768448478169401">
