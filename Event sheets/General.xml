@@ -872,85 +872,95 @@
                                     </conditions>
                                     <actions />
                                     <sub-events>
-                                        <event-block any="1" sid="864757597813511">
+                                        <event-block sid="619900150878507">
                                             <conditions>
-                                                <condition id="-8" name="Compare two values" sid="522247608445256" type="System">
-                                                    <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Comparison">5</param>
-                                                    <param id="2" name="Second value">315</param>
-                                                </condition>
-                                                <condition id="-8" name="Compare two values" sid="572276668224984" type="System">
-                                                    <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Comparison">2</param>
-                                                    <param id="2" name="Second value">45</param>
+                                                <condition id="-11" name="For Each" sid="305285180217786" type="System">
+                                                    <param id="0" name="Object">DittoType</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="878971865309622" type="DittoType">
-                                                    <param id="0" name="Animation">&quot;Right&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="188986110690171">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="189961901414899" type="System">
-                                                    <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Comparison">5</param>
-                                                    <param id="2" name="Second value">45</param>
-                                                </condition>
-                                                <condition id="-8" name="Compare two values" sid="179176257775325" type="System">
-                                                    <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Comparison">2</param>
-                                                    <param id="2" name="Second value">135</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="645459583447016" type="DittoType">
-                                                    <param id="0" name="Animation">&quot;Down&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="177271139072672">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="412892726388107" type="System">
-                                                    <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Comparison">5</param>
-                                                    <param id="2" name="Second value">135</param>
-                                                </condition>
-                                                <condition id="-8" name="Compare two values" sid="878987123238743" type="System">
-                                                    <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Comparison">2</param>
-                                                    <param id="2" name="Second value">225</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="630684521942614" type="DittoType">
-                                                    <param id="0" name="Animation">&quot;Left&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                        <event-block sid="120553069155122">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="244647405804142" type="System">
-                                                    <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Comparison">5</param>
-                                                    <param id="2" name="Second value">225</param>
-                                                </condition>
-                                                <condition id="-8" name="Compare two values" sid="772550799272200" type="System">
-                                                    <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
-                                                    <param id="1" name="Comparison">2</param>
-                                                    <param id="2" name="Second value">315</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="885356371752559" type="DittoType">
-                                                    <param id="0" name="Animation">&quot;Up&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block any="1" sid="864757597813511">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="522247608445256" type="System">
+                                                            <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Comparison">5</param>
+                                                            <param id="2" name="Second value">315</param>
+                                                        </condition>
+                                                        <condition id="-8" name="Compare two values" sid="572276668224984" type="System">
+                                                            <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Comparison">2</param>
+                                                            <param id="2" name="Second value">45</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="878971865309622" type="DittoType">
+                                                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="188986110690171">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="189961901414899" type="System">
+                                                            <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Comparison">5</param>
+                                                            <param id="2" name="Second value">45</param>
+                                                        </condition>
+                                                        <condition id="-8" name="Compare two values" sid="179176257775325" type="System">
+                                                            <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Comparison">2</param>
+                                                            <param id="2" name="Second value">135</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="645459583447016" type="DittoType">
+                                                            <param id="0" name="Animation">&quot;Down&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="177271139072672">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="412892726388107" type="System">
+                                                            <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Comparison">5</param>
+                                                            <param id="2" name="Second value">135</param>
+                                                        </condition>
+                                                        <condition id="-8" name="Compare two values" sid="878987123238743" type="System">
+                                                            <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Comparison">2</param>
+                                                            <param id="2" name="Second value">225</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="630684521942614" type="DittoType">
+                                                            <param id="0" name="Animation">&quot;Left&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="120553069155122">
+                                                    <conditions>
+                                                        <condition id="-8" name="Compare two values" sid="244647405804142" type="System">
+                                                            <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Comparison">5</param>
+                                                            <param id="2" name="Second value">225</param>
+                                                        </condition>
+                                                        <condition id="-8" name="Compare two values" sid="772550799272200" type="System">
+                                                            <param id="0" name="First value">DittoType.Pathfinding.MovingAngle</param>
+                                                            <param id="1" name="Comparison">2</param>
+                                                            <param id="2" name="Second value">315</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="885356371752559" type="DittoType">
+                                                            <param id="0" name="Animation">&quot;Up&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
