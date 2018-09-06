@@ -1003,6 +1003,14 @@
                 <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\TileMap\TileMap.png" />
                 <tiles />
             </object-type>
+            <object-type name="Mapa" sid="152546522468032">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="905546758514990" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\TileMap\Mappa.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="Sprite" sid="699980309050608">
             <plugin id="Sprite" />
