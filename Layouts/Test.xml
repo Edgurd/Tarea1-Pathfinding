@@ -66,8 +66,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>128</x>
-                        <y>176</y>
+                        <x>0</x>
+                        <y>224</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
@@ -257,7 +257,7 @@
                     </properties>
                     <instance-variables>
                         <Sector>0</Sector>
-                        <Coordenadas>2|100|150|200|0</Coordenadas>
+                        <Coordenadas>3|50|0|75|200|50|50</Coordenadas>
                         <ActualCo>1</ActualCo>
                         <MaxCo>0</MaxCo>
                         <Estado>0</Estado>
@@ -1158,8 +1158,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>144</x>
-                        <y>176</y>
+                        <x>48</x>
+                        <y>240</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
@@ -1612,6 +1612,54 @@
                     <world>
                         <x>254.433135986</x>
                         <y>44.398113251</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Buscador" uid="786">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Sector>0</Sector>
+                        <Coordenadas>2|100|150|200|0</Coordenadas>
+                        <ActualCo>1</ActualCo>
+                        <MaxCo>0</MaxCo>
+                        <Estado>0</Estado>
+                        <TiempoFollow>8</TiempoFollow>
+                        <Watch>1</Watch>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>30</cell-size>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>70</max-speed>
+                                <acceleration>1000</acceleration>
+                                <deceleration>2000</deceleration>
+                                <rotate-speed>8000</rotate-speed>
+                                <rotate-object>No</rotate-object>
+                                <diagonals>Disabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>144</x>
+                        <y>16</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
