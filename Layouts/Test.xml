@@ -49,15 +49,6 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Tint">
-                            <parameters>
-                                <blue>1</blue>
-                                <green>0</green>
-                                <red>0</red>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -279,14 +270,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>32</x>
-                        <y>80</y>
+                        <x>160</x>
+                        <y>64</y>
                         <z>0</z>
                         <width>16</width>
-                        <height>16</height>
+                        <height>26</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
-                        <hotspotY>1</hotspotY>
+                        <hotspotY>0.961538434</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1136,15 +1127,6 @@
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
-                    <effect-instances>
-                        <effect-instance type="Tint">
-                            <parameters>
-                                <blue>0</blue>
-                                <green>0</green>
-                                <red>1</red>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1505,7 +1487,7 @@
                         <hotspotX>1</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
                 <instance type="BuscadorVisionUp" uid="32">
@@ -1535,7 +1517,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
                 <instance type="BuscadorVisionDown" uid="33">
@@ -1565,7 +1547,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.200000003</opacity>
                     </world>
                 </instance>
                 <instance type="Button_1" uid="10">
@@ -1652,10 +1634,10 @@
                         <y>16</y>
                         <z>0</z>
                         <width>16</width>
-                        <height>16</height>
+                        <height>26</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
-                        <hotspotY>1</hotspotY>
+                        <hotspotY>0.961538434</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

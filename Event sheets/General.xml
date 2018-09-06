@@ -364,18 +364,106 @@
                 </event-group>
                 <event-group description="" sid="622560098594838" title="Animaciones">
                     <sub-events>
+                        <event-block sid="276382240508528">
+                            <conditions>
+                                <condition behavior="8Direction" id="0" name="Is moving" sid="959503278172293" type="Player2" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="927682545641881">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="772194519450156" type="System">
+                                            <param id="0" name="First value">abs( Player2.8Direction.VectorX )</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">abs( Player2.8Direction.VectorY )</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="329044722107335">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="487540156318109" type="System">
+                                                    <param id="0" name="First value">Player2.8Direction.VectorX</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="315361464924018" type="Player2">
+                                                    <param id="0" name="Animation">&quot;East&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="998175763787277">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="435809467169903" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="948252138354759" type="Player2">
+                                                    <param id="0" name="Animation">&quot;West&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="189832649607805">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="513989428805534" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="115101061883414">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="346430030932361" type="System">
+                                                    <param id="0" name="First value">Player2.8Direction.VectorY</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="846546925239325" type="Player2">
+                                                    <param id="0" name="Animation">&quot;South&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="137380654183592">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="625952780956428" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="370076315191694" type="Player2">
+                                                    <param id="0" name="Animation">&quot;North&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="268127819300063">
+                            <conditions>
+                                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="757282989274015" type="Player2" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="816392893129383" type="Player2" />
+                            </actions>
+                        </event-block>
                         <event-block sid="978785465258149">
                             <conditions>
-                                <condition behavior="8Direction" id="0" name="Is moving" sid="506610629877681" type="Players" />
+                                <condition behavior="8Direction" id="0" name="Is moving" sid="506610629877681" type="Player1" />
                             </conditions>
                             <actions />
                             <sub-events>
                                 <event-block sid="237576628779130">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="169212569148499" type="System">
-                                            <param id="0" name="First value">abs( Players.8Direction.VectorX )</param>
+                                            <param id="0" name="First value">abs( Player1.8Direction.VectorX )</param>
                                             <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">abs( Players.8Direction.VectorY )</param>
+                                            <param id="2" name="Second value">abs( Player1.8Direction.VectorY )</param>
                                         </condition>
                                     </conditions>
                                     <actions />
@@ -383,13 +471,13 @@
                                         <event-block sid="416542732952278">
                                             <conditions>
                                                 <condition id="-8" name="Compare two values" sid="296431777226991" type="System">
-                                                    <param id="0" name="First value">Players.8Direction.VectorX</param>
+                                                    <param id="0" name="First value">Player1.8Direction.VectorX</param>
                                                     <param id="1" name="Comparison">4</param>
                                                     <param id="2" name="Second value">0</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="4" name="Set animation" sid="238770817818463" type="Players">
+                                                <action id="4" name="Set animation" sid="238770817818463" type="Player1">
                                                     <param id="0" name="Animation">&quot;East&quot;</param>
                                                     <param id="1" name="From">1</param>
                                                 </action>
@@ -400,7 +488,7 @@
                                                 <condition id="-22" name="Else" sid="139321872649168" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="4" name="Set animation" sid="115482796918729" type="Players">
+                                                <action id="4" name="Set animation" sid="115482796918729" type="Player1">
                                                     <param id="0" name="Animation">&quot;West&quot;</param>
                                                     <param id="1" name="From">1</param>
                                                 </action>
@@ -417,13 +505,13 @@
                                         <event-block sid="875931950418401">
                                             <conditions>
                                                 <condition id="-8" name="Compare two values" sid="172261235145845" type="System">
-                                                    <param id="0" name="First value">Players.8Direction.VectorY</param>
+                                                    <param id="0" name="First value">Player1.8Direction.VectorY</param>
                                                     <param id="1" name="Comparison">4</param>
                                                     <param id="2" name="Second value">0</param>
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="4" name="Set animation" sid="780672097099482" type="Players">
+                                                <action id="4" name="Set animation" sid="780672097099482" type="Player1">
                                                     <param id="0" name="Animation">&quot;South&quot;</param>
                                                     <param id="1" name="From">1</param>
                                                 </action>
@@ -434,7 +522,7 @@
                                                 <condition id="-22" name="Else" sid="169874726521818" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="4" name="Set animation" sid="666541602214999" type="Players">
+                                                <action id="4" name="Set animation" sid="666541602214999" type="Player1">
                                                     <param id="0" name="Animation">&quot;North&quot;</param>
                                                     <param id="1" name="From">1</param>
                                                 </action>
@@ -446,10 +534,10 @@
                         </event-block>
                         <event-block sid="147246394226457">
                             <conditions>
-                                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="225441244594621" type="Players" />
+                                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="225441244594621" type="Player1" />
                             </conditions>
                             <actions>
-                                <action id="2" name="Stop" sid="525646768589259" type="Players" />
+                                <action id="2" name="Stop" sid="525646768589259" type="Player1" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -2447,35 +2535,48 @@
                     <sub-events>
                         <event-group description="" sid="103806611830698" title="Camera 1">
                             <sub-events>
-                                <event-block sid="772341474780339">
+                                <event-block sid="252251964171569">
                                     <conditions>
-                                        <condition id="-1" name="Every tick" sid="672852596381002" type="System" />
+                                        <condition id="-2" name="On start of layout" sid="587813725285400" type="System" />
+                                    </conditions>
+                                    <actions />
+                                </event-block>
+                                <event-block sid="565885710995128">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="999458890623557" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="7" name="Clear Canvas" sid="838553573207846" type="ScreenP1" />
+                                        <action id="1" name="Clear to color" sid="988809301336281" type="Camera1">
+                                            <param id="0" name="red">0</param>
+                                            <param id="1" name="green">0</param>
+                                            <param id="2" name="blue">0</param>
+                                            <param id="3" name="alpha">0</param>
+                                        </action>
                                     </actions>
                                     <sub-events>
-                                        <event-block sid="489592744531910">
-                                            <conditions />
+                                        <event-block sid="772341474780339">
+                                            <conditions>
+                                                <condition id="-1" name="Every tick" sid="672852596381002" type="System" />
+                                            </conditions>
                                             <actions>
-                                                <action id="-3" name="Set position" sid="958850249471935" type="ScreenP1">
-                                                    <param id="0" name="X">clamp(player1.X,self.Width/2,layoutwidth-self.Width/2)</param>
-                                                    <param id="1" name="Y">clamp(player1.Y,self.Height/2,layoutheight-self.Height/2)</param>
+                                                <action id="-3" name="Set position" sid="883754590645239" type="Camera1">
+                                                    <param id="0" name="X">camerafocus_1.X</param>
+                                                    <param id="1" name="Y">camerafocus_1.Y</param>
                                                 </action>
-                                                <action id="21" name="Paste Layer" sid="445996972723362" type="ScreenP1">
-                                                    <param id="0" name="Layer">0</param>
+                                                <action id="0" name="Paste Object" sid="381330524450392" type="Camera1">
+                                                    <param id="0" name="Object">Everytin</param>
                                                 </action>
-                                                <action id="21" name="Paste Layer" sid="499055218705416" type="ScreenP1">
-                                                    <param id="0" name="Layer">1</param>
+                                                <action id="0" name="Paste Object" sid="729519546169186" type="Camera1">
+                                                    <param id="0" name="Object">Player1</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block sid="722995811763240">
+                                                <event-block sid="240343283505889">
                                                     <conditions />
                                                     <actions>
-                                                        <action id="-3" name="Set position" sid="282363798337318" type="ScreenP1">
-                                                            <param id="0" name="X">Sprite.BBoxLeft</param>
-                                                            <param id="1" name="Y">Sprite.BBoxTop</param>
+                                                        <action id="-3" name="Set position" sid="319485842266407" type="Camera1">
+                                                            <param id="0" name="X">128</param>
+                                                            <param id="1" name="Y">112</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
@@ -2483,45 +2584,227 @@
                                         </event-block>
                                     </sub-events>
                                 </event-block>
+                                <comment>camara sigue al  jugador</comment>
+                                <event-block sid="723808247631384">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="413481251190851" type="camerafocus_1">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="804242016188921" type="camerafocus_1">
+                                            <param id="0" name="X">camerafocus_1.X</param>
+                                            <param id="1" name="Y">lerp(camerafocus_1.Y, Player1.Y-40,0.09)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>camara se mantiene al inicio del nivel</comment>
+                                <event-block sid="342184842844580">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="326135436800145" type="camerafocus_1">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="509459155617633" type="camerafocus_1">
+                                            <param id="0" name="X">camerafocus_1.X</param>
+                                            <param id="1" name="Y">lerp(camerafocus_1.Y, camera1limite_inicio.Y-16,0.09)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>camara se mantiene en el fin de este nivel</comment>
+                                <event-block sid="169293577154706">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="610916577055127" type="camerafocus_1">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="882519114892133" type="camerafocus_1">
+                                            <param id="0" name="X">camerafocus_1.X</param>
+                                            <param id="1" name="Y">lerp(camerafocus_1.Y, camera1limite_fin.Y+16,0.09)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="955425929471106">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="947857942728534" type="System">
+                                            <param id="0" name="First value">Player1.Y</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">672</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="885270455555867" type="camerafocus_1">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="558565957627731">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="859750184246740" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="882922886243202" type="camerafocus_1">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="214958805449483">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="818969495277449" type="System">
+                                            <param id="0" name="First value">Player1.Y</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">170</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="575079665085356" type="camerafocus_1">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-group>
                         <event-group description="" sid="789731633564870" title="Camera 2">
                             <sub-events>
-                                <event-block sid="303168948515641">
+                                <event-block sid="362621552398766">
                                     <conditions>
-                                        <condition id="-1" name="Every tick" sid="275740015469682" type="System" />
+                                        <condition id="-1" name="Every tick" sid="777257665120180" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="7" name="Clear Canvas" sid="661311990343559" type="ScreenP2" />
+                                        <action id="1" name="Clear to color" sid="511965504714650" type="Camera2">
+                                            <param id="0" name="red">0</param>
+                                            <param id="1" name="green">0</param>
+                                            <param id="2" name="blue">0</param>
+                                            <param id="3" name="alpha">0</param>
+                                        </action>
                                     </actions>
                                     <sub-events>
-                                        <event-block sid="332397060578358">
-                                            <conditions />
+                                        <event-block sid="809781566611112">
+                                            <conditions>
+                                                <condition id="-1" name="Every tick" sid="941969714268782" type="System" />
+                                            </conditions>
                                             <actions>
-                                                <action id="-3" name="Set position" sid="442095935073416" type="ScreenP2">
-                                                    <param id="0" name="X">clamp(Player2.X,self.Width/2,layoutwidth-self.Width/2)</param>
-                                                    <param id="1" name="Y">clamp(Player2.Y,self.Height/2,layoutheight-self.Height/2)</param>
+                                                <action id="-3" name="Set position" sid="389162141155394" type="Camera2">
+                                                    <param id="0" name="X">camerafocus_2.X</param>
+                                                    <param id="1" name="Y">camerafocus_2.Y</param>
                                                 </action>
-                                                <action id="21" name="Paste Layer" sid="346507607414381" type="ScreenP2">
-                                                    <param id="0" name="Layer">0</param>
-                                                </action>
-                                                <action id="21" name="Paste Layer" sid="230894941100304" type="ScreenP2">
-                                                    <param id="0" name="Layer">1</param>
+                                                <action id="0" name="Paste Object" sid="639323707488619" type="Camera2">
+                                                    <param id="0" name="Object">Everytin</param>
                                                 </action>
                                             </actions>
                                             <sub-events>
-                                                <event-block sid="785172200961281">
+                                                <event-block sid="930280867377311">
                                                     <conditions />
                                                     <actions>
-                                                        <action id="-3" name="Set position" sid="258293024377435" type="ScreenP2">
-                                                            <param id="0" name="X">Sprite.BBoxRight</param>
-                                                            <param id="1" name="Y">Sprite.BBoxTop</param>
+                                                        <action id="-3" name="Set position" sid="610049492876401" type="Camera2">
+                                                            <param id="0" name="X">384</param>
+                                                            <param id="1" name="Y">112</param>
                                                         </action>
                                                     </actions>
                                                 </event-block>
                                             </sub-events>
                                         </event-block>
                                     </sub-events>
+                                </event-block>
+                                <comment>camara sigue al  jugador</comment>
+                                <event-block sid="855532182194574">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="335380709423638" type="camerafocus_2">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="123432538955620" type="camerafocus_2">
+                                            <param id="0" name="X">camerafocus_2.X</param>
+                                            <param id="1" name="Y">lerp(camerafocus_2.Y, Player2.Y-40,0.09)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>camara se mantiene al inicio del nivel</comment>
+                                <event-block sid="880045780575267">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="211876653801252" type="camerafocus_2">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="847609605497595" type="camerafocus_2">
+                                            <param id="0" name="X">camerafocus_2.X</param>
+                                            <param id="1" name="Y">lerp(camerafocus_2.Y, camera2limite_inicio.Y-16,0.09)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>camara se mantiene en el fin de este nivel</comment>
+                                <event-block sid="737098103258049">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="846879263553895" type="camerafocus_2">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">-1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="672487128723182" type="camerafocus_2">
+                                            <param id="0" name="X">camerafocus_2.X</param>
+                                            <param id="1" name="Y">lerp(camerafocus_2.Y, camera2limite_fin.Y+16,0.09)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="928721277439736">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="354295230766523" type="System">
+                                            <param id="0" name="First value">Player2.Y</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">672</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="240981376735912" type="camerafocus_2">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="968418033670431">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="553723053093997" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="565588054251296" type="camerafocus_2">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="165436511909757">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="149240363582418" type="System">
+                                            <param id="0" name="First value">Player2.Y</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Second value">170</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="235691016272384" type="camerafocus_2">
+                                            <param id="0" name="Instance variable">follow</param>
+                                            <param id="1" name="Value">-1</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-group>
