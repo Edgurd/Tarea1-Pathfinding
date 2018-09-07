@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Player</name>
+    <events>
+        <event-group description="" sid="983274440757448" title="Balas">
+            <sub-events>
+                <event-block sid="168441177794762">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="970170096667444" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="305841513389293">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="869068885050769" type="Player1">
+                                    <param id="0" name="Animation">&quot;East&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="630453401968593" type="Player1">
+                                    <param id="0" name="Object">PlayerBullet</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="344683694834862" type="PlayerBullet">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="963284540705362">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="744644870727026" type="Player1">
+                                    <param id="0" name="Animation">&quot;North&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="168109741451174" type="Player1">
+                                    <param id="0" name="Object">PlayerBullet</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="857381494390613" type="PlayerBullet">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="698662990743900">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="489739184520379" type="Player1">
+                                    <param id="0" name="Animation">&quot;South&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="889854365309064" type="Player1">
+                                    <param id="0" name="Object">PlayerBullet</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="596508519282421" type="PlayerBullet">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="944547684256090">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="206859746272211" type="Player1">
+                                    <param id="0" name="Animation">&quot;West&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="867283836608141" type="Player1">
+                                    <param id="0" name="Object">PlayerBullet</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="455104529555175" type="PlayerBullet">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="857174819737766">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="747141281969568" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="649555009682359">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="496992617552537" type="Player2">
+                                    <param id="0" name="Animation">&quot;East&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="140142647596591" type="Player2">
+                                    <param id="0" name="Object">PlayerBullet</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="225085980194469" type="PlayerBullet">
+                                    <param id="0" name="Angle">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="465647058530380">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="774611818561711" type="Player2">
+                                    <param id="0" name="Animation">&quot;North&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="888524449573813" type="Player2">
+                                    <param id="0" name="Object">PlayerBullet</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="873728870616645" type="PlayerBullet">
+                                    <param id="0" name="Angle">270</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="700201282851797">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="708034574086627" type="Player2">
+                                    <param id="0" name="Animation">&quot;South&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="426883689554762" type="Player2">
+                                    <param id="0" name="Object">PlayerBullet</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="547941648237082" type="PlayerBullet">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="983207240030496">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="156728601986857" type="Player2">
+                                    <param id="0" name="Animation">&quot;West&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="628152102162054" type="Player2">
+                                    <param id="0" name="Object">PlayerBullet</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="238822455111732" type="PlayerBullet">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="836624454012377" title="Movimiento">
+            <sub-events>
+                <event-block sid="891499434703526">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="722418256360741" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="516871676415055" type="Player2">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="118061814509319">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="637492826225137" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">-50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="338825117228501" type="Player2">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="345802538494674">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="999614628897061" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="805735060532809" type="Player2">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="705400598236459">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="437111240629161" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">-50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="760083999384743" type="Player2">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="991153578558061" title="Animaciones">
+            <sub-events>
+                <event-block sid="539467853169795">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="386502760040567" type="Player2" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="989867621335502">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="878939539650121" type="System">
+                                    <param id="0" name="First value">abs( Player2.8Direction.VectorX )</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">abs( Player2.8Direction.VectorY )</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="990084503392685">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="901802586210567" type="System">
+                                            <param id="0" name="First value">Player2.8Direction.VectorX</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="261167302182780" type="Player2">
+                                            <param id="0" name="Animation">&quot;East&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="612245133340335">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="330314757800395" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="278127900132802" type="Player2">
+                                            <param id="0" name="Animation">&quot;West&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="586636446037686">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="174773684729668" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="558665538510556">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="960652648792695" type="System">
+                                            <param id="0" name="First value">Player2.8Direction.VectorY</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="659759060445334" type="Player2">
+                                            <param id="0" name="Animation">&quot;South&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="830131521449116">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="282906058809332" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="115997876614880" type="Player2">
+                                            <param id="0" name="Animation">&quot;North&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="552986325506457">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="545168265519976" type="Player2" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="907436768703617" type="Player2" />
+                    </actions>
+                </event-block>
+                <event-block sid="806102421405006">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" name="Is moving" sid="182219477989882" type="Player1" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="757916584597825">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="102263175063480" type="System">
+                                    <param id="0" name="First value">abs( Player1.8Direction.VectorX )</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">abs( Player1.8Direction.VectorY )</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="487796972626140">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="271318990246978" type="System">
+                                            <param id="0" name="First value">Player1.8Direction.VectorX</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="443882754526809" type="Player1">
+                                            <param id="0" name="Animation">&quot;East&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="648904352093233">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="714958427737821" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="197371264127867" type="Player1">
+                                            <param id="0" name="Animation">&quot;West&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="915018968407019">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="418986039165467" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="270884445107072">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="393002545186691" type="System">
+                                            <param id="0" name="First value">Player1.8Direction.VectorY</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Second value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="698598069041850" type="Player1">
+                                            <param id="0" name="Animation">&quot;South&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="788748997965909">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="765099341150310" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="490894617796153" type="Player1">
+                                            <param id="0" name="Animation">&quot;North&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="921411110182648">
+                    <conditions>
+                        <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="168211554875771" type="Player1" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="260577151905441" type="Player1" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="835440121366509" title="Set Cuadrante">
+            <sub-events>
+                <event-block sid="951308509480357">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="783467104432128" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="291219420781172">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="784857633345355" type="Player1">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">LayoutWidth/2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="131311543426164" type="System">
+                                    <param id="0" name="Variable">UIDSector0</param>
+                                    <param id="1" name="Value">Player1.UID</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="910614475149384" type="System">
+                                    <param id="0" name="Variable">UIDSector1</param>
+                                    <param id="1" name="Value">Player2.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="940842446211657">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="417835839192284" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="385211563762051" type="System">
+                                    <param id="0" name="Variable">UIDSector1</param>
+                                    <param id="1" name="Value">Player1.UID</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="518019100460745" type="System">
+                                    <param id="0" name="Variable">UIDSector0</param>
+                                    <param id="1" name="Value">Player2.UID</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="898790789487074" title="Funciones Personaje">
+            <sub-events>
+                <variable constant="0" name="Auxiliar" sid="627853704206003" static="0" type="number">0</variable>
+                <event-block sid="365203127159277">
+                    <conditions>
+                        <condition id="0" name="On function" sid="168190467697146" type="Function">
+                            <param id="0" name="Name">&quot;IntercambiarPlayers&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="459120710618195">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="170820413422086" type="System">
+                                    <param id="0" name="Object">Enemies</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="966686659344646">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="597407195771364" type="System">
+                                            <param id="0" name="Variable">Auxiliar</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="594774954400760">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="889774800298871" type="Enemies">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="983946592130137" type="System">
+                                            <param id="0" name="Variable">Auxiliar</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="519741314876807" type="Enemies">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="858548308633409" type="System">
+                                            <param id="0" name="Variable">Auxiliar</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="932536059832261">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="538179943645778" type="Enemies">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="422454457457083" type="System">
+                                            <param id="0" name="Variable">Auxiliar</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="826847139879005" type="Enemies">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="329630510051088" type="System">
+                                            <param id="0" name="Variable">Auxiliar</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
