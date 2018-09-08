@@ -227,6 +227,9 @@
                                             <param id="2" name="X">0</param>
                                             <param id="3" name="Y">Player1.Y - CoeficienteDistancia</param>
                                         </action>
+                                        <action id="7" name="Set mirrored" sid="637295099487307" type="bird">
+                                            <param id="0" name="State">0</param>
+                                        </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="934319917114429" type="bird">
                                             <param id="0" name="Speed">Self.Bullet.Speed *1</param>
                                         </action>
@@ -246,6 +249,9 @@
                                             <param id="1" name="Layer">&quot;Players&quot;</param>
                                             <param id="2" name="X">0</param>
                                             <param id="3" name="Y">Player2.Y - CoeficienteDistancia</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="683956135993905" type="bird">
+                                            <param id="0" name="State">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="822711830907926" type="bird">
                                             <param id="0" name="Speed">Self.Bullet.Speed *1</param>
@@ -280,7 +286,10 @@
                                             <param id="2" name="X">LayoutWidth</param>
                                             <param id="3" name="Y">Player1.Y - CoeficienteDistancia</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="683956135993905" type="bird">
+                                        <action id="8" name="Set flipped" sid="505452891028794" type="bird">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="675673272099747" type="bird">
                                             <param id="0" name="State">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="263724439884681" type="bird">
@@ -303,7 +312,10 @@
                                             <param id="2" name="X">LayoutWidth</param>
                                             <param id="3" name="Y">Player2.Y - CoeficienteDistancia</param>
                                         </action>
-                                        <action id="7" name="Set mirrored" sid="269027611002890" type="bird">
+                                        <action id="7" name="Set mirrored" sid="854442563629459" type="bird">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="8" name="Set flipped" sid="663122847264148" type="bird">
                                             <param id="0" name="State">0</param>
                                         </action>
                                         <action behavior="Bullet" id="0" name="Set speed" sid="521293274685267" type="bird">
@@ -514,6 +526,9 @@
                                                     <param id="1" name="Layer">0</param>
                                                     <param id="2" name="Image point">1</param>
                                                 </action>
+                                                <action id="7" name="Set mirrored" sid="307492348338043" type="Turret">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
                                                 <action id="-8" name="Set angle" sid="478302766057145" type="TurretBullet">
                                                     <param id="0" name="Angle">180</param>
                                                 </action>
@@ -528,6 +543,9 @@
                                                     <param id="0" name="Object">TurretBullet</param>
                                                     <param id="1" name="Layer">0</param>
                                                     <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="775812557026576" type="Turret">
+                                                    <param id="0" name="State">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="621211260649718" type="TurretBullet">
                                                     <param id="0" name="Angle">0</param>
@@ -642,6 +660,9 @@
                                                     <param id="1" name="Layer">0</param>
                                                     <param id="2" name="Image point">1</param>
                                                 </action>
+                                                <action id="7" name="Set mirrored" sid="228036531437178" type="Turret">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
                                                 <action id="-8" name="Set angle" sid="358754409126528" type="TurretBullet">
                                                     <param id="0" name="Angle">180</param>
                                                 </action>
@@ -656,6 +677,9 @@
                                                     <param id="0" name="Object">TurretBullet</param>
                                                     <param id="1" name="Layer">0</param>
                                                     <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="7" name="Set mirrored" sid="774965525538073" type="Turret">
+                                                    <param id="0" name="State">0</param>
                                                 </action>
                                                 <action id="-8" name="Set angle" sid="586049012886207" type="TurretBullet">
                                                     <param id="0" name="Angle">0</param>
@@ -926,6 +950,10 @@
                                 <action behavior="Solid" id="0" name="Set enabled" sid="244909611384107" type="DittoType">
                                     <param id="0" name="State">1</param>
                                 </action>
+                                <action id="4" name="Set animation" sid="465100093014976" type="DittoType">
+                                    <param id="0" name="Animation">&quot;dittoWall&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -1015,6 +1043,10 @@
                             <actions>
                                 <action behavior="Solid" id="0" name="Set enabled" sid="605937870575312" type="DittoType">
                                     <param id="0" name="State">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="700239997462581" type="DittoType">
+                                    <param id="0" name="Animation">&quot;dittoWall&quot;</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
