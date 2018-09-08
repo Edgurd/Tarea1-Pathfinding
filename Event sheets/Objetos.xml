@@ -125,6 +125,19 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <event-block sid="416492939903773">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="155880868229470" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="209412796967256" type="Audio">
+                                    <param id="0" name="Audio file">DoorOpen</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="111500163388842">
                             <conditions>
                                 <condition id="-10" name="For" sid="166093800977117" type="System">
@@ -182,6 +195,19 @@
                         </action>
                     </actions>
                     <sub-events>
+                        <event-block sid="418813584275779">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="342307620326199" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="918915105157556" type="Audio">
+                                    <param id="0" name="Audio file">DoorClose</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="484508802721476">
                             <conditions>
                                 <condition id="-10" name="For" sid="695434571033317" type="System">

@@ -598,6 +598,42 @@
                                             <param id="2" name="Tag">&quot;InvulnerableTimer&quot;</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="496226890895795">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="433553307306424" type="System">
+                                                    <param id="0" name="First value">Function.Param(0)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">Player1.UID</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="735404499187011" type="Audio">
+                                                    <param id="0" name="Audio file">Damage1</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="395551582469032">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="625941987282691" type="System">
+                                                    <param id="0" name="First value">Function.Param(0)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">Player2.UID</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Play" sid="915642334216921" type="Audio">
+                                                    <param id="0" name="Audio file">Damage2</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>

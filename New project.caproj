@@ -2002,6 +2002,10 @@
     </global-instances>
     <sounds-folder>
         <file name="MainLoop.ogg" />
+        <file name="Damage1.ogg" />
+        <file name="Damage2.ogg" />
+        <file name="DoorClose.ogg" />
+        <file name="DoorOpen.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
