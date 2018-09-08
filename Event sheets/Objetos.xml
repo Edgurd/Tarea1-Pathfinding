@@ -129,14 +129,7 @@
                             <conditions>
                                 <condition id="-4" name="Trigger once while true" sid="155880868229470" type="System" />
                             </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="209412796967256" type="Audio">
-                                    <param id="0" name="Audio file">DoorOpen</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
-                                </action>
-                            </actions>
+                            <actions />
                         </event-block>
                         <event-block sid="111500163388842">
                             <conditions>
@@ -164,6 +157,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="209412796967256" type="Audio">
+                                                    <param id="0" name="Audio file">DoorOpen</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
                                                 <action id="-15" name="Set visible" sid="930168983684855" type="Puerta">
                                                     <param id="0" name="Visibility">0</param>
                                                 </action>
@@ -199,14 +198,7 @@
                             <conditions>
                                 <condition id="-4" name="Trigger once while true" sid="342307620326199" type="System" />
                             </conditions>
-                            <actions>
-                                <action id="0" name="Play" sid="918915105157556" type="Audio">
-                                    <param id="0" name="Audio file">DoorClose</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">0</param>
-                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
-                                </action>
-                            </actions>
+                            <actions />
                         </event-block>
                         <event-block sid="484508802721476">
                             <conditions>
@@ -234,6 +226,12 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
+                                                <action id="0" name="Play" sid="918915105157556" type="Audio">
+                                                    <param id="0" name="Audio file">DoorClose</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                                                </action>
                                                 <action id="-15" name="Set visible" sid="922683378840544" type="Puerta">
                                                     <param id="0" name="Visibility">1</param>
                                                 </action>
