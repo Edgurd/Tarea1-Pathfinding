@@ -60,171 +60,483 @@
             <object-type name="Player1" sid="829905532487569">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="4" loop="0" name="East" pingpong="0" repeatcount="1" repeatto="0" sid="440870184746187" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\000.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                            <collision-poly>
-                                <point x="0.208333" y="0.25" />
-                                <point x="0.8125" y="0.25" />
-                                <point x="0.8125" y="0.958333" />
-                                <point x="0.208333" y="0.958333" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\001.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                            <collision-poly>
-                                <point x="0.208333" y="0.25" />
-                                <point x="0.8125" y="0.25" />
-                                <point x="0.8125" y="0.958333" />
-                                <point x="0.208333" y="0.958333" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\002.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                            <collision-poly>
-                                <point x="0.208333" y="0.25" />
-                                <point x="0.8125" y="0.25" />
-                                <point x="0.8125" y="0.958333" />
-                                <point x="0.208333" y="0.958333" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\003.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                            <collision-poly>
-                                <point x="0.208333" y="0.25" />
-                                <point x="0.8125" y="0.25" />
-                                <point x="0.8125" y="0.958333" />
-                                <point x="0.208333" y="0.958333" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="West" pingpong="0" repeatcount="1" repeatto="0" sid="961697777521463" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\000.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\001.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\002.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\003.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="North" pingpong="0" repeatcount="1" repeatto="0" sid="665956786030159" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\000.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\001.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\002.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\003.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="South" pingpong="0" repeatcount="1" repeatto="0" sid="638669922531917" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\000.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\001.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\002.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\003.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                    </animation>
+                    <animation-folder name="Newanimation">
+                        <animation framecount="2" loop="0" name="East" pingpong="0" repeatcount="1" repeatto="0" sid="402413939409922" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="2" loop="0" name="West" pingpong="0" repeatcount="1" repeatto="0" sid="961697777521463" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player1\walk_3.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player1\walk_4.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="2" loop="0" name="North" pingpong="0" repeatcount="1" repeatto="0" sid="665956786030159" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player1\walk_5.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player1\walk_6.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="2" loop="0" name="South" pingpong="0" repeatcount="1" repeatto="0" sid="440870184746187" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player1\walk_1.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player1\walk_2.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                    <animation-folder name="Oldanimation">
+                        <animation framecount="4" loop="0" name="East2" pingpong="0" repeatcount="1" repeatto="0" sid="727747937672133" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="West2" pingpong="0" repeatcount="1" repeatto="0" sid="981882127116254" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="North2" pingpong="0" repeatcount="1" repeatto="0" sid="878166729900331" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="South2" pingpong="0" repeatcount="1" repeatto="0" sid="537330995026707" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.208333" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.958333" />
+                                    <point x="0.208333" y="0.958333" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
                 </animation-folder>
             </object-type>
             <object-type name="Player2" sid="421173631473826">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="4" loop="0" name="East" pingpong="0" repeatcount="1" repeatto="0" sid="920700376399886" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\000.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                            <collision-poly>
-                                <point x="0.270833" y="0.229167" />
-                                <point x="0.791667" y="0.229167" />
-                                <point x="0.791667" y="0.9375" />
-                                <point x="0.270833" y="0.9375" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\001.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                            <collision-poly>
-                                <point x="0.270833" y="0.229167" />
-                                <point x="0.791667" y="0.229167" />
-                                <point x="0.791667" y="0.9375" />
-                                <point x="0.270833" y="0.9375" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\002.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                            <collision-poly>
-                                <point x="0.270833" y="0.229167" />
-                                <point x="0.791667" y="0.229167" />
-                                <point x="0.791667" y="0.9375" />
-                                <point x="0.270833" y="0.9375" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\003.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                            <collision-poly>
-                                <point x="0.270833" y="0.229167" />
-                                <point x="0.791667" y="0.229167" />
-                                <point x="0.791667" y="0.9375" />
-                                <point x="0.270833" y="0.9375" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="West" pingpong="0" repeatcount="1" repeatto="0" sid="684411886875841" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\000.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\001.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\002.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\003.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="North" pingpong="0" repeatcount="1" repeatto="0" sid="268990228166989" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\000.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\001.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\002.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\003.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                    </animation>
-                    <animation framecount="4" loop="0" name="South" pingpong="0" repeatcount="1" repeatto="0" sid="492452787912626" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\000.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\001.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\002.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\003.png">
-                            <image-point name="Center" x="0.5" y="0.5" />
-                        </frame>
-                    </animation>
+                    <animation-folder name="NewAnimation">
+                        <animation framecount="2" loop="0" name="East" pingpong="0" repeatcount="1" repeatto="0" sid="365116539546450" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="2" loop="0" name="West" pingpong="0" repeatcount="1" repeatto="0" sid="293858009611536" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player2\Walk_3.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player2\Walk_4.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="2" loop="0" name="North" pingpong="0" repeatcount="1" repeatto="0" sid="287059328888804" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player2\Walk_5.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player2\Walk_6.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="2" loop="0" name="South" pingpong="0" repeatcount="1" repeatto="0" sid="685670777948122" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player2\Walk_1.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Player2\Walk_2.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                    <animation-folder name="OldAnimation">
+                        <animation framecount="4" loop="0" name="East2" pingpong="0" repeatcount="1" repeatto="0" sid="920700376399886" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\000.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\001.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\002.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk0\003.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="West2" pingpong="0" repeatcount="1" repeatto="0" sid="684411886875841" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\000.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\001.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\002.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk2\003.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="North2" pingpong="0" repeatcount="1" repeatto="0" sid="268990228166989" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\000.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\001.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\002.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk3\003.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="4" loop="0" name="South2" pingpong="0" repeatcount="1" repeatto="0" sid="492452787912626" speed="5">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\000.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\001.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\002.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Jhü\Desktop\Nueva carpeta (2)\Animations\Player\Walk1\003.png">
+                                <image-point name="Center" x="0.5" y="0.5" />
+                                <collision-poly>
+                                    <point x="0.1875" y="0.25" />
+                                    <point x="0.8125" y="0.25" />
+                                    <point x="0.8125" y="0.9375" />
+                                    <point x="0.1875" y="0.9375" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
                 </animation-folder>
             </object-type>
             <object-type name="PlayerBullet" sid="616552796887854">
