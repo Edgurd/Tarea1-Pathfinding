@@ -773,7 +773,7 @@
                     </behaviors>
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="279236188006138" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="1">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\Bolita.png">
                                 <image-point name="Up" x="0.5" y="0" />
                                 <image-point name="Right" x="1" y="0.5" />
                                 <image-point name="Left" x="0" y="0.5" />
@@ -809,62 +809,218 @@
                         </behavior-type>
                     </behaviors>
                     <animation-folder>
-                        <animation framecount="1" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="726247475679292" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="C:\Users\Multimedia5_13\Desktop\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot.png">
-                                <image-point name="Down" x="0.5" y="0.769231" />
-                                <image-point name="Right" x="0.6875" y="0.615385" />
-                                <image-point name="Left" x="0.3125" y="0.615385" />
-                                <image-point name="Up" x="0.5" y="0.5" />
-                                <collision-poly>
-                                    <point x="0" y="0.346154" />
-                                    <point x="1" y="0.346154" />
-                                    <point x="1" y="0.961538" />
-                                    <point x="0" y="0.961538" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                        <animation framecount="1" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="726976280419499" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="C:\Users\Multimedia5_13\Desktop\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot.png">
-                                <image-point name="Down" x="0.5" y="0.923077" />
-                                <image-point name="Right" x="0.875" y="0.5" />
-                                <image-point name="Left" x="0.125" y="0.5" />
-                                <image-point name="Up" x="0.5" y="0.115385" />
-                                <collision-poly>
-                                    <point x="0" y="0.346154" />
-                                    <point x="1" y="0.346154" />
-                                    <point x="1" y="0.961538" />
-                                    <point x="0" y="0.961538" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                        <animation framecount="1" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="458026755602742" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="C:\Users\Multimedia5_13\Desktop\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot.png">
-                                <image-point name="Down" x="0.5" y="0.923077" />
-                                <image-point name="Right" x="0.875" y="0.5" />
-                                <image-point name="Left" x="0.125" y="0.5" />
-                                <image-point name="Up" x="0.5" y="0.115385" />
-                                <collision-poly>
-                                    <point x="0" y="0.346154" />
-                                    <point x="1" y="0.346154" />
-                                    <point x="1" y="0.961538" />
-                                    <point x="0" y="0.961538" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
-                        <animation framecount="1" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="312362092699039" speed="5">
-                            <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="C:\Users\Multimedia5_13\Desktop\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot.png">
-                                <image-point name="Down" x="0.5" y="0.923077" />
-                                <image-point name="Right" x="0.875" y="0.5" />
-                                <image-point name="Left" x="0.125" y="0.5" />
-                                <image-point name="Up" x="0.5" y="0.115385" />
-                                <collision-poly>
-                                    <point x="0" y="0.346154" />
-                                    <point x="1" y="0.346154" />
-                                    <point x="1" y="0.961538" />
-                                    <point x="0" y="0.961538" />
-                                </collision-poly>
-                            </frame>
-                        </animation>
+                        <animation-folder name="Patrulla">
+                            <animation framecount="2" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="726247475679292" speed="5">
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\walk_1.png">
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\walk_2.png">
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="2" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="826573498985569" speed="5">
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="2" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="965863586463137" speed="5">
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="2" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="867186052090847" speed="5">
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                        <animation-folder name="Activo">
+                            <animation framecount="2" loop="0" name="DownActivo" pingpong="0" repeatcount="1" repeatto="0" sid="486912020730847" speed="5">
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\activo_1.png">
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\activo_2.png">
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="2" loop="0" name="UpActivo" pingpong="0" repeatcount="1" repeatto="0" sid="940054562094630" speed="5">
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="2" loop="0" name="RightActivo" pingpong="0" repeatcount="1" repeatto="0" sid="259964880210493" speed="5">
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="2" loop="0" name="LeftActivo" pingpong="0" repeatcount="1" repeatto="0" sid="249240047829180" speed="5">
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                    <image-point name="Up" x="0.5" y="0.115385" />
+                                    <image-point name="Left" x="0.125" y="0.5" />
+                                    <image-point name="Right" x="0.875" y="0.5" />
+                                    <image-point name="Down" x="0.5" y="0.923077" />
+                                    <collision-poly>
+                                        <point x="0" y="0.295858" />
+                                        <point x="1" y="0.295858" />
+                                        <point x="1" y="0.887514" />
+                                        <point x="0" y="0.887514" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
                     </animation-folder>
                 </object-type>
                 <object-type name="BuscadorVisionRight" sid="104452927784578">
@@ -948,8 +1104,16 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="846371747439105" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Multimedia5_13\Desktop\Tarea1-Pathfinding\Assets\Sprites\Personajes\Araña.png">
+                    <animation framecount="2" loop="1" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="846371747439105" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\araña\walk_1.png">
+                            <collision-poly>
+                                <point x="0.0625" y="0.125" />
+                                <point x="0.9375" y="0.125" />
+                                <point x="0.9375" y="0.8125" />
+                                <point x="0.0625" y="0.8125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\araña\walk_2.png">
                             <collision-poly>
                                 <point x="0.0625" y="0.125" />
                                 <point x="0.9375" y="0.125" />
@@ -958,8 +1122,16 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="397295775042268" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Multimedia5_13\Desktop\Tarea1-Pathfinding\Assets\Sprites\Personajes\Araña.png">
+                    <animation framecount="2" loop="1" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="275467595050651" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.0625" y="0.125" />
+                                <point x="0.9375" y="0.125" />
+                                <point x="0.9375" y="0.8125" />
+                                <point x="0.0625" y="0.8125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="1">
                             <collision-poly>
                                 <point x="0.0625" y="0.125" />
                                 <point x="0.9375" y="0.125" />
@@ -968,8 +1140,16 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="135361541808643" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Multimedia5_13\Desktop\Tarea1-Pathfinding\Assets\Sprites\Personajes\Araña.png">
+                    <animation framecount="2" loop="1" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="996899223925073" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.0625" y="0.125" />
+                                <point x="0.9375" y="0.125" />
+                                <point x="0.9375" y="0.8125" />
+                                <point x="0.0625" y="0.8125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="1">
                             <collision-poly>
                                 <point x="0.0625" y="0.125" />
                                 <point x="0.9375" y="0.125" />
@@ -978,8 +1158,16 @@
                             </collision-poly>
                         </frame>
                     </animation>
-                    <animation framecount="1" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="860425167654204" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Multimedia5_13\Desktop\Tarea1-Pathfinding\Assets\Sprites\Personajes\Araña.png">
+                    <animation framecount="2" loop="1" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="913467308708507" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1">
+                            <collision-poly>
+                                <point x="0.0625" y="0.125" />
+                                <point x="0.9375" y="0.125" />
+                                <point x="0.9375" y="0.8125" />
+                                <point x="0.0625" y="0.8125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="1">
                             <collision-poly>
                                 <point x="0.0625" y="0.125" />
                                 <point x="0.9375" y="0.125" />
@@ -994,16 +1182,16 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="233015351552233" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\calabaza.png" />
                     </animation>
                     <animation framecount="1" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="945583905956714" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\calabaza.png" />
                     </animation>
                     <animation framecount="1" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="321921645840436" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\calabaza.png" />
                     </animation>
                     <animation framecount="1" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="408015994779153" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1" />
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\calabaza.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -1015,9 +1203,44 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492707754589083" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="1">
+                    <animation framecount="2" loop="1" name="Attack" pingpong="0" repeatcount="1" repeatto="0" sid="115894474575497" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\conejo\conejoataque_1.png">
                             <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                            <collision-poly>
+                                <point x="0.1" y="0.558824" />
+                                <point x="0.9" y="0.558824" />
+                                <point x="0.9" y="0.970588" />
+                                <point x="0.1" y="0.970588" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\conejo\conejoataque_2.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                            <collision-poly>
+                                <point x="0.1" y="0.558824" />
+                                <point x="0.9" y="0.558824" />
+                                <point x="0.9" y="0.970588" />
+                                <point x="0.1" y="0.970588" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="2" loop="1" name="Iddle" pingpong="0" repeatcount="1" repeatto="0" sid="492707754589083" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\conejo\iddle_1.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                            <collision-poly>
+                                <point x="0.1" y="0.558824" />
+                                <point x="0.9" y="0.558824" />
+                                <point x="0.9" y="0.970588" />
+                                <point x="0.1" y="0.970588" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\conejo\iddle_2.png">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                            <collision-poly>
+                                <point x="0.1" y="0.558824" />
+                                <point x="0.9" y="0.558824" />
+                                <point x="0.9" y="0.970588" />
+                                <point x="0.1" y="0.970588" />
+                            </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
