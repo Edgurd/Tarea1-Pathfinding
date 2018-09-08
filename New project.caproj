@@ -25,6 +25,7 @@
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -916,7 +917,7 @@
                             </animation>
                         </animation-folder>
                         <animation-folder name="Activo">
-                            <animation framecount="2" loop="0" name="DownActivo" pingpong="0" repeatcount="1" repeatto="0" sid="486912020730847" speed="5">
+                            <animation framecount="2" loop="0" name="DownActivo" pingpong="0" repeatcount="1" repeatto="0" sid="486912020730847" speed="7">
                                 <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\activo_1.png">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -942,7 +943,7 @@
                                     </collision-poly>
                                 </frame>
                             </animation>
-                            <animation framecount="2" loop="0" name="UpActivo" pingpong="0" repeatcount="1" repeatto="0" sid="940054562094630" speed="5">
+                            <animation framecount="2" loop="0" name="UpActivo" pingpong="0" repeatcount="1" repeatto="0" sid="940054562094630" speed="7">
                                 <frame duration="1" hotspotX="0" hotspotY="0.961538">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -968,7 +969,7 @@
                                     </collision-poly>
                                 </frame>
                             </animation>
-                            <animation framecount="2" loop="0" name="RightActivo" pingpong="0" repeatcount="1" repeatto="0" sid="259964880210493" speed="5">
+                            <animation framecount="2" loop="0" name="RightActivo" pingpong="0" repeatcount="1" repeatto="0" sid="259964880210493" speed="7">
                                 <frame duration="1" hotspotX="0" hotspotY="0.961538">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -994,7 +995,7 @@
                                     </collision-poly>
                                 </frame>
                             </animation>
-                            <animation framecount="2" loop="0" name="LeftActivo" pingpong="0" repeatcount="1" repeatto="0" sid="249240047829180" speed="5">
+                            <animation framecount="2" loop="0" name="LeftActivo" pingpong="0" repeatcount="1" repeatto="0" sid="249240047829180" speed="7">
                                 <frame duration="1" hotspotX="0" hotspotY="0.961538">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -1279,6 +1280,22 @@
                         <frame duration="1" hotspotX="0" hotspotY="1" />
                     </animation>
                     <animation framecount="1" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="453267986842887" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bird" sid="834318197406658">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="387607025695567">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="666674242709822">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="907830486360027" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="1" />
                     </animation>
                 </animation-folder>

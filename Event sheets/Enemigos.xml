@@ -174,7 +174,235 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="192690207968300" title="Bird" />
+        <event-group description="" disabled="1" sid="157752533620855" title="Bird">
+            <sub-events>
+                <variable comment="Distancia en la que se mueve adelante del jugador" constant="0" name="CoeficienteDistancia" sid="273962856774005" static="0" type="number">40</variable>
+                <variable comment="0 izquierda 1 derecha" constant="0" name="RandomSide" sid="466733026895408" static="0" type="number">0</variable>
+                <variable comment="0 player1 / 1 player2" constant="0" name="RandomPlayer" sid="539114415571326" static="0" type="number">0</variable>
+                <comment></comment>
+                <variable comment="MAX" constant="0" name="Counter" sid="769121657069150" static="1" type="number">5</variable>
+                <variable constant="0" name="AcCounter" sid="608769210038921" static="1" type="number">5</variable>
+                <event-block disabled="1" sid="925025048882266">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="412138694874632" type="System">
+                            <param id="0" name="Interval (seconds)">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="321527637934364" type="System">
+                            <param id="0" name="Variable">RandomSide</param>
+                            <param id="1" name="Value">round(random(0,1))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="581106310176376" type="System">
+                            <param id="0" name="Variable">RandomPlayer</param>
+                            <param id="1" name="Value">round(random(0,1))</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block disabled="1" sid="947564293120049">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="352260601348046" type="System">
+                                    <param id="0" name="Variable">RandomSide</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>0: Player 1 | 1:Player2</comment>
+                                <event-block disabled="1" sid="736581008119678">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="541281969156756" type="System">
+                                            <param id="0" name="Variable">RandomPlayer</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="144132339984389" type="System">
+                                            <param id="0" name="Object to create">bird</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">Player1.Y - CoeficienteDistancia</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="934319917114429" type="bird">
+                                            <param id="0" name="Speed">Self.Bullet.Speed *1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block disabled="1" sid="316900811640796">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="741253825468345" type="System">
+                                            <param id="0" name="Variable">RandomPlayer</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="770730489889184" type="System">
+                                            <param id="0" name="Object to create">bird</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">0</param>
+                                            <param id="3" name="Y">Player2.Y - CoeficienteDistancia</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="822711830907926" type="bird">
+                                            <param id="0" name="Speed">Self.Bullet.Speed *1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block disabled="1" sid="606776875761773">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="587471849289854" type="System">
+                                    <param id="0" name="Variable">RandomSide</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>0: Player 1 | 1:Player2</comment>
+                                <event-block disabled="1" sid="805371942426699">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="804821833806925" type="System">
+                                            <param id="0" name="Variable">RandomPlayer</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="612241460954609" type="System">
+                                            <param id="0" name="Object to create">bird</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">LayoutWidth</param>
+                                            <param id="3" name="Y">Player1.Y - CoeficienteDistancia</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="683956135993905" type="bird">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="263724439884681" type="bird">
+                                            <param id="0" name="Speed">Self.Bullet.Speed *-1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block disabled="1" sid="495915319031068">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="430565211452931" type="System">
+                                            <param id="0" name="Variable">RandomPlayer</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="720600053115536" type="System">
+                                            <param id="0" name="Object to create">bird</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="X">LayoutWidth</param>
+                                            <param id="3" name="Y">Player2.Y - CoeficienteDistancia</param>
+                                        </action>
+                                        <action id="7" name="Set mirrored" sid="269027611002890" type="bird">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action behavior="Bullet" id="0" name="Set speed" sid="521293274685267" type="bird">
+                                            <param id="0" name="Speed">Self.Bullet.Speed *-1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <variable constant="0" name="Player1XY" sid="816831983052889" static="0" type="text"></variable>
+                <variable constant="0" name="Player2XY" sid="884597035073160" static="0" type="text"></variable>
+                <event-block disabled="1" sid="206805721081932">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="969329804357384" type="System">
+                            <param id="0" name="Variable">AcCounter</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">Counter</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" disabled="1" sid="364580773371681">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="607777030723175" type="bird">
+                                    <param id="0" name="Object">Player1</param>
+                                </condition>
+                                <condition id="0" name="On collision with another object" sid="155699170952329" type="bird">
+                                    <param id="0" name="Object">Player2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="947717760092880" type="System">
+                                    <param id="0" name="Variable">AcCounter</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="407116178431388" type="System">
+                                    <param id="0" name="Variable">Player1XY</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="824954634484064" type="System">
+                                    <param id="0" name="Variable">Player2XY</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="264456184200021" type="System">
+                                    <param id="0" name="Variable">Player1XY</param>
+                                    <param id="1" name="Value">Player1.X</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="117644208209065" type="System">
+                                    <param id="0" name="Variable">Player1XY</param>
+                                    <param id="1" name="Value">SEPARATOR</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="612521177057291" type="System">
+                                    <param id="0" name="Variable">Player1XY</param>
+                                    <param id="1" name="Value">Player1.Y</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="373088127712612" type="System">
+                                    <param id="0" name="Variable">Player2XY</param>
+                                    <param id="1" name="Value">Player2.X</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="148531885226967" type="System">
+                                    <param id="0" name="Variable">Player2XY</param>
+                                    <param id="1" name="Value">SEPARATOR</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="132240195451930" type="System">
+                                    <param id="0" name="Variable">Player2XY</param>
+                                    <param id="1" name="Value">Player2.Y</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="650730273159599" type="Player2">
+                                    <param id="0" name="X">int(tokenat(Player1XY,0,SEPARATOR))</param>
+                                    <param id="1" name="Y">int(tokenat(Player1XY,1,SEPARATOR))</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="270266355269889" type="Player1">
+                                    <param id="0" name="X">int(tokenat(Player2XY,0,SEPARATOR))</param>
+                                    <param id="1" name="Y">int(tokenat(Player2XY,1,SEPARATOR))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block disabled="1" sid="655258208148217">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="838869642404861" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="628486436761549" type="System">
+                            <param id="0" name="Variable">AcCounter</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">Counter</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="949009429290754" type="System">
+                            <param id="0" name="Variable">AcCounter</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="450916957992598" title="Turret">
             <sub-events>
                 <event-block any="1" sid="255545536419974">
@@ -1052,13 +1280,38 @@
                                                     <param id="2" name="Second value">45</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="148804367265894" type="Buscador">
-                                                    <param id="0" name="Animation">&quot;Right&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
                                             <sub-events>
+                                                <event-block sid="413083838741093">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="854246435543729" type="Buscador">
+                                                            <param id="0" name="Instance variable">Estado</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="148804367265894" type="Buscador">
+                                                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="956968677829305">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="294947925657586" type="Buscador">
+                                                            <param id="0" name="Instance variable">Estado</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="309432042735437" type="Buscador">
+                                                            <param id="0" name="Animation">&quot;RightActivo&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
                                                 <event-block sid="296905052469801">
                                                     <conditions>
                                                         <condition id="1" name="Is overlapping another object" sid="203711241317208" type="Buscador">
@@ -1126,13 +1379,38 @@
                                                     <param id="2" name="Second value">135</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="262238272991420" type="Buscador">
-                                                    <param id="0" name="Animation">&quot;Down&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
                                             <sub-events>
+                                                <event-block sid="870257914541279">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="299517005372514" type="Buscador">
+                                                            <param id="0" name="Instance variable">Estado</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="215363418918157" type="Buscador">
+                                                            <param id="0" name="Animation">&quot;Down&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="989952441605635">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="931043317203378" type="Buscador">
+                                                            <param id="0" name="Instance variable">Estado</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="595682001430499" type="Buscador">
+                                                            <param id="0" name="Animation">&quot;DownActivo&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
                                                 <event-block sid="784291705788906">
                                                     <conditions>
                                                         <condition id="1" name="Is overlapping another object" sid="995673318762150" type="Buscador">
@@ -1200,13 +1478,38 @@
                                                     <param id="2" name="Second value">225</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="696841162189076" type="Buscador">
-                                                    <param id="0" name="Animation">&quot;Left&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
                                             <sub-events>
+                                                <event-block sid="443798046466480">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="775929304344800" type="Buscador">
+                                                            <param id="0" name="Instance variable">Estado</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="696841162189076" type="Buscador">
+                                                            <param id="0" name="Animation">&quot;Left&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="334774311805761">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="108931567761053" type="Buscador">
+                                                            <param id="0" name="Instance variable">Estado</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="863917066434390" type="Buscador">
+                                                            <param id="0" name="Animation">&quot;LeftActivo&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
                                                 <event-block sid="272259574433369">
                                                     <conditions>
                                                         <condition id="1" name="Is overlapping another object" sid="694300328107315" type="Buscador">
@@ -1274,13 +1577,38 @@
                                                     <param id="2" name="Second value">315</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="4" name="Set animation" sid="889541745514257" type="Buscador">
-                                                    <param id="0" name="Animation">&quot;Up&quot;</param>
-                                                    <param id="1" name="From">1</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
                                             <sub-events>
+                                                <event-block sid="447543042005734">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="203343701116640" type="Buscador">
+                                                            <param id="0" name="Instance variable">Estado</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="889541745514257" type="Buscador">
+                                                            <param id="0" name="Animation">&quot;Up&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="156523733625761">
+                                                    <conditions>
+                                                        <condition id="-7" name="Compare instance variable" sid="809515751546398" type="Buscador">
+                                                            <param id="0" name="Instance variable">Estado</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="4" name="Set animation" sid="676383658450459" type="Buscador">
+                                                            <param id="0" name="Animation">&quot;UpActivo&quot;</param>
+                                                            <param id="1" name="From">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
                                                 <event-block sid="843809843073339">
                                                     <conditions>
                                                         <condition id="1" name="Is overlapping another object" sid="333444831233117" type="Buscador">
