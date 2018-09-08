@@ -174,15 +174,13 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" disabled="1" sid="157752533620855" title="Bird">
+        <event-group description="" sid="157752533620855" title="Bird">
             <sub-events>
-                <variable comment="Distancia en la que se mueve adelante del jugador" constant="0" name="CoeficienteDistancia" sid="273962856774005" static="0" type="number">40</variable>
+                <comment>SpawnRandomBird</comment>
+                <variable constant="0" name="CoeficienteDistancia" sid="273962856774005" static="0" type="number">0</variable>
                 <variable comment="0 izquierda 1 derecha" constant="0" name="RandomSide" sid="466733026895408" static="0" type="number">0</variable>
                 <variable comment="0 player1 / 1 player2" constant="0" name="RandomPlayer" sid="539114415571326" static="0" type="number">0</variable>
-                <comment></comment>
-                <variable comment="MAX" constant="0" name="Counter" sid="769121657069150" static="1" type="number">5</variable>
-                <variable constant="0" name="AcCounter" sid="608769210038921" static="1" type="number">5</variable>
-                <event-block disabled="1" sid="925025048882266">
+                <event-block sid="925025048882266">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="412138694874632" type="System">
                             <param id="0" name="Interval (seconds)">1</param>
@@ -197,9 +195,13 @@
                             <param id="0" name="Variable">RandomPlayer</param>
                             <param id="1" name="Value">round(random(0,1))</param>
                         </action>
+                        <action id="-9" name="Set value" sid="948710265579470" type="System">
+                            <param id="0" name="Variable">CoeficienteDistancia</param>
+                            <param id="1" name="Value">round(random(20,50))</param>
+                        </action>
                     </actions>
                     <sub-events>
-                        <event-block disabled="1" sid="947564293120049">
+                        <event-block sid="947564293120049">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="352260601348046" type="System">
                                     <param id="0" name="Variable">RandomSide</param>
@@ -210,7 +212,7 @@
                             <actions />
                             <sub-events>
                                 <comment>0: Player 1 | 1:Player2</comment>
-                                <event-block disabled="1" sid="736581008119678">
+                                <event-block sid="736581008119678">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="541281969156756" type="System">
                                             <param id="0" name="Variable">RandomPlayer</param>
@@ -221,7 +223,7 @@
                                     <actions>
                                         <action id="-3" name="Create object" sid="144132339984389" type="System">
                                             <param id="0" name="Object to create">bird</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;Players&quot;</param>
                                             <param id="2" name="X">0</param>
                                             <param id="3" name="Y">Player1.Y - CoeficienteDistancia</param>
                                         </action>
@@ -230,7 +232,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="316900811640796">
+                                <event-block sid="316900811640796">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="741253825468345" type="System">
                                             <param id="0" name="Variable">RandomPlayer</param>
@@ -241,7 +243,7 @@
                                     <actions>
                                         <action id="-3" name="Create object" sid="770730489889184" type="System">
                                             <param id="0" name="Object to create">bird</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;Players&quot;</param>
                                             <param id="2" name="X">0</param>
                                             <param id="3" name="Y">Player2.Y - CoeficienteDistancia</param>
                                         </action>
@@ -252,7 +254,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block disabled="1" sid="606776875761773">
+                        <event-block sid="606776875761773">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="587471849289854" type="System">
                                     <param id="0" name="Variable">RandomSide</param>
@@ -263,7 +265,7 @@
                             <actions />
                             <sub-events>
                                 <comment>0: Player 1 | 1:Player2</comment>
-                                <event-block disabled="1" sid="805371942426699">
+                                <event-block sid="805371942426699">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="804821833806925" type="System">
                                             <param id="0" name="Variable">RandomPlayer</param>
@@ -274,7 +276,7 @@
                                     <actions>
                                         <action id="-3" name="Create object" sid="612241460954609" type="System">
                                             <param id="0" name="Object to create">bird</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;Players&quot;</param>
                                             <param id="2" name="X">LayoutWidth</param>
                                             <param id="3" name="Y">Player1.Y - CoeficienteDistancia</param>
                                         </action>
@@ -286,7 +288,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block disabled="1" sid="495915319031068">
+                                <event-block sid="495915319031068">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="430565211452931" type="System">
                                             <param id="0" name="Variable">RandomPlayer</param>
@@ -297,7 +299,7 @@
                                     <actions>
                                         <action id="-3" name="Create object" sid="720600053115536" type="System">
                                             <param id="0" name="Object to create">bird</param>
-                                            <param id="1" name="Layer">0</param>
+                                            <param id="1" name="Layer">&quot;Players&quot;</param>
                                             <param id="2" name="X">LayoutWidth</param>
                                             <param id="3" name="Y">Player2.Y - CoeficienteDistancia</param>
                                         </action>
@@ -313,77 +315,66 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>ColisionesBird</comment>
+                <variable comment="MAX" constant="0" name="Counter" sid="769121657069150" static="1" type="number">5</variable>
+                <variable constant="0" name="AcCounter" sid="608769210038921" static="1" type="number">5</variable>
                 <variable constant="0" name="Player1XY" sid="816831983052889" static="0" type="text"></variable>
                 <variable constant="0" name="Player2XY" sid="884597035073160" static="0" type="text"></variable>
-                <event-block disabled="1" sid="206805721081932">
+                <event-block sid="364580773371681">
                     <conditions>
+                        <condition id="0" name="On collision with another object" sid="607777030723175" type="bird">
+                            <param id="0" name="Object">Players</param>
+                        </condition>
                         <condition id="-14" name="Compare variable" sid="969329804357384" type="System">
                             <param id="0" name="Variable">AcCounter</param>
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Value">Counter</param>
                         </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block any="1" disabled="1" sid="364580773371681">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="607777030723175" type="bird">
-                                    <param id="0" name="Object">Player1</param>
-                                </condition>
-                                <condition id="0" name="On collision with another object" sid="155699170952329" type="bird">
-                                    <param id="0" name="Object">Player2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="947717760092880" type="System">
-                                    <param id="0" name="Variable">AcCounter</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="407116178431388" type="System">
-                                    <param id="0" name="Variable">Player1XY</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="824954634484064" type="System">
-                                    <param id="0" name="Variable">Player2XY</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="264456184200021" type="System">
-                                    <param id="0" name="Variable">Player1XY</param>
-                                    <param id="1" name="Value">Player1.X</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="117644208209065" type="System">
-                                    <param id="0" name="Variable">Player1XY</param>
-                                    <param id="1" name="Value">SEPARATOR</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="612521177057291" type="System">
-                                    <param id="0" name="Variable">Player1XY</param>
-                                    <param id="1" name="Value">Player1.Y</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="373088127712612" type="System">
-                                    <param id="0" name="Variable">Player2XY</param>
-                                    <param id="1" name="Value">Player2.X</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="148531885226967" type="System">
-                                    <param id="0" name="Variable">Player2XY</param>
-                                    <param id="1" name="Value">SEPARATOR</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="132240195451930" type="System">
-                                    <param id="0" name="Variable">Player2XY</param>
-                                    <param id="1" name="Value">Player2.Y</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="650730273159599" type="Player2">
-                                    <param id="0" name="X">int(tokenat(Player1XY,0,SEPARATOR))</param>
-                                    <param id="1" name="Y">int(tokenat(Player1XY,1,SEPARATOR))</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="270266355269889" type="Player1">
-                                    <param id="0" name="X">int(tokenat(Player2XY,0,SEPARATOR))</param>
-                                    <param id="1" name="Y">int(tokenat(Player2XY,1,SEPARATOR))</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-9" name="Set value" sid="947717760092880" type="System">
+                            <param id="0" name="Variable">AcCounter</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="535791328106271" type="System">
+                            <param id="0" name="Variable">Player1XY</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="944789991123504" type="System">
+                            <param id="0" name="Variable">Player2XY</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="983695335092946" type="System">
+                            <param id="0" name="Variable">Player1XY</param>
+                            <param id="1" name="Value">Player1.X</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="592462439004070" type="System">
+                            <param id="0" name="Variable">Player1XY</param>
+                            <param id="1" name="Value">SEPARATOR</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="328088044135247" type="System">
+                            <param id="0" name="Variable">Player1XY</param>
+                            <param id="1" name="Value">Player1.Y</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="463944141265967" type="System">
+                            <param id="0" name="Variable">Player2XY</param>
+                            <param id="1" name="Value">Player2.X</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="131046878810501" type="System">
+                            <param id="0" name="Variable">Player2XY</param>
+                            <param id="1" name="Value">SEPARATOR</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="930297801785101" type="System">
+                            <param id="0" name="Variable">Player2XY</param>
+                            <param id="1" name="Value">Player2.Y</param>
+                        </action>
+                        <action id="0" name="Call function" sid="211153424059507" type="Function">
+                            <param id="0" name="Name">&quot;IntercambiarPlayers&quot;</param>
+                            <param id="1" name="Parameter {n}">Player1XY{###}Player2XY</param>
+                        </action>
+                    </actions>
                 </event-block>
-                <event-block disabled="1" sid="655258208148217">
+                <event-block sid="655258208148217">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="838869642404861" type="System">
                             <param id="0" name="Interval (seconds)">1.0</param>
@@ -415,221 +406,321 @@
                         <action id="-9" name="Destroy" sid="549837038895152" type="TurretBullet" />
                     </actions>
                 </event-block>
-                <event-block sid="191771497311173">
+                <event-block sid="504699677916817">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="873609806201412" type="Turret">
-                            <param id="0" name="Instance variable">Sector</param>
-                            <param id="1" name="Comparison">0</param>
+                        <condition id="-8" name="Is boolean instance variable set" sid="451188810532493" type="Turret">
+                            <param id="0" name="Instance variable">Atacando</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="398413014538525" type="Turret">
+                            <param id="0" name="Animation">&quot;Attack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="792488718067542">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="671315646837946" type="Turret">
+                            <param id="0" name="Instance variable">Atacando</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="629044681809587" type="Turret">
+                            <param id="0" name="Animation">&quot;Iddle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="616402090267466">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="505490326728459" type="System">
+                            <param id="0" name="Interval (seconds)">0.3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="936565688462343" type="Turret">
+                            <param id="0" name="Instance variable">AnimacionDaño</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="685456275927919">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="308332346387124" type="Turret">
+                            <param id="0" name="Instance variable">AnimacionDaño</param>
+                            <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="723437783559878">
-                            <conditions>
-                                <condition id="-2" name="Compare Y" sid="296216564600492" type="Turret">
-                                    <param id="0" name="Comparison">3</param>
-                                    <param id="1" name="Y co-ordinate">Player1.Y +SIZE*0.5</param>
-                                </condition>
-                                <condition id="-2" name="Compare Y" sid="807861226748086" type="Turret">
-                                    <param id="0" name="Comparison">4</param>
-                                    <param id="1" name="Y co-ordinate">Player1.Y  - SIZE*0.5</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="831326274091566">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="878361405047412" type="System">
-                                            <param id="0" name="First value">Turret.X - Player1.X</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="527675789994299" type="Turret">
-                                            <param id="0" name="Object">TurretBullet</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">1</param>
-                                        </action>
-                                        <action id="-8" name="Set angle" sid="478302766057145" type="TurretBullet">
-                                            <param id="0" name="Angle">180</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="520839806315421">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="224480200063653" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="348814133482949" type="Turret">
-                                            <param id="0" name="Object">TurretBullet</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">1</param>
-                                        </action>
-                                        <action id="-8" name="Set angle" sid="621211260649718" type="TurretBullet">
-                                            <param id="0" name="Angle">0</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="643990120083280">
-                            <conditions>
-                                <condition id="-1" name="Compare X" sid="501669491300227" type="Turret">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="X co-ordinate">Player1.X -SIZE*0.5</param>
-                                </condition>
-                                <condition id="-1" name="Compare X" sid="255570131905380" type="Turret">
-                                    <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="X co-ordinate">Player1.X + SIZE*0.5</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="626530064484859">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="137803874119227" type="System">
-                                            <param id="0" name="First value">Turret.Y - Player1.Y</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="764895085391861" type="Turret">
-                                            <param id="0" name="Object">TurretBullet</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">1</param>
-                                        </action>
-                                        <action id="-8" name="Set angle" sid="841945572755926" type="TurretBullet">
-                                            <param id="0" name="Angle">270</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                                <event-block sid="507342265814826">
-                                    <conditions>
-                                        <condition id="-22" name="Else" sid="495273093212576" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="0" name="Spawn another object" sid="546083619126968" type="Turret">
-                                            <param id="0" name="Object">TurretBullet</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">1</param>
-                                        </action>
-                                        <action id="-8" name="Set angle" sid="633269870597745" type="TurretBullet">
-                                            <param id="0" name="Angle">90</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                    </sub-events>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="255161211491372" type="Turret">
+                            <param id="0" name="Instance variable">Atacando</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
                 </event-block>
-                <event-block sid="695653650583820">
+                <event-block sid="948301565462831">
                     <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="476483628615239" type="Turret">
-                            <param id="0" name="Instance variable">Sector</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                        <condition id="-11" name="For Each" sid="639946879543046" type="System">
+                            <param id="0" name="Object">Turret</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="698343741285782">
+                        <event-block sid="191771497311173">
                             <conditions>
-                                <condition id="-2" name="Compare Y" sid="374050132808875" type="Turret">
-                                    <param id="0" name="Comparison">3</param>
-                                    <param id="1" name="Y co-ordinate">Player2.Y +SIZE*0.5</param>
-                                </condition>
-                                <condition id="-2" name="Compare Y" sid="833649342471418" type="Turret">
-                                    <param id="0" name="Comparison">4</param>
-                                    <param id="1" name="Y co-ordinate">Player2.Y  - SIZE*0.5</param>
+                                <condition id="-7" name="Compare instance variable" sid="873609806201412" type="Turret">
+                                    <param id="0" name="Instance variable">Sector</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="435306217578906">
+                                <event-block sid="723437783559878">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="118537117408228" type="System">
-                                            <param id="0" name="First value">Turret.X - Player2.X</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">0</param>
+                                        <condition id="-2" name="Compare Y" sid="296216564600492" type="Turret">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Y co-ordinate">Player1.Y +SIZE*0.5</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="807861226748086" type="Turret">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">Player1.Y  - SIZE*0.5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Spawn another object" sid="491527968030307" type="Turret">
-                                            <param id="0" name="Object">TurretBullet</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">1</param>
+                                        <action id="-13" name="Set boolean" sid="834540539627747" type="Turret">
+                                            <param id="0" name="Instance variable">Atacando</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-8" name="Set angle" sid="358754409126528" type="TurretBullet">
-                                            <param id="0" name="Angle">180</param>
+                                        <action id="-10" name="Set value" sid="142501121109287" type="Turret">
+                                            <param id="0" name="Instance variable">AnimacionDaño</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="831326274091566">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="878361405047412" type="System">
+                                                    <param id="0" name="First value">Turret.X - Player1.X</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="527675789994299" type="Turret">
+                                                    <param id="0" name="Object">TurretBullet</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="478302766057145" type="TurretBullet">
+                                                    <param id="0" name="Angle">180</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="520839806315421">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="224480200063653" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="348814133482949" type="Turret">
+                                                    <param id="0" name="Object">TurretBullet</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="621211260649718" type="TurretBullet">
+                                                    <param id="0" name="Angle">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
-                                <event-block sid="879449965036625">
+                                <event-block sid="643990120083280">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="363053736849360" type="System" />
+                                        <condition id="-1" name="Compare X" sid="501669491300227" type="Turret">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">Player1.X -SIZE*0.5</param>
+                                        </condition>
+                                        <condition id="-1" name="Compare X" sid="255570131905380" type="Turret">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">Player1.X + SIZE*0.5</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Spawn another object" sid="949222461762240" type="Turret">
-                                            <param id="0" name="Object">TurretBullet</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">1</param>
+                                        <action id="-13" name="Set boolean" sid="348416443502956" type="Turret">
+                                            <param id="0" name="Instance variable">Atacando</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-8" name="Set angle" sid="586049012886207" type="TurretBullet">
-                                            <param id="0" name="Angle">0</param>
+                                        <action id="-10" name="Set value" sid="678332573050481" type="Turret">
+                                            <param id="0" name="Instance variable">AnimacionDaño</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="626530064484859">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="137803874119227" type="System">
+                                                    <param id="0" name="First value">Turret.Y - Player1.Y</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="764895085391861" type="Turret">
+                                                    <param id="0" name="Object">TurretBullet</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="841945572755926" type="TurretBullet">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="507342265814826">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="495273093212576" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="546083619126968" type="Turret">
+                                                    <param id="0" name="Object">TurretBullet</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="633269870597745" type="TurretBullet">
+                                                    <param id="0" name="Angle">90</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="920459616309525">
+                        <event-block sid="695653650583820">
                             <conditions>
-                                <condition id="-1" name="Compare X" sid="141299025890766" type="Turret">
-                                    <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="X co-ordinate">Player2.X -SIZE*0.5</param>
-                                </condition>
-                                <condition id="-1" name="Compare X" sid="788719385879300" type="Turret">
-                                    <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="X co-ordinate">Player2.X + SIZE*0.5</param>
+                                <condition id="-7" name="Compare instance variable" sid="476483628615239" type="Turret">
+                                    <param id="0" name="Instance variable">Sector</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions />
                             <sub-events>
-                                <event-block sid="580146613312874">
+                                <event-block sid="698343741285782">
                                     <conditions>
-                                        <condition id="-8" name="Compare two values" sid="793337372606942" type="System">
-                                            <param id="0" name="First value">Turret.Y - Player2.Y</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">0</param>
+                                        <condition id="-2" name="Compare Y" sid="374050132808875" type="Turret">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="Y co-ordinate">Player2.Y +SIZE*0.5</param>
+                                        </condition>
+                                        <condition id="-2" name="Compare Y" sid="833649342471418" type="Turret">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="Y co-ordinate">Player2.Y  - SIZE*0.5</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Spawn another object" sid="241389766937512" type="Turret">
-                                            <param id="0" name="Object">TurretBullet</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">1</param>
+                                        <action id="-13" name="Set boolean" sid="218492590942928" type="Turret">
+                                            <param id="0" name="Instance variable">Atacando</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-8" name="Set angle" sid="287689660392895" type="TurretBullet">
-                                            <param id="0" name="Angle">270</param>
+                                        <action id="-10" name="Set value" sid="600988264772468" type="Turret">
+                                            <param id="0" name="Instance variable">AnimacionDaño</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="435306217578906">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="118537117408228" type="System">
+                                                    <param id="0" name="First value">Turret.X - Player2.X</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="491527968030307" type="Turret">
+                                                    <param id="0" name="Object">TurretBullet</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="358754409126528" type="TurretBullet">
+                                                    <param id="0" name="Angle">180</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="879449965036625">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="363053736849360" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="949222461762240" type="Turret">
+                                                    <param id="0" name="Object">TurretBullet</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="586049012886207" type="TurretBullet">
+                                                    <param id="0" name="Angle">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
-                                <event-block sid="360866472349311">
+                                <event-block sid="920459616309525">
                                     <conditions>
-                                        <condition id="-22" name="Else" sid="950067815948907" type="System" />
+                                        <condition id="-1" name="Compare X" sid="141299025890766" type="Turret">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">Player2.X -SIZE*0.5</param>
+                                        </condition>
+                                        <condition id="-1" name="Compare X" sid="788719385879300" type="Turret">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">Player2.X + SIZE*0.5</param>
+                                        </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="0" name="Spawn another object" sid="889218518027293" type="Turret">
-                                            <param id="0" name="Object">TurretBullet</param>
-                                            <param id="1" name="Layer">0</param>
-                                            <param id="2" name="Image point">1</param>
+                                        <action id="-13" name="Set boolean" sid="651163707421462" type="Turret">
+                                            <param id="0" name="Instance variable">Atacando</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-8" name="Set angle" sid="481985944698571" type="TurretBullet">
-                                            <param id="0" name="Angle">90</param>
+                                        <action id="-10" name="Set value" sid="383453803345715" type="Turret">
+                                            <param id="0" name="Instance variable">AnimacionDaño</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
+                                    <sub-events>
+                                        <event-block sid="580146613312874">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="793337372606942" type="System">
+                                                    <param id="0" name="First value">Turret.Y - Player2.Y</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Second value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="241389766937512" type="Turret">
+                                                    <param id="0" name="Object">TurretBullet</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="287689660392895" type="TurretBullet">
+                                                    <param id="0" name="Angle">270</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="360866472349311">
+                                            <conditions>
+                                                <condition id="-22" name="Else" sid="950067815948907" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="889218518027293" type="Turret">
+                                                    <param id="0" name="Object">TurretBullet</param>
+                                                    <param id="1" name="Layer">0</param>
+                                                    <param id="2" name="Image point">1</param>
+                                                </action>
+                                                <action id="-8" name="Set angle" sid="481985944698571" type="TurretBullet">
+                                                    <param id="0" name="Angle">90</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -2004,5 +2095,44 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="937838030045785">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="605377011775527" type="Dañino">
+                    <param id="0" name="Object">Players</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="336077846136205" type="Function">
+                    <param id="0" name="Name">&quot;RecibirDaño&quot;</param>
+                    <param id="1" name="Parameter {n}">Players.UID</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="334120391380880">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="316020013654293" type="TurretBullet" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="860235921467948" type="TurretBullet" />
+            </actions>
+        </event-block>
+        <event-block sid="707948835902140">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="291193666887419" type="bird" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="685923627646296" type="bird" />
+            </actions>
+        </event-block>
+        <event-block sid="700630427791548">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="443753786029117" type="PlayerBullet">
+                    <param id="0" name="Object">Dañino</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="868565681721177" type="PlayerBullet" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
