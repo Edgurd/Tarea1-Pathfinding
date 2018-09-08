@@ -20018,7 +20018,7 @@
                     </properties>
                     <instance-variables>
                         <Sector>0</Sector>
-                        <Coordenadas>4|32|208|32|288|224|288|224|208</Coordenadas>
+                        <Coordenadas>4|25|200|25|288|224|288|224|200</Coordenadas>
                         <ActualCo>1</ActualCo>
                         <MaxCo>0</MaxCo>
                         <Estado>0</Estado>
@@ -20029,7 +20029,7 @@
                         <behavior-instance type="Pathfinding">
                             <properties>
                                 <cell-size>16</cell-size>
-                                <cell-border>-1</cell-border>
+                                <cell-border>0</cell-border>
                                 <obstacles>Solids</obstacles>
                                 <max-speed>70</max-speed>
                                 <acceleration>1000</acceleration>
@@ -20059,7 +20059,7 @@
                 </instance>
                 <instance type="BuscadorVisionDown" uid="803">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -20089,7 +20089,7 @@
                 </instance>
                 <instance type="BuscadorVisionLeft" uid="804">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -20119,7 +20119,7 @@
                 </instance>
                 <instance type="BuscadorVisionRight" uid="805">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -20149,7 +20149,7 @@
                 </instance>
                 <instance type="BuscadorVisionUp" uid="806">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -20186,8 +20186,8 @@
                     </properties>
                     <instance-variables>
                         <Sector>0</Sector>
-                        <Coordenadas>4|32|208|32|288|224|288|224|208</Coordenadas>
-                        <ActualCo>1</ActualCo>
+                        <Coordenadas>4|25|200|25|288|224|288|224|200</Coordenadas>
+                        <ActualCo>3</ActualCo>
                         <MaxCo>0</MaxCo>
                         <Estado>0</Estado>
                         <TiempoFollow>8</TiempoFollow>
@@ -20197,7 +20197,7 @@
                         <behavior-instance type="Pathfinding">
                             <properties>
                                 <cell-size>16</cell-size>
-                                <cell-border>-1</cell-border>
+                                <cell-border>0</cell-border>
                                 <obstacles>Solids</obstacles>
                                 <max-speed>70</max-speed>
                                 <acceleration>1000</acceleration>
@@ -20213,8 +20213,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>224</x>
-                        <y>272</y>
+                        <x>16</x>
+                        <y>288</y>
                         <z>0</z>
                         <width>16</width>
                         <height>26</height>
@@ -20267,8 +20267,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>96</x>
-                        <y>352</y>
+                        <x>400</x>
+                        <y>736</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
@@ -20347,9 +20347,9 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>80</x>
-                        <y>736</y>
-                        <z>-0.000001907</z>
+                        <x>160</x>
+                        <y>768</y>
+                        <z>0</z>
                         <width>16</width>
                         <height>16</height>
                         <depth>0</depth>
@@ -20392,8 +20392,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>368</x>
-                        <y>736</y>
+                        <x>336</x>
+                        <y>768</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>

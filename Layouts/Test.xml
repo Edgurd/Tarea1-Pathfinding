@@ -206,7 +206,7 @@
                 </instance>
                 <instance type="BuscadorVisionRight" uid="11">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -270,8 +270,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>160</x>
-                        <y>64</y>
+                        <x>187</x>
+                        <y>54</y>
                         <z>0</z>
                         <width>16</width>
                         <height>26</height>
@@ -1462,7 +1462,7 @@
                 </instance>
                 <instance type="BuscadorVisionLeft" uid="31">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -1492,7 +1492,7 @@
                 </instance>
                 <instance type="BuscadorVisionUp" uid="32">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -1522,7 +1522,7 @@
                 </instance>
                 <instance type="BuscadorVisionDown" uid="33">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -1630,8 +1630,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>144</x>
-                        <y>16</y>
+                        <x>14</x>
+                        <y>22</y>
                         <z>0</z>
                         <width>16</width>
                         <height>26</height>

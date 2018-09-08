@@ -1339,30 +1339,6 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="685019916813171">
-                            <conditions>
-                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="651346841449579" type="Vision">
-                                    <param id="0" name="Instance variable">Active</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-15" name="Set visible" sid="532861300376783" type="Vision">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="493577626710281">
-                            <conditions>
-                                <condition id="-8" name="Is boolean instance variable set" sid="691676843788359" type="Vision">
-                                    <param id="0" name="Instance variable">Active</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-15" name="Set visible" sid="647141573759095" type="Vision">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-block sid="139812143177370">
@@ -1413,58 +1389,6 @@
                         <action id="0" name="Call function" sid="284457374746589" type="Function">
                             <param id="0" name="Name">&quot;BuscadorMain&quot;</param>
                             <param id="1" name="Parameter {n}">Buscador.ActualCo{###}Buscador.UID</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="150933637598358">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="521622003231566" type="Buscador">
-                            <param id="0" name="Object">BuscadorVisionDown</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="225456732329432" type="BuscadorVisionDown">
-                            <param id="0" name="Instance variable">Active</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="835721189038833">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="317623085481633" type="Buscador">
-                            <param id="0" name="Object">BuscadorVisionLeft</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="116884155192904" type="BuscadorVisionLeft">
-                            <param id="0" name="Instance variable">Active</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="865341496818846">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="990098716212651" type="Buscador">
-                            <param id="0" name="Object">BuscadorVisionRight</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="900281570911265" type="BuscadorVisionRight">
-                            <param id="0" name="Instance variable">Active</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="820138531158777">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="264976738448360" type="Buscador">
-                            <param id="0" name="Object">BuscadorVisionUp</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set boolean" sid="328504431887043" type="BuscadorVisionUp">
-                            <param id="0" name="Instance variable">Active</param>
-                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1565,25 +1489,32 @@
                                         <condition id="0" name="On collision with another object" sid="633784750432109" type="Vision">
                                             <param id="0" name="Object">Player1</param>
                                         </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="574422671068023" type="Vision">
-                                            <param id="0" name="Object">Buscador</param>
-                                        </condition>
                                         <condition id="11" name="Collisions enabled" sid="513496422637724" type="Vision" />
-                                        <condition id="-8" name="Is boolean instance variable set" sid="529123510937518" type="Vision">
-                                            <param id="0" name="Instance variable">Active</param>
+                                        <condition id="1" name="Is overlapping another object" sid="729571404459021" type="Buscador">
+                                            <param id="0" name="Object">Vision</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-10" name="Set value" sid="682665427978920" type="Buscador">
-                                            <param id="0" name="Instance variable">Estado</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action behavior="Timer" id="0" name="Start timer" sid="589505908449607" type="Buscador">
-                                            <param id="0" name="Duration">Self.TiempoFollow</param>
-                                            <param id="1" name="Type">0</param>
-                                            <param id="2" name="Tag">&quot;SeguirPlayer&quot;</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="183349955822298">
+                                            <conditions>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="529123510937518" type="Vision">
+                                                    <param id="0" name="Instance variable">Active</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="682665427978920" type="Buscador">
+                                                    <param id="0" name="Instance variable">Estado</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action behavior="Timer" id="0" name="Start timer" sid="589505908449607" type="Buscador">
+                                                    <param id="0" name="Duration">Self.TiempoFollow</param>
+                                                    <param id="1" name="Type">0</param>
+                                                    <param id="2" name="Tag">&quot;SeguirPlayer&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -1668,26 +1599,37 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="427694057577588">
+                                <event-block sid="702161358581945">
                                     <conditions>
-                                        <condition id="0" name="On collision with another object" sid="268226588172082" type="BuscadorVisionRight">
+                                        <condition id="0" name="On collision with another object" sid="498364181864210" type="Vision">
                                             <param id="0" name="Object">Player2</param>
                                         </condition>
-                                        <condition id="1" name="Is overlapping another object" sid="222729906801387" type="BuscadorVisionRight">
-                                            <param id="0" name="Object">Buscador</param>
+                                        <condition id="11" name="Collisions enabled" sid="673543762063885" type="Vision" />
+                                        <condition id="1" name="Is overlapping another object" sid="329605825184650" type="Buscador">
+                                            <param id="0" name="Object">Vision</param>
                                         </condition>
                                     </conditions>
-                                    <actions>
-                                        <action id="-10" name="Set value" sid="992311285261753" type="Buscador">
-                                            <param id="0" name="Instance variable">Estado</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action behavior="Timer" id="0" name="Start timer" sid="894854005369063" type="Buscador">
-                                            <param id="0" name="Duration">Self.TiempoFollow</param>
-                                            <param id="1" name="Type">0</param>
-                                            <param id="2" name="Tag">&quot;SeguirPlayer&quot;</param>
-                                        </action>
-                                    </actions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="378819304487531">
+                                            <conditions>
+                                                <condition id="-8" name="Is boolean instance variable set" sid="605728362718832" type="Vision">
+                                                    <param id="0" name="Instance variable">Active</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="575775420992181" type="Buscador">
+                                                    <param id="0" name="Instance variable">Estado</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action behavior="Timer" id="0" name="Start timer" sid="271262319254064" type="Buscador">
+                                                    <param id="0" name="Duration">Self.TiempoFollow</param>
+                                                    <param id="1" name="Type">0</param>
+                                                    <param id="2" name="Tag">&quot;SeguirPlayer&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
                                 </event-block>
                             </sub-events>
                         </event-block>
