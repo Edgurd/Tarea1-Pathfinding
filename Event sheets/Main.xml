@@ -57,9 +57,6 @@
                                                         <action id="0" name="Paste Object" sid="381330524450392" type="Camera1">
                                                             <param id="0" name="Object">Everytin</param>
                                                         </action>
-                                                        <action id="0" name="Paste Object" sid="729519546169186" type="Camera1">
-                                                            <param id="0" name="Object">Player1</param>
-                                                        </action>
                                                     </actions>
                                                     <sub-events>
                                                         <event-block sid="240343283505889">

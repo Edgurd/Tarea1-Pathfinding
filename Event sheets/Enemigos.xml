@@ -174,13 +174,13 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="157752533620855" title="Bird">
+        <event-group description="" disabled="1" sid="157752533620855" title="Bird">
             <sub-events>
                 <comment>SpawnRandomBird</comment>
                 <variable constant="0" name="CoeficienteDistancia" sid="273962856774005" static="0" type="number">0</variable>
                 <variable comment="0 izquierda 1 derecha" constant="0" name="RandomSide" sid="466733026895408" static="0" type="number">0</variable>
                 <variable comment="0 player1 / 1 player2" constant="0" name="RandomPlayer" sid="539114415571326" static="0" type="number">0</variable>
-                <event-block sid="925025048882266">
+                <event-block disabled="1" sid="925025048882266">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="412138694874632" type="System">
                             <param id="0" name="Interval (seconds)">1</param>
@@ -201,7 +201,7 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="947564293120049">
+                        <event-block disabled="1" sid="947564293120049">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="352260601348046" type="System">
                                     <param id="0" name="Variable">RandomSide</param>
@@ -212,7 +212,7 @@
                             <actions />
                             <sub-events>
                                 <comment>0: Player 1 | 1:Player2</comment>
-                                <event-block sid="736581008119678">
+                                <event-block disabled="1" sid="736581008119678">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="541281969156756" type="System">
                                             <param id="0" name="Variable">RandomPlayer</param>
@@ -232,7 +232,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="316900811640796">
+                                <event-block disabled="1" sid="316900811640796">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="741253825468345" type="System">
                                             <param id="0" name="Variable">RandomPlayer</param>
@@ -254,7 +254,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block sid="606776875761773">
+                        <event-block disabled="1" sid="606776875761773">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="587471849289854" type="System">
                                     <param id="0" name="Variable">RandomSide</param>
@@ -265,7 +265,7 @@
                             <actions />
                             <sub-events>
                                 <comment>0: Player 1 | 1:Player2</comment>
-                                <event-block sid="805371942426699">
+                                <event-block disabled="1" sid="805371942426699">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="804821833806925" type="System">
                                             <param id="0" name="Variable">RandomPlayer</param>
@@ -288,7 +288,7 @@
                                         </action>
                                     </actions>
                                 </event-block>
-                                <event-block sid="495915319031068">
+                                <event-block disabled="1" sid="495915319031068">
                                     <conditions>
                                         <condition id="-14" name="Compare variable" sid="430565211452931" type="System">
                                             <param id="0" name="Variable">RandomPlayer</param>
@@ -320,7 +320,7 @@
                 <variable constant="0" name="AcCounter" sid="608769210038921" static="1" type="number">5</variable>
                 <variable constant="0" name="Player1XY" sid="816831983052889" static="0" type="text"></variable>
                 <variable constant="0" name="Player2XY" sid="884597035073160" static="0" type="text"></variable>
-                <event-block sid="364580773371681">
+                <event-block disabled="1" sid="364580773371681">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="607777030723175" type="bird">
                             <param id="0" name="Object">Players</param>
@@ -374,7 +374,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="655258208148217">
+                <event-block disabled="1" sid="655258208148217">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="838869642404861" type="System">
                             <param id="0" name="Interval (seconds)">1.0</param>

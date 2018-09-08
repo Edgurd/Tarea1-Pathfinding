@@ -822,7 +822,7 @@
                     <animation-folder>
                         <animation-folder name="Patrulla">
                             <animation framecount="2" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="726247475679292" speed="5">
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\walk_1.png">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\walk_1.png">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
                                     <image-point name="Left" x="0.125" y="0.5" />
@@ -834,7 +834,7 @@
                                         <point x="0" y="0.887514" />
                                     </collision-poly>
                                 </frame>
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\walk_2.png">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\walk_2.png">
                                     <image-point name="Up" x="0.5" y="0.115385" />
                                     <image-point name="Left" x="0.125" y="0.5" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -848,7 +848,7 @@
                                 </frame>
                             </animation>
                             <animation framecount="2" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="826573498985569" speed="5">
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
                                     <image-point name="Left" x="0.125" y="0.5" />
@@ -860,7 +860,7 @@
                                         <point x="0" y="0.887514" />
                                     </collision-poly>
                                 </frame>
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Up" x="0.5" y="0.115385" />
                                     <image-point name="Left" x="0.125" y="0.5" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -874,7 +874,7 @@
                                 </frame>
                             </animation>
                             <animation framecount="2" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="965863586463137" speed="5">
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
                                     <image-point name="Left" x="0.125" y="0.5" />
@@ -886,7 +886,7 @@
                                         <point x="0" y="0.887514" />
                                     </collision-poly>
                                 </frame>
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Up" x="0.5" y="0.115385" />
                                     <image-point name="Left" x="0.125" y="0.5" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -900,7 +900,7 @@
                                 </frame>
                             </animation>
                             <animation framecount="2" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="867186052090847" speed="5">
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
                                     <image-point name="Left" x="0.125" y="0.5" />
@@ -912,7 +912,7 @@
                                         <point x="0" y="0.887514" />
                                     </collision-poly>
                                 </frame>
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Up" x="0.5" y="0.115385" />
                                     <image-point name="Left" x="0.125" y="0.5" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -928,7 +928,7 @@
                         </animation-folder>
                         <animation-folder name="Activo">
                             <animation framecount="2" loop="0" name="DownActivo" pingpong="0" repeatcount="1" repeatto="0" sid="486912020730847" speed="7">
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\activo_1.png">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\activo_1.png">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
                                     <image-point name="Left" x="0.125" y="0.5" />
@@ -940,7 +940,7 @@
                                         <point x="0" y="0.887514" />
                                     </collision-poly>
                                 </frame>
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\activo_2.png">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\robot\activo_2.png">
                                     <image-point name="Up" x="0.5" y="0.115385" />
                                     <image-point name="Left" x="0.125" y="0.5" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -954,7 +954,7 @@
                                 </frame>
                             </animation>
                             <animation framecount="2" loop="0" name="UpActivo" pingpong="0" repeatcount="1" repeatto="0" sid="940054562094630" speed="7">
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
                                     <image-point name="Left" x="0.125" y="0.5" />
@@ -966,7 +966,7 @@
                                         <point x="0" y="0.887514" />
                                     </collision-poly>
                                 </frame>
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Up" x="0.5" y="0.115385" />
                                     <image-point name="Left" x="0.125" y="0.5" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -980,7 +980,7 @@
                                 </frame>
                             </animation>
                             <animation framecount="2" loop="0" name="RightActivo" pingpong="0" repeatcount="1" repeatto="0" sid="259964880210493" speed="7">
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
                                     <image-point name="Left" x="0.125" y="0.5" />
@@ -992,7 +992,7 @@
                                         <point x="0" y="0.887514" />
                                     </collision-poly>
                                 </frame>
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Up" x="0.5" y="0.115385" />
                                     <image-point name="Left" x="0.125" y="0.5" />
                                     <image-point name="Right" x="0.875" y="0.5" />
@@ -1006,7 +1006,7 @@
                                 </frame>
                             </animation>
                             <animation framecount="2" loop="0" name="LeftActivo" pingpong="0" repeatcount="1" repeatto="0" sid="249240047829180" speed="7">
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Down" x="0.5" y="0.923077" />
                                     <image-point name="Right" x="0.875" y="0.5" />
                                     <image-point name="Left" x="0.125" y="0.5" />
@@ -1018,7 +1018,7 @@
                                         <point x="0" y="0.887514" />
                                     </collision-poly>
                                 </frame>
-                                <frame duration="1" hotspotX="0" hotspotY="0.961538">
+                                <frame duration="1" hotspotX="0" hotspotY="0.923077">
                                     <image-point name="Up" x="0.5" y="0.115385" />
                                     <image-point name="Left" x="0.125" y="0.5" />
                                     <image-point name="Right" x="0.875" y="0.5" />
