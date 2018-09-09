@@ -549,8 +549,51 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="611312917143184" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="611312917143184" speed="12">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet_2.png">
+                            <collision-poly>
+                                <point x="0.375" y="0.375" />
+                                <point x="0.625" y="0.375" />
+                                <point x="0.625" y="0.625" />
+                                <point x="0.375" y="0.625" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet_2.png">
+                            <collision-poly>
+                                <point x="0.25" y="0.25" />
+                                <point x="0.5" y="0.3125" />
+                                <point x="0.6875" y="0.3125" />
+                                <point x="0.8125" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.6875" />
+                                <point x="0.3125" y="0.6875" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet_3.png">
+                            <collision-poly>
+                                <point x="0.3125" y="0.3125" />
+                                <point x="0.5" y="0.3125" />
+                                <point x="0.75" y="0.25" />
+                                <point x="0.6875" y="0.5" />
+                                <point x="0.6875" y="0.6875" />
+                                <point x="0.5" y="0.625" />
+                                <point x="0.25" y="0.75" />
+                                <point x="0.3125" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet_4.png">
+                            <collision-poly>
+                                <point x="0.25" y="0.25" />
+                                <point x="0.5" y="0.375" />
+                                <point x="0.6875" y="0.3125" />
+                                <point x="0.6875" y="0.5" />
+                                <point x="0.75" y="0.75" />
+                                <point x="0.5" y="0.625" />
+                                <point x="0.3125" y="0.6875" />
+                                <point x="0.375" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -630,6 +673,27 @@
                     <animation-folder>
                         <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="945022395646302" speed="5">
                             <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="PowerUp">
+                <object-type name="Stick" sid="894080192398978">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="12" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="236835863286855" speed="12">
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps00.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps01.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps02.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps03.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps04.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps05.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps06.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps07.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps08.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps09.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps10.png" />
+                            <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\PlayerBullet\PowerUps11.png" />
                         </animation>
                     </animation-folder>
                 </object-type>
@@ -1192,6 +1256,11 @@
             </object-type>
             <object-type name="Calabaza" sid="880204884107345">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="649615014788276">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Down" pingpong="0" repeatcount="1" repeatto="0" sid="233015351552233" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\calabaza.png" />
@@ -1601,8 +1670,8 @@
                             <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Obstaculos\Side Fence.png">
                                 <collision-poly>
                                     <point x="0.5625" y="0.125" />
-                                    <point x="1" y="0.125" />
-                                    <point x="1" y="0.9375" />
+                                    <point x="0.9375" y="0.125" />
+                                    <point x="0.9375" y="0.9375" />
                                     <point x="0.5625" y="0.9375" />
                                 </collision-poly>
                             </frame>
@@ -2010,6 +2079,33 @@
                 <plugin id="Spritefont2" />
                 <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\score2font.png" />
             </object-type>
+            <object-type name="Palito" sid="295718754019505">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Player" sid="200955189137808" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="119607426275612" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\Palito.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TortugaHud" sid="298144753782593">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614893857158482" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Powerup\tortuga.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rayo" sid="765259716887752">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430304083610845" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Powerup\Rayo.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
     </object-folder>
     <families>
@@ -2018,7 +2114,6 @@
                 <member>Box</member>
                 <member>Bush_1</member>
                 <member>Bush_2</member>
-                <member>Calabaza</member>
                 <member>DittoType</member>
                 <member>Door</member>
                 <member>Door_L</member>
@@ -2164,6 +2259,7 @@
                 <member>SideWall_3</member>
                 <member>SideWall_4</member>
                 <member>SolidTest</member>
+                <member>Stick</member>
                 <member>Tree</member>
                 <member>Trunk</member>
                 <member>Trunk_2</member>

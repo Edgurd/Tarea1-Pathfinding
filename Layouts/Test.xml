@@ -38,7 +38,7 @@
                     </properties>
                     <instance-variables>
                         <Vidas>3</Vidas>
-                        <Disparos>0</Disparos>
+                        <Disparos>1</Disparos>
                         <Invulnerable>false</Invulnerable>
                         <TimeInvulnerable>2</TimeInvulnerable>
                     </instance-variables>
@@ -1326,11 +1326,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>272</x>
+                        <x>192</x>
                         <y>176</y>
                         <z>0</z>
-                        <width>4</width>
-                        <height>4</height>
+                        <width>16</width>
+                        <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

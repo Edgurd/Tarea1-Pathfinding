@@ -276,5 +276,37 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="940371924832907" title="Stick">
+            <sub-events>
+                <event-block sid="678678274242073">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="549266050975280" type="Player1">
+                            <param id="0" name="Object">Stick</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="976720348054883" type="Player1">
+                            <param id="0" name="Instance variable">Disparos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="294225597493511" type="Stick" />
+                    </actions>
+                </event-block>
+                <event-block sid="197665189032201">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="602612794091446" type="Player2">
+                            <param id="0" name="Object">Stick</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="207429235842810" type="Player2">
+                            <param id="0" name="Instance variable">Disparos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="929466263708202" type="Stick" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

@@ -16,7 +16,12 @@
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="263865157654887" type="Player1">
+                            <param id="0" name="Instance variable">Disparos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="305841513389293">
                             <conditions>
@@ -100,7 +105,12 @@
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="744042364818002" type="Player2">
+                            <param id="0" name="Instance variable">Disparos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="649555009682359">
                             <conditions>
@@ -171,6 +181,16 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="448723860312027">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="596667227320775" type="PlayerBullet">
+                            <param id="0" name="Object">Solid</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="971493960861130" type="PlayerBullet" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

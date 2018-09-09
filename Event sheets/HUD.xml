@@ -7,9 +7,11 @@
         <variable constant="0" name="Palitos_P2" sid="974820120399917" static="0" type="number">0</variable>
         <variable constant="0" name="Score_P1" sid="136374275450035" static="0" type="number">0</variable>
         <variable constant="0" name="Score_P2" sid="994839080651355" static="0" type="number">0</variable>
+        <variable constant="0" name="Win_P1" sid="920385814134040" static="0" type="number">0</variable>
+        <variable constant="0" name="Win_P2" sid="945662262460893" static="0" type="number">0</variable>
         <event-group description="" sid="922484454755759" title="Corazones">
             <sub-events>
-                <event-group description="" sid="453536661399670" title="Player1">
+                <event-group description="" sid="453536661399670" title="Player1-Corazones">
                     <sub-events>
                         <event-block sid="925946544375852">
                             <conditions>
@@ -187,7 +189,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="336342388747656" title="Player2">
+                <event-group description="" sid="336342388747656" title="Player2-Corazones">
                     <sub-events>
                         <event-block sid="860696044033814">
                             <conditions>
@@ -367,9 +369,186 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="514912880857938" title="Score" />
+        <event-group description="" sid="514912880857938" title="Score">
+            <sub-events>
+                <event-block sid="462964982788837">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="619131088500842" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="274689852927801" type="ScoreP1_font">
+                            <param id="0" name="Text">str(Score_P1)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="474857801425427" type="ScoreP2_font">
+                            <param id="0" name="Text">str(Score_P2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="763935932160600">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="530861605967927" type="PlayerBullet">
+                            <param id="0" name="Object">Enemies</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="761497436928994">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="462350310122990" type="Enemies">
+                                    <param id="0" name="Instance variable">Sector</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="983004908029334" type="System">
+                                    <param id="0" name="Variable">Score_P1</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                                <action id="0" name="Set text" sid="355547399033597" type="ScoreP1_font">
+                                    <param id="0" name="Text">str(Score_P1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="168356949730244">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="867768802840532" type="Enemies">
+                                    <param id="0" name="Instance variable">Sector</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="821332769696849" type="System">
+                                    <param id="0" name="Variable">Score_P2</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
+                                <action id="0" name="Set text" sid="930670957338258" type="ScoreP2_font">
+                                    <param id="0" name="Text">str(Score_P2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
         <event-group description="" sid="781324476914200" title="PowerUp" />
-        <event-group description="" sid="753732200429386" title="Palito" />
-        <event-group description="" sid="223964142725548" title="Wins" />
+        <event-group description="" sid="753732200429386" title="Palito">
+            <sub-events>
+                <event-group description="" sid="137377314483946" title="Player1-Palitos">
+                    <sub-events>
+                        <event-block sid="581146193616849">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="241451536044633" type="Palito">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="131003451065676" type="System">
+                                    <param id="0" name="Variable">Palitos_P1</param>
+                                    <param id="1" name="Value">Player1.Disparos</param>
+                                </action>
+                                <action id="0" name="Set text" sid="310434950320388" type="PalitoFont_P1">
+                                    <param id="0" name="Text">str(Palitos_P1)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="193636611324753">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="358244017381927" type="System">
+                                            <param id="0" name="Variable">Palitos_P1</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="852505692376699" type="Palito">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="847293823057175">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="856790334171836" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="268503021473823" type="Palito">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="248476309747822" title="Player2-Palitos">
+                    <sub-events>
+                        <event-block sid="245172710965624">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="495475014387883" type="Palito">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="297978235858078" type="System">
+                                    <param id="0" name="Variable">Palitos_P2</param>
+                                    <param id="1" name="Value">Player2.Disparos</param>
+                                </action>
+                                <action id="0" name="Set text" sid="667993147364802" type="PalitoFont_P2">
+                                    <param id="0" name="Text">str(Palitos_P2)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="404284036042215">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="532253929251099" type="System">
+                                            <param id="0" name="Variable">Palitos_P2</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="422609999904689" type="Palito">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="148006243962523">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="930760320768326" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="656065848964236" type="Palito">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="223964142725548" title="Wins">
+            <sub-events>
+                <event-block sid="454122209187028">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="114492250752473" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="256466942398961" type="Winfont_P1">
+                            <param id="0" name="Text">str(Win_P1)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="680744773361961" type="Winfont_P2">
+                            <param id="0" name="Text">str(Win_P2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
