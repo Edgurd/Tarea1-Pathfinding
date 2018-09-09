@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>HUD</name>
+    <events>
+        <variable constant="0" name="Palitos_P1" sid="817945480050903" static="0" type="number">0</variable>
+        <variable constant="0" name="Palitos_P2" sid="974820120399917" static="0" type="number">0</variable>
+        <variable constant="0" name="Score_P1" sid="136374275450035" static="0" type="number">0</variable>
+        <variable constant="0" name="Score_P2" sid="994839080651355" static="0" type="number">0</variable>
+        <event-group description="" sid="922484454755759" title="Corazones">
+            <sub-events>
+                <event-group description="" sid="453536661399670" title="Player1">
+                    <sub-events>
+                        <event-block sid="925946544375852">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="878536653465944" type="Player1">
+                                    <param id="0" name="Instance variable">Vidas</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="193476904606578">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="523898443070525" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="272343148371183" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="224571813326205" type="Heart">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="681092579477571">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="181487358316975" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="716443172179960">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="628174651018721" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="104266770720946" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="867728275262556" type="Heart">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="452329385852437">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="438412280711337" type="Player1">
+                                    <param id="0" name="Instance variable">Vidas</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="770735265142838">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="231161141937225" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="155353535841670" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="783215792916080" type="Heart">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="769225745603278">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="763776744102629" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="797611270220854">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="420980718761414" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="136192460118905" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="162056484005553" type="Heart">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="383040942967733">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="165435431293865" type="Player1">
+                                    <param id="0" name="Instance variable">Vidas</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="923461856812598">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="848554761077689" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="101450349891828" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="700373451249436" type="Heart">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="312879915236672">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="154153944570835" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="586317366995150">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="358602176437593" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="642891639272521" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="555492624938048" type="Heart">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="336342388747656" title="Player2">
+                    <sub-events>
+                        <event-block sid="860696044033814">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="580506165787338" type="Player2">
+                                    <param id="0" name="Instance variable">Vidas</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="642897925598696">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="551145195051907" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="427504941858310" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="589795706409313" type="Heart">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="694185607050867">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="815438326487806" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="215475173432644">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="796197390454177" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="558094490121096" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="494761717039874" type="Heart">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="934371128715777">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="507394098049336" type="Player2">
+                                    <param id="0" name="Instance variable">Vidas</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="829132916012159">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="239569217619088" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="173600666229782" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="218725219354267" type="Heart">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="859345393646593">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="715489876295797" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="665287770624792">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="673240268405629" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="264513328656289" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="836455987853280" type="Heart">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="661483799279507">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="924276511233124" type="Player2">
+                                    <param id="0" name="Instance variable">Vidas</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="530842988317915">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="565792981447067" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="490726001367836" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="362400934415917" type="Heart">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="952099692322078">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="490619862581848" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="189180547692439">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="455566021472776" type="Heart">
+                                            <param id="0" name="Instance variable">posicion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="283980527642748" type="Heart">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="910616796552098" type="Heart">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="514912880857938" title="Score" />
+        <event-group description="" sid="781324476914200" title="PowerUp" />
+        <event-group description="" sid="753732200429386" title="Palito" />
+        <event-group description="" sid="223964142725548" title="Wins" />
+    </events>
+</c2eventsheet>

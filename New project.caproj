@@ -15,6 +15,7 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
         <plugin author="R0J0hound" id="rojoPaster" version="0.5">Paster</plugin>
@@ -1526,8 +1527,8 @@
                                 <collision-poly>
                                     <point x="0.125" y="0.25" />
                                     <point x="0.875" y="0.25" />
-                                    <point x="0.875" y="0.9375" />
-                                    <point x="0.125" y="0.9375" />
+                                    <point x="0.875" y="0.875" />
+                                    <point x="0.125" y="0.875" />
                                 </collision-poly>
                             </frame>
                         </animation>
@@ -1949,6 +1950,67 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Hud">
+            <object-type name="HUD" sid="297157455166856">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718397928621400" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\HUD1.png">
+                            <image-point name="heart1_P1" x="0.234375" y="0.107143" />
+                            <image-point name="heart2_P1" x="0.265625" y="0.107143" />
+                            <image-point name="heart3_P1" x="0.296875" y="0.107143" />
+                            <image-point name="Item1_P1" x="0.234375" y="0.178571" />
+                            <image-point name="Item2_P1" x="0.265625" y="0.178571" />
+                            <image-point name="Item3_P1" x="0.296875" y="0.178571" />
+                            <image-point name="Palitos_P1" x="0.359375" y="0.107143" />
+                            <image-point name="heart1_P2" x="0.765625" y="0.107143" />
+                            <image-point name="heart2_P2" x="0.734375" y="0.107143" />
+                            <image-point name="heart3_P2" x="0.703125" y="0.107143" />
+                            <image-point name="Item1_P2" x="0.765625" y="0.178571" />
+                            <image-point name="Item2_P2" x="0.734375" y="0.178571" />
+                            <image-point name="Item3_P2" x="0.703125" y="0.178571" />
+                            <image-point name="Palitos_P1" x="0.609375" y="0.107143" />
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Heart" sid="209059483088001">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Player" sid="622527364745554" type="number" />
+                    <instance-variable name="posicion" sid="948626389596082" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392167393950892" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\Heart.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ScoreP1_font" sid="174803778112106">
+                <plugin id="Spritefont2" />
+                <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\score1font.png" />
+            </object-type>
+            <object-type name="ScoreP2_font" sid="958739927185082">
+                <plugin id="Spritefont2" />
+                <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\score2font.png" />
+            </object-type>
+            <object-type name="Winfont_P1" sid="459385806747218">
+                <plugin id="Spritefont2" />
+                <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\winsFont.png" />
+            </object-type>
+            <object-type name="Winfont_P2" sid="376730963979340">
+                <plugin id="Spritefont2" />
+                <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\winsFont.png" />
+            </object-type>
+            <object-type name="PalitoFont_P1" sid="122070032891646">
+                <plugin id="Spritefont2" />
+                <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\score1font.png" />
+            </object-type>
+            <object-type name="PalitoFont_P2" sid="213148758568270">
+                <plugin id="Spritefont2" />
+                <texture original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\score2font.png" />
+            </object-type>
+        </object-folder>
     </object-folder>
     <families>
         <family name="Solid" plugin-id="Sprite" sid="768448478169401">
@@ -2131,6 +2193,7 @@
         <event-sheet>Player.xml</event-sheet>
         <event-sheet>Objetos.xml</event-sheet>
         <event-sheet>Enemigos.xml</event-sheet>
+        <event-sheet>HUD.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="7" />
