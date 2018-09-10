@@ -521,36 +521,58 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Spawn another object" sid="527675789994299" type="Turret">
-                                                    <param id="0" name="Object">TurretBullet</param>
-                                                    <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">1</param>
-                                                </action>
                                                 <action id="7" name="Set mirrored" sid="307492348338043" type="Turret">
                                                     <param id="0" name="State">1</param>
                                                 </action>
-                                                <action id="-8" name="Set angle" sid="478302766057145" type="TurretBullet">
-                                                    <param id="0" name="Angle">180</param>
-                                                </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="218557978825271">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="720080503335312" type="System">
+                                                            <param id="0" name="Interval (seconds)">Turret.TiempoEntreBalas</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="527675789994299" type="Turret">
+                                                            <param id="0" name="Object">TurretBullet</param>
+                                                            <param id="1" name="Layer">0</param>
+                                                            <param id="2" name="Image point">1</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="478302766057145" type="TurretBullet">
+                                                            <param id="0" name="Angle">180</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="520839806315421">
                                             <conditions>
                                                 <condition id="-22" name="Else" sid="224480200063653" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Spawn another object" sid="348814133482949" type="Turret">
-                                                    <param id="0" name="Object">TurretBullet</param>
-                                                    <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">1</param>
-                                                </action>
                                                 <action id="7" name="Set mirrored" sid="775812557026576" type="Turret">
                                                     <param id="0" name="State">0</param>
                                                 </action>
-                                                <action id="-8" name="Set angle" sid="621211260649718" type="TurretBullet">
-                                                    <param id="0" name="Angle">0</param>
-                                                </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="229236944973567">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="634218983140566" type="System">
+                                                            <param id="0" name="Interval (seconds)">Turret.TiempoEntreBalas</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="348814133482949" type="Turret">
+                                                            <param id="0" name="Object">TurretBullet</param>
+                                                            <param id="1" name="Layer">0</param>
+                                                            <param id="2" name="Image point">1</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="621211260649718" type="TurretBullet">
+                                                            <param id="0" name="Angle">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -584,31 +606,51 @@
                                                     <param id="2" name="Second value">0</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="0" name="Spawn another object" sid="764895085391861" type="Turret">
-                                                    <param id="0" name="Object">TurretBullet</param>
-                                                    <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">1</param>
-                                                </action>
-                                                <action id="-8" name="Set angle" sid="841945572755926" type="TurretBullet">
-                                                    <param id="0" name="Angle">270</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="668721127145787">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="175419691509886" type="System">
+                                                            <param id="0" name="Interval (seconds)">Turret.TiempoEntreBalas</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="764895085391861" type="Turret">
+                                                            <param id="0" name="Object">TurretBullet</param>
+                                                            <param id="1" name="Layer">0</param>
+                                                            <param id="2" name="Image point">1</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="841945572755926" type="TurretBullet">
+                                                            <param id="0" name="Angle">270</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="507342265814826">
                                             <conditions>
                                                 <condition id="-22" name="Else" sid="495273093212576" type="System" />
                                             </conditions>
-                                            <actions>
-                                                <action id="0" name="Spawn another object" sid="546083619126968" type="Turret">
-                                                    <param id="0" name="Object">TurretBullet</param>
-                                                    <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">1</param>
-                                                </action>
-                                                <action id="-8" name="Set angle" sid="633269870597745" type="TurretBullet">
-                                                    <param id="0" name="Angle">90</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="121444506248555">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="966580171468710" type="System">
+                                                            <param id="0" name="Interval (seconds)">Turret.TiempoEntreBalas</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="546083619126968" type="Turret">
+                                                            <param id="0" name="Object">TurretBullet</param>
+                                                            <param id="1" name="Layer">0</param>
+                                                            <param id="2" name="Image point">1</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="633269870597745" type="TurretBullet">
+                                                            <param id="0" name="Angle">90</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -655,36 +697,58 @@
                                                 </condition>
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Spawn another object" sid="491527968030307" type="Turret">
-                                                    <param id="0" name="Object">TurretBullet</param>
-                                                    <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">1</param>
-                                                </action>
                                                 <action id="7" name="Set mirrored" sid="228036531437178" type="Turret">
                                                     <param id="0" name="State">1</param>
                                                 </action>
-                                                <action id="-8" name="Set angle" sid="358754409126528" type="TurretBullet">
-                                                    <param id="0" name="Angle">180</param>
-                                                </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="116471198530976">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="146755216164287" type="System">
+                                                            <param id="0" name="Interval (seconds)">Turret.TiempoEntreBalas</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="491527968030307" type="Turret">
+                                                            <param id="0" name="Object">TurretBullet</param>
+                                                            <param id="1" name="Layer">0</param>
+                                                            <param id="2" name="Image point">1</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="358754409126528" type="TurretBullet">
+                                                            <param id="0" name="Angle">180</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="879449965036625">
                                             <conditions>
                                                 <condition id="-22" name="Else" sid="363053736849360" type="System" />
                                             </conditions>
                                             <actions>
-                                                <action id="0" name="Spawn another object" sid="949222461762240" type="Turret">
-                                                    <param id="0" name="Object">TurretBullet</param>
-                                                    <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">1</param>
-                                                </action>
                                                 <action id="7" name="Set mirrored" sid="774965525538073" type="Turret">
                                                     <param id="0" name="State">0</param>
                                                 </action>
-                                                <action id="-8" name="Set angle" sid="586049012886207" type="TurretBullet">
-                                                    <param id="0" name="Angle">0</param>
-                                                </action>
                                             </actions>
+                                            <sub-events>
+                                                <event-block sid="693525575600704">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="843181265230416" type="System">
+                                                            <param id="0" name="Interval (seconds)">Turret.TiempoEntreBalas</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="949222461762240" type="Turret">
+                                                            <param id="0" name="Object">TurretBullet</param>
+                                                            <param id="1" name="Layer">0</param>
+                                                            <param id="2" name="Image point">1</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="586049012886207" type="TurretBullet">
+                                                            <param id="0" name="Angle">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>
@@ -718,31 +782,51 @@
                                                     <param id="2" name="Second value">0</param>
                                                 </condition>
                                             </conditions>
-                                            <actions>
-                                                <action id="0" name="Spawn another object" sid="241389766937512" type="Turret">
-                                                    <param id="0" name="Object">TurretBullet</param>
-                                                    <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">1</param>
-                                                </action>
-                                                <action id="-8" name="Set angle" sid="287689660392895" type="TurretBullet">
-                                                    <param id="0" name="Angle">270</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="820811580420527">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="300584423659199" type="System">
+                                                            <param id="0" name="Interval (seconds)">Turret.TiempoEntreBalas</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="241389766937512" type="Turret">
+                                                            <param id="0" name="Object">TurretBullet</param>
+                                                            <param id="1" name="Layer">0</param>
+                                                            <param id="2" name="Image point">1</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="287689660392895" type="TurretBullet">
+                                                            <param id="0" name="Angle">270</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                         <event-block sid="360866472349311">
                                             <conditions>
                                                 <condition id="-22" name="Else" sid="950067815948907" type="System" />
                                             </conditions>
-                                            <actions>
-                                                <action id="0" name="Spawn another object" sid="889218518027293" type="Turret">
-                                                    <param id="0" name="Object">TurretBullet</param>
-                                                    <param id="1" name="Layer">0</param>
-                                                    <param id="2" name="Image point">1</param>
-                                                </action>
-                                                <action id="-8" name="Set angle" sid="481985944698571" type="TurretBullet">
-                                                    <param id="0" name="Angle">90</param>
-                                                </action>
-                                            </actions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="283267139139528">
+                                                    <conditions>
+                                                        <condition id="-6" name="Every X seconds" sid="728669569704373" type="System">
+                                                            <param id="0" name="Interval (seconds)">Turret.TiempoEntreBalas</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="0" name="Spawn another object" sid="889218518027293" type="Turret">
+                                                            <param id="0" name="Object">TurretBullet</param>
+                                                            <param id="1" name="Layer">0</param>
+                                                            <param id="2" name="Image point">1</param>
+                                                        </action>
+                                                        <action id="-8" name="Set angle" sid="481985944698571" type="TurretBullet">
+                                                            <param id="0" name="Angle">90</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
                                         </event-block>
                                     </sub-events>
                                 </event-block>

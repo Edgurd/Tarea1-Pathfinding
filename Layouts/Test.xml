@@ -41,6 +41,10 @@
                         <Disparos>1</Disparos>
                         <Invulnerable>false</Invulnerable>
                         <TimeInvulnerable>2</TimeInvulnerable>
+                        <Tortuga>0</Tortuga>
+                        <Rayo>0</Rayo>
+                        <Control>0</Control>
+                        <invertido>0</invertido>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -214,7 +218,7 @@
                 </instance>
                 <instance type="BuscadorVisionRight" uid="11">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -1127,6 +1131,10 @@
                         <Disparos>0</Disparos>
                         <Invulnerable>false</Invulnerable>
                         <TimeInvulnerable>2</TimeInvulnerable>
+                        <Tortuga>0</Tortuga>
+                        <Rayo>0</Rayo>
+                        <Control>0</Control>
+                        <invertido>0</invertido>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -1169,6 +1177,7 @@
                         <Sector>0</Sector>
                         <Atacando>false</Atacando>
                         <AnimacionDaño>0</AnimacionDaño>
+                        <TiempoEntreBalas>1</TiempoEntreBalas>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Flash" />
@@ -1480,7 +1489,7 @@
                 </instance>
                 <instance type="BuscadorVisionLeft" uid="31">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -1510,7 +1519,7 @@
                 </instance>
                 <instance type="BuscadorVisionUp" uid="32">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -1540,7 +1549,7 @@
                 </instance>
                 <instance type="BuscadorVisionDown" uid="33">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>

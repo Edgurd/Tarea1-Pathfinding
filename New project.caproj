@@ -697,6 +697,37 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="ControlInvertido" sid="656166297925551">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="873629382854415" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Powerup\ControlInvertido.png">
+                                <collision-poly>
+                                    <point x="0.0555556" y="0" />
+                                    <point x="0.944444" y="0" />
+                                    <point x="0.944444" y="1" />
+                                    <point x="0.0555556" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Tortuga" sid="263244351696355">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="496660115646381" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Powerup\tortuga.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Rayo" sid="168841337838789">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="245472075355944" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Powerup\Rayo.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-type name="SolidTest" sid="142122577336849">
                 <plugin id="Sprite" />
@@ -1281,6 +1312,7 @@
                 <instance-variables>
                     <instance-variable name="Atacando" sid="984165469269097" type="boolean" />
                     <instance-variable name="AnimacionDaño" sid="466014603523557" type="number" />
+                    <instance-variable comment="Cada cuantos segundos spawenea una bala" name="TiempoEntreBalas" sid="612947680567999" type="number" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Flash" sid="897380949659446">
@@ -2098,11 +2130,26 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Rayo" sid="765259716887752">
+            <object-type name="Rayo_HUD" sid="765259716887752">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430304083610845" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Powerup\Rayo.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ControlInvertido_HUD" sid="484994655557572">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="766558367077871" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Powerup\ControlInvertido.png">
+                            <collision-poly>
+                                <point x="0.0555556" y="0" />
+                                <point x="0.944444" y="0" />
+                                <point x="0.944444" y="1" />
+                                <point x="0.0555556" y="1" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -2154,6 +2201,10 @@
                 <instance-variable name="Disparos" sid="768935475057443" type="number" />
                 <instance-variable name="Invulnerable" sid="330714397435873" type="boolean" />
                 <instance-variable name="TimeInvulnerable" sid="924389317536654" type="number" />
+                <instance-variable comment="powerUp en contra de tu enemigo(0= Desactivado, 1=activo)" name="Tortuga" sid="302595011177007" type="number" />
+                <instance-variable comment="powerUp en contra de tu enemigo(0= Desactivado, 1=activo)" name="Rayo" sid="245956125881015" type="number" />
+                <instance-variable comment="powerUp en contra de tu enemigo(0= Desactivado, 1=activo)" name="Control" sid="693973424487436" type="number" />
+                <instance-variable comment="Control del jugador invertido(1) no invertido (0)" name="invertido" sid="568618790960924" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="252102654172955">
@@ -2231,6 +2282,7 @@
                 <member>Button_1</member>
                 <member>Calabaza</member>
                 <member>camerafocus_2</member>
+                <member>ControlInvertido</member>
                 <member>DittoType</member>
                 <member>Door</member>
                 <member>Door_L</member>
@@ -2251,6 +2303,7 @@
                 <member>Player2</member>
                 <member>PlayerBullet</member>
                 <member>Puerta</member>
+                <member>Rayo</member>
                 <member>Rock</member>
                 <member>Sidefence_1</member>
                 <member>Sidefence_2</member>
@@ -2260,6 +2313,7 @@
                 <member>SideWall_4</member>
                 <member>SolidTest</member>
                 <member>Stick</member>
+                <member>Tortuga</member>
                 <member>Tree</member>
                 <member>Trunk</member>
                 <member>Trunk_2</member>
@@ -2277,6 +2331,27 @@
                 <member>Turret</member>
                 <member>TurretBullet</member>
             </members>
+        </family>
+        <family name="PowerUpsHUD" plugin-id="Sprite" sid="959710818430162">
+            <members>
+                <member>ControlInvertido_HUD</member>
+                <member>Rayo_HUD</member>
+                <member>TortugaHud</member>
+            </members>
+            <instance-variables>
+                <instance-variable name="Player" sid="310712783506187" type="number" />
+                <instance-variable name="Cantidad" sid="164532110161535" type="number" />
+            </instance-variables>
+        </family>
+        <family name="PowerUPs" plugin-id="Sprite" sid="124090318230530">
+            <members>
+                <member>ControlInvertido</member>
+                <member>Rayo</member>
+                <member>Tortuga</member>
+            </members>
+            <instance-variables>
+                <instance-variable comment="Control(1)-Rayo(2)-Tortuga(3)" name="powerUP" sid="886971643745389" type="number" />
+            </instance-variables>
         </family>
     </families>
     <layout-folder>

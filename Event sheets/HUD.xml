@@ -432,7 +432,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="781324476914200" title="PowerUp" />
         <event-group description="" sid="753732200429386" title="Palito">
             <sub-events>
                 <event-group description="" sid="137377314483946" title="Player1-Palitos">
@@ -528,6 +527,242 @@
                                     </actions>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="781324476914200" title="PowerUpHUD">
+            <sub-events>
+                <event-group description="" sid="703628019474228" title="PowerUPHUD-P1">
+                    <sub-events>
+                        <comment>Control</comment>
+                        <event-block sid="862446890397328">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="273588184476755" type="Player1">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="880408889085232" type="ControlInvertido_HUD">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="478440667192388" type="ControlInvertido_HUD">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="329132389156903">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="695229814847164" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="217742018156888" type="ControlInvertido_HUD">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="968905357876448" type="ControlInvertido_HUD">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Rayo</comment>
+                        <event-block sid="449150034973514">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="475986206243486" type="Player1">
+                                    <param id="0" name="Instance variable">Rayo</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="337063410905354">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="109843398791196" type="Rayo_HUD">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="515442299607637" type="Rayo_HUD">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="430535535111299">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="697511799241823" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="599732612949752" type="Rayo_HUD">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="868769070251620" type="Rayo_HUD">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Tortuga</comment>
+                        <event-block sid="996737881294224">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="428446935569108" type="Player1">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="850654590424487" type="TortugaHud">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="934636239994507" type="TortugaHud">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="298392165136954">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="733084798249862" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="262696938620953" type="TortugaHud">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="797036414795558" type="TortugaHud">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="398581841676868" title="PowerUPHUD-P2">
+                    <sub-events>
+                        <comment>Control</comment>
+                        <event-block sid="641037923229773">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="149049639264919" type="Player2">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="200550121129425" type="ControlInvertido_HUD">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="955831165722153" type="ControlInvertido_HUD">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="171198906587355">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="578558231056306" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="130450696679878" type="ControlInvertido_HUD">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="824563874844866" type="ControlInvertido_HUD">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Tortuga</comment>
+                        <event-block sid="612304764487232">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="352213287429263" type="Player2">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="736650336717348" type="TortugaHud">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="528530339614846" type="TortugaHud">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="414816614448383">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="758125420895989" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="760969936681301" type="TortugaHud">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="875122322042723" type="TortugaHud">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Rayo</comment>
+                        <event-block sid="221806186768954">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="760792842783823" type="Player2">
+                                    <param id="0" name="Instance variable">Rayo</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="571218194453459">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="724392150250335" type="Rayo_HUD">
+                                            <param id="0" name="Instance variable">Player</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="351284498033752" type="Rayo_HUD">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="512847317649320">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="818018960351698" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="340578326550932" type="Rayo_HUD">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="364831174198910" type="Rayo_HUD">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>

@@ -308,5 +308,600 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="464665336914801" title="PowerUPs">
+            <sub-events>
+                <event-group description="" sid="349636209136945" title="Rayo-P1">
+                    <sub-events>
+                        <event-block sid="984348495719278">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="983273167674231" type="Player1">
+                                    <param id="0" name="Object">Rayo</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="621815882166805">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="451975163363969" type="Player1">
+                                            <param id="0" name="Instance variable">Rayo</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="174617773335863" type="Player1">
+                                            <param id="0" name="Instance variable">Rayo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="248374358694190" type="Rayo" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="376434694122562">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="323862341132186" type="Keyboard">
+                                    <param id="0" name="Key">81</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="926619304115589" type="Player1">
+                                    <param id="0" name="Instance variable">Rayo</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="864718347829447" type="Player1">
+                                    <param id="0" name="Instance variable">Rayo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="634102239026751">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="498164245381761" type="Buscador">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="7" name="Set max speed" sid="416891255654356" type="Buscador">
+                                            <param id="0" name="Speed">120</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="197803101694687">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="418708846102269" type="Inicial">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="720126350882370" type="Inicial">
+                                            <param id="0" name="Instance variable">SleepTime</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="793832183970591">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="829388532882553" type="Turret">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="202950274525611" type="Turret">
+                                            <param id="0" name="Instance variable">TiempoEntreBalas</param>
+                                            <param id="1" name="Value">0.3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="753032380841184">
+                            <conditions>
+                                <condition behavior="Timer" id="0" name="On timer" sid="185878215897044" type="Player2">
+                                    <param id="0" name="Tag">&quot;OnRayoCooldown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="248862858434340" type="bird">
+                                    <param id="0" name="Speed">150</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="430528618085509">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="628973357745765" type="Buscador">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="7" name="Set max speed" sid="696094267403475" type="Buscador">
+                                            <param id="0" name="Speed">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="407153606319973">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="796986768348485" type="Inicial">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="663662474882393" type="Inicial">
+                                            <param id="0" name="Instance variable">SleepTime</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="587666209435020">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="148420835926182" type="Turret">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="312605271947898" type="Turret">
+                                            <param id="0" name="Instance variable">TiempoEntreBalas</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="751590965166351" title="Tortuga-P1">
+                    <sub-events>
+                        <event-block sid="851606710823711">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="622103633290636" type="Player1">
+                                    <param id="0" name="Object">Tortuga</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="523519525306192">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="425177741894543" type="Player1">
+                                            <param id="0" name="Instance variable">Tortuga</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="244855485286657" type="Player1">
+                                            <param id="0" name="Instance variable">Tortuga</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="851800870048779" type="Tortuga" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="641800401685842">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="388858313047458" type="Keyboard">
+                                    <param id="0" name="Key">69</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="195495635436132" type="Player1">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="783155993386222" type="Player2">
+                                    <param id="0" name="Max Speed">30</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="946847473060343" type="Player1">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="893876395287026" type="Player2">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnTortugaCooldown&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="917847441905184">
+                            <conditions>
+                                <condition behavior="Timer" id="0" name="On timer" sid="140816649590037" type="Player2">
+                                    <param id="0" name="Tag">&quot;OnTortugaCooldown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="449410663055917" type="Player2">
+                                    <param id="0" name="Max Speed">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="763871899741476" title="ControlInvertido-P1">
+                    <sub-events>
+                        <event-block sid="105688167021988">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="461837437233576" type="Player1">
+                                    <param id="0" name="Object">ControlInvertido</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="740567787699662">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="309004692861181" type="Player1">
+                                            <param id="0" name="Instance variable">Control</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="701763211837550" type="Player1">
+                                            <param id="0" name="Instance variable">Control</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="339957218913492" type="ControlInvertido" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="532206292616653">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="373147934870841" type="Keyboard">
+                                    <param id="0" name="Key">87</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="583165447751790" type="Player1">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="498959006348923" type="Player1">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="134091594726305" type="Player2">
+                                    <param id="0" name="Instance variable">invertido</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="599622757524804" type="Player2">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnControlCooldown&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="367791515364348">
+                            <conditions>
+                                <condition behavior="Timer" id="0" name="On timer" sid="284178139624043" type="Player2">
+                                    <param id="0" name="Tag">&quot;OnControlCooldown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="978164979917554" type="Player2">
+                                    <param id="0" name="Instance variable">invertido</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="673237209330089" title="ControlInvertido-P2">
+                    <sub-events>
+                        <event-block sid="941013139736797">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="363812595953340" type="Player2">
+                                    <param id="0" name="Object">ControlInvertido</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="384546638647325">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="986694466276234" type="Player2">
+                                            <param id="0" name="Instance variable">Control</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="505389287558300" type="Player2">
+                                            <param id="0" name="Instance variable">Control</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="335347690909563" type="ControlInvertido" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="824899109129324">
+                            <conditions>
+                                <condition id="6" name="On button pressed" sid="340983713534497" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="534764675525685" type="Player2">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="522937559242247" type="Player2">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="898505642780494" type="Player1">
+                                    <param id="0" name="Instance variable">invertido</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="265117633466306" type="Player1">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnControlCooldown&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="743262439335687">
+                            <conditions>
+                                <condition behavior="Timer" id="0" name="On timer" sid="444235753933307" type="Player1">
+                                    <param id="0" name="Tag">&quot;OnControlCooldown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="524557453209119" type="Player1">
+                                    <param id="0" name="Instance variable">invertido</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="188489358589640" title="Tortuga-P2">
+                    <sub-events>
+                        <event-block sid="133038470137232">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="214514877498716" type="Player2">
+                                    <param id="0" name="Object">Tortuga</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="419988712688848">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="308585110642012" type="Player2">
+                                            <param id="0" name="Instance variable">Tortuga</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="240439022036557" type="Player2">
+                                            <param id="0" name="Instance variable">Tortuga</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="117387996497600" type="Tortuga" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="841966597217939">
+                            <conditions>
+                                <condition id="6" name="On button pressed" sid="120174822904325" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="203006451234734" type="Player2">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="124188026172855" type="Player1">
+                                    <param id="0" name="Max Speed">30</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="724599965029160" type="Player2">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="286181490656655" type="Player1">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnTortugaCooldown&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="988737903587081">
+                            <conditions>
+                                <condition behavior="Timer" id="0" name="On timer" sid="404105209093573" type="Player1">
+                                    <param id="0" name="Tag">&quot;OnTortugaCooldown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="788703835544598" type="Player1">
+                                    <param id="0" name="Max Speed">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="498792854444593" title="Rayo-P2">
+                    <sub-events>
+                        <event-block sid="430829004488062">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="988381925418371" type="Player2">
+                                    <param id="0" name="Object">Rayo</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="780982206809341">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="697627931089978" type="Player2">
+                                            <param id="0" name="Instance variable">Rayo</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="575824981836495" type="Player2">
+                                            <param id="0" name="Instance variable">Rayo</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="968291147593192" type="Rayo" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="727071344257128">
+                            <conditions>
+                                <condition id="6" name="On button pressed" sid="648094030894381" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="438715281453402" type="Player2">
+                                    <param id="0" name="Instance variable">Rayo</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="728292511947918" type="Player2">
+                                    <param id="0" name="Instance variable">Rayo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="848163860236294" type="Player1">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnRayoCooldown&quot;</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="910783289369689" type="bird">
+                                    <param id="0" name="Speed">200</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="259322088436721">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="958531437580058" type="Buscador">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="7" name="Set max speed" sid="608314374507666" type="Buscador">
+                                            <param id="0" name="Speed">120</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="674956160768469">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="842000922282590" type="Inicial">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="816591231510130" type="Inicial">
+                                            <param id="0" name="Instance variable">SleepTime</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="607574899909028">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="502381449305223" type="Turret">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="751023379115765" type="Turret">
+                                            <param id="0" name="Instance variable">TiempoEntreBalas</param>
+                                            <param id="1" name="Value">0.3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="387953385810866">
+                            <conditions>
+                                <condition behavior="Timer" id="0" name="On timer" sid="558645246318013" type="Player1">
+                                    <param id="0" name="Tag">&quot;OnRayoCooldown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="742437265363996" type="bird">
+                                    <param id="0" name="Speed">150</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="914145787048160">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="663560933387140" type="Buscador">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="7" name="Set max speed" sid="432623329438063" type="Buscador">
+                                            <param id="0" name="Speed">70</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="530539035136946">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="544422900251799" type="Inicial">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="960927553435036" type="Inicial">
+                                            <param id="0" name="Instance variable">SleepTime</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="871343935710505">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="399785965077127" type="Turret">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="178353818793238" type="Turret">
+                                            <param id="0" name="Instance variable">TiempoEntreBalas</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

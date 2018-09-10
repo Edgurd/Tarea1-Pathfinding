@@ -19783,7 +19783,7 @@
                 </instance>
                 <instance type="BuscadorVisionDown" uid="803">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -19813,7 +19813,7 @@
                 </instance>
                 <instance type="BuscadorVisionLeft" uid="804">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -19843,7 +19843,7 @@
                 </instance>
                 <instance type="BuscadorVisionRight" uid="805">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -19873,7 +19873,7 @@
                 </instance>
                 <instance type="BuscadorVisionUp" uid="806">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -20315,6 +20315,7 @@
                         <Sector>0</Sector>
                         <Atacando>false</Atacando>
                         <AnimacionDaño>0</AnimacionDaño>
+                        <TiempoEntreBalas>1</TiempoEntreBalas>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Flash" />
@@ -20345,6 +20346,7 @@
                         <Sector>0</Sector>
                         <Atacando>false</Atacando>
                         <AnimacionDaño>0</AnimacionDaño>
+                        <TiempoEntreBalas>1</TiempoEntreBalas>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Flash" />
@@ -20375,6 +20377,7 @@
                         <Sector>0</Sector>
                         <Atacando>false</Atacando>
                         <AnimacionDaño>0</AnimacionDaño>
+                        <TiempoEntreBalas>1</TiempoEntreBalas>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Flash" />
@@ -20405,6 +20408,7 @@
                         <Sector>0</Sector>
                         <Atacando>false</Atacando>
                         <AnimacionDaño>0</AnimacionDaño>
+                        <TiempoEntreBalas>1</TiempoEntreBalas>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Flash" />
@@ -20867,6 +20871,181 @@
                         <opacity>0.400000006</opacity>
                     </world>
                 </instance>
+                <instance type="ControlInvertido" uid="853">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <powerUP>1</powerUP>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>162.004196167</x>
+                        <y>134.53213501</y>
+                        <z>0</z>
+                        <width>18</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Rayo" uid="854">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <powerUP>2</powerUP>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>84.294662476</x>
+                        <y>139.995956421</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Tortuga" uid="855">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <powerUP>3</powerUP>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>201.148605347</x>
+                        <y>133.932952881</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Rayo" uid="856">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <powerUP>2</powerUP>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>454.612731934</x>
+                        <y>697.149719238</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Rayo" uid="857">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <powerUP>2</powerUP>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>445.414123535</x>
+                        <y>671.470031738</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Tortuga" uid="858">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <powerUP>3</powerUP>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>439</x>
+                        <y>718</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ControlInvertido" uid="859">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <powerUP>1</powerUP>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>385</x>
+                        <y>721</y>
+                        <z>0</z>
+                        <width>18</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -20898,6 +21077,10 @@
                         <Disparos>0</Disparos>
                         <Invulnerable>false</Invulnerable>
                         <TimeInvulnerable>2</TimeInvulnerable>
+                        <Tortuga>0</Tortuga>
+                        <Rayo>0</Rayo>
+                        <Control>0</Control>
+                        <invertido>0</invertido>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -20917,8 +21100,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>352</x>
-                        <y>704</y>
+                        <x>355.906311035</x>
+                        <y>709.209106445</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
@@ -20941,6 +21124,10 @@
                         <Disparos>0</Disparos>
                         <Invulnerable>false</Invulnerable>
                         <TimeInvulnerable>2</TimeInvulnerable>
+                        <Tortuga>0</Tortuga>
+                        <Rayo>0</Rayo>
+                        <Control>0</Control>
+                        <invertido>0</invertido>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -21050,8 +21237,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>336</x>
-                        <y>768</y>
+                        <x>319.722381592</x>
+                        <y>723.075378418</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
@@ -21741,6 +21928,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Player>1</Player>
+                        <Cantidad>0</Cantidad>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -21763,6 +21954,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Player>2</Player>
+                        <Cantidad>0</Cantidad>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -21778,13 +21973,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Rayo" uid="849">
+                <instance type="Rayo_HUD" uid="849">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Player>1</Player>
+                        <Cantidad>0</Cantidad>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -21800,13 +21999,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Rayo" uid="850">
+                <instance type="Rayo_HUD" uid="850">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Player>2</Player>
+                        <Cantidad>0</Cantidad>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -21814,6 +22017,58 @@
                         <y>32.773422241</y>
                         <z>0</z>
                         <width>16</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ControlInvertido_HUD" uid="851">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Player>1</Player>
+                        <Cantidad>0</Cantidad>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>120.163421631</x>
+                        <y>32.281890869</y>
+                        <z>0</z>
+                        <width>18</width>
+                        <height>16</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ControlInvertido_HUD" uid="852">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Player>2</Player>
+                        <Cantidad>0</Cantidad>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>360.537597656</x>
+                        <y>32.281890869</y>
+                        <z>0</z>
+                        <width>18</width>
                         <height>16</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
