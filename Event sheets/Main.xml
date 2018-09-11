@@ -751,6 +751,19 @@
                             <param id="1" name="Comparison">5</param>
                             <param id="2" name="Second value">2</param>
                         </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="104832669704452" type="System">
+                            <param id="0" name="Layout">&quot;Final&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="466057307483139" type="Player1">
+                            <param id="0" name="Instance variable">win</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="605719612642027">
+                    <conditions>
                         <condition id="-8" name="Compare two values" sid="313369440389109" type="System">
                             <param id="0" name="First value">Win_P2</param>
                             <param id="1" name="Comparison">5</param>
@@ -758,8 +771,12 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-25" name="Go to layout (by name)" sid="104832669704452" type="System">
+                        <action id="-25" name="Go to layout (by name)" sid="188466043285785" type="System">
                             <param id="0" name="Layout">&quot;Final&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="820481547274087" type="Player2">
+                            <param id="0" name="Instance variable">win</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                     </actions>
                 </event-block>

@@ -2,5 +2,69 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EndSheet</name>
-    <events />
+    <events>
+        <event-block sid="507263982379157">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="714203809036558" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="338237376977444" type="fin1">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="644690912986927" type="fin2">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="893170347175602">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="703553809672961" type="Player1">
+                    <param id="0" name="Instance variable">win</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="780767480728081" type="fin1">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="775953635819809" type="fin1" />
+            </actions>
+        </event-block>
+        <event-block sid="949423600728307">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="925537775765872" type="Player2">
+                    <param id="0" name="Instance variable">win</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="463738951047603" type="fin2">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="993917189407934" type="fin2" />
+            </actions>
+        </event-block>
+        <event-block sid="701146651077616">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="404087289945064" type="fin1" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="972104113320737" type="System">
+                    <param id="0" name="Layout">Nivel_1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="183845070148047">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="272898269017980" type="fin2" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="756389611845778" type="System">
+                    <param id="0" name="Layout">Nivel_1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

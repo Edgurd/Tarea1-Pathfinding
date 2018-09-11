@@ -2302,6 +2302,7 @@
                 <instance-variable comment="powerUp en contra de tu enemigo(0= Desactivado, 1=activo)" name="Rayo" sid="245956125881015" type="number" />
                 <instance-variable comment="powerUp en contra de tu enemigo(0= Desactivado, 1=activo)" name="Control" sid="693973424487436" type="number" />
                 <instance-variable comment="Control del jugador invertido(1) no invertido (0)" name="invertido" sid="568618790960924" type="number" />
+                <instance-variable name="win" sid="654441327020819" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="252102654172955">

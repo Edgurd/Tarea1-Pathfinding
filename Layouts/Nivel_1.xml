@@ -21684,6 +21684,7 @@
                         <Rayo>0</Rayo>
                         <Control>0</Control>
                         <invertido>0</invertido>
+                        <win>0</win>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
@@ -21731,6 +21732,7 @@
                         <Rayo>0</Rayo>
                         <Control>0</Control>
                         <invertido>0</invertido>
+                        <win>0</win>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
