@@ -287,7 +287,7 @@
                     <actions>
                         <action id="-11" name="Add to" sid="976720348054883" type="Player1">
                             <param id="0" name="Instance variable">Disparos</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-9" name="Destroy" sid="294225597493511" type="Stick" />
                     </actions>
@@ -301,7 +301,7 @@
                     <actions>
                         <action id="-11" name="Add to" sid="207429235842810" type="Player2">
                             <param id="0" name="Instance variable">Disparos</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-9" name="Destroy" sid="929466263708202" type="Stick" />
                     </actions>
@@ -341,7 +341,7 @@
                         <event-block sid="376434694122562">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="323862341132186" type="Keyboard">
-                                    <param id="0" name="Key">81</param>
+                                    <param id="0" name="Key">87</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="926619304115589" type="Player1">
                                     <param id="0" name="Instance variable">Rayo</param>
@@ -561,7 +561,7 @@
                         <event-block sid="532206292616653">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="373147934870841" type="Keyboard">
-                                    <param id="0" name="Key">87</param>
+                                    <param id="0" name="Key">81</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="583165447751790" type="Player1">
                                     <param id="0" name="Instance variable">Control</param>
