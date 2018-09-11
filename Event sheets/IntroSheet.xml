@@ -2,5 +2,162 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>IntroSheet</name>
-    <events />
+    <events>
+        <event-block sid="644714390348562">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="773670508591886" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="578803439080187" type="intro01">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="179444708167988" type="PressAnyKey">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="390421292491236" type="intro2">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="192513590715856" type="intro3">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="120934203971316" type="intro4">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="358966998813420" type="intro5">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="541012843123658" type="intro6">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="7" name="Play (by name)" sid="443950894716792" type="Audio">
+                    <param id="0" name="Folder">1</param>
+                    <param id="1" name="Audio file name">&quot;intro&quot;</param>
+                    <param id="3" name="Loop">1</param>
+                    <param id="4" name="Volume">-64</param>
+                    <param id="2" name="Tag (optional)">&quot;intro&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="733324754777615" type="System">
+                    <param id="0" name="Seconds">4</param>
+                </action>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="902955002450063" type="intro01">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="551720340952448" type="intro01" />
+            </actions>
+        </event-block>
+        <event-block sid="485689674019276">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="558996789630366" type="intro01" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="862422108570649" type="intro2">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="703490564678764" type="intro2" />
+            </actions>
+        </event-block>
+        <event-block sid="547668341263965">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="426096034377535" type="intro2" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="680844780660345" type="intro3">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="165466634036173" type="intro3" />
+            </actions>
+        </event-block>
+        <event-block sid="221510865872361">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="542833297005082" type="intro3" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="234485124700284" type="intro4">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="912314635097072" type="intro4" />
+            </actions>
+        </event-block>
+        <event-block sid="718356259349884">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="353308619609130" type="intro4" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="269340629950064" type="intro5">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="808221762175891" type="intro5" />
+            </actions>
+        </event-block>
+        <event-block sid="476559416074694">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="164119019103494" type="intro5" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="926655746512158" type="intro6">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="786113935127229" type="intro6" />
+            </actions>
+        </event-block>
+        <event-block sid="364839236154327">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="932640142295278" type="intro6" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="827330101997707" type="PressAnyKey">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="916548107646652" type="PressAnyKey" />
+                <action id="-10" name="Set value" sid="934891606741411" type="PressAnyKey">
+                    <param id="0" name="Instance variable">Ready</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="678130172616346">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="354511357399623" type="PressAnyKey" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="527179759954406" type="PressAnyKey">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="549218611612594" type="PressAnyKey" />
+            </actions>
+        </event-block>
+        <event-block sid="269824011574476">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="789575067575473" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="826054867057561" type="PressAnyKey">
+                    <param id="0" name="Instance variable">Ready</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="985761598929418" type="System">
+                    <param id="0" name="Layout">Nivel_1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="943004192150427">
+            <conditions>
+                <condition id="1" name="On any key pressed" sid="468452366299972" type="Keyboard" />
+                <condition id="-7" name="Compare instance variable" sid="616695547029195" type="PressAnyKey">
+                    <param id="0" name="Instance variable">Ready</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="292058657866292" type="System">
+                    <param id="0" name="Layout">Nivel_1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
