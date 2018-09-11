@@ -23,6 +23,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
@@ -2157,6 +2158,91 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Imagenes">
+            <object-type name="intro1" sid="749457100807204">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948401787284556" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\01.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="intro2" sid="617785375632426">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="947079237968957" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\02.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="intro3" sid="386979117426848">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="628366900985871" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\03.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="intro4" sid="460889734958320">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="153893248535784" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\04.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="intro5" sid="523098595898719">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="326317792310491" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\05.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="intro6" sid="565476495401262">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="414705979846819" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\06.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fin1" sid="390016106834686">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924121620307510" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\07.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="fin2" sid="510658548918324">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848650835608179" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\08.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bg" sid="306800583082872">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240154912972232" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\bg_IntroFin.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="anykey" sid="743769341268950">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Ready" sid="472756199372002" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937159436427946" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\Pressanykey.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="end" sid="366969000091652">
             <plugin id="Sprite" />
             <animation-folder>
@@ -2364,6 +2450,24 @@
                 <instance-variable comment="Control(1)-Rayo(2)-Tortuga(3)" name="powerUP" sid="886971643745389" type="number" />
             </instance-variables>
         </family>
+        <family name="imagenes" plugin-id="Sprite" sid="570616366233046">
+            <members>
+                <member>anykey</member>
+                <member>fin1</member>
+                <member>fin2</member>
+                <member>intro1</member>
+                <member>intro2</member>
+                <member>intro3</member>
+                <member>intro4</member>
+                <member>intro5</member>
+                <member>intro6</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Fade" sid="952992765590800">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </family>
     </families>
     <layout-folder>
         <layout>Test.xml</layout>
@@ -2412,7 +2516,9 @@
         <file name="DoorClose.ogg" />
         <file name="DoorOpen.ogg" />
     </sounds-folder>
-    <music-folder />
+    <music-folder>
+        <file name="intro.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
