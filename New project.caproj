@@ -2358,6 +2358,8 @@
         <layout>Test.xml</layout>
         <layout>Assets.xml</layout>
         <layout>Nivel_1.xml</layout>
+        <layout>Introduccion.xml</layout>
+        <layout>Final.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Main.xml</event-sheet>
@@ -2365,6 +2367,8 @@
         <event-sheet>Objetos.xml</event-sheet>
         <event-sheet>Enemigos.xml</event-sheet>
         <event-sheet>HUD.xml</event-sheet>
+        <event-sheet>IntroSheet.xml</event-sheet>
+        <event-sheet>EndSheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="7" />
