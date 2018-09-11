@@ -5,7 +5,7 @@
     <events>
         <event-block sid="507263982379157">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="714203809036558" type="System" />
+                <condition id="-25" name="On loader layout complete" sid="714203809036558" type="System" />
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="338237376977444" type="fin1">

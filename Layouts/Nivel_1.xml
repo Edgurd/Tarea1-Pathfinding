@@ -19783,7 +19783,7 @@
                 </instance>
                 <instance type="BuscadorVisionDown" uid="803">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -19813,7 +19813,7 @@
                 </instance>
                 <instance type="BuscadorVisionLeft" uid="804">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -19843,7 +19843,7 @@
                 </instance>
                 <instance type="BuscadorVisionRight" uid="805">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -19873,7 +19873,7 @@
                 </instance>
                 <instance type="BuscadorVisionUp" uid="806">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -21752,8 +21752,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>112</x>
-                        <y>704</y>
+                        <x>150.822784424</x>
+                        <y>145.241989136</y>
                         <z>0</z>
                         <width>16</width>
                         <height>16</height>
