@@ -33,7 +33,7 @@
                     <param id="0" name="Folder">1</param>
                     <param id="1" name="Audio file name">&quot;intro&quot;</param>
                     <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-64</param>
+                    <param id="4" name="Volume">-10</param>
                     <param id="2" name="Tag (optional)">&quot;intro&quot;</param>
                 </action>
                 <action id="-16" name="Wait" sid="733324754777615" type="System">
