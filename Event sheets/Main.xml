@@ -601,15 +601,201 @@
                         <condition id="-2" name="On start of layout" sid="988223628276040" type="System" />
                     </conditions>
                     <actions>
+                        <action id="33" name="Stop all" sid="748240357940333" type="Audio" />
                         <action id="0" name="Play" sid="265616939385200" type="Audio">
                             <param id="0" name="Audio file">MainLoop</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">-12</param>
                             <param id="1" name="Tag (optional)">&quot;Back&quot;</param>
                         </action>
+                        <action id="-16" name="Wait" sid="856401692701273" type="System">
+                            <param id="0" name="Seconds">4</param>
+                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="272168509473973">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="479823346789358" type="Puerta">
+                                    <param id="0" name="Unique ID">722</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="805035925992162" type="Puerta" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="821562945980582">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="608588912120580" type="Puerta">
+                                    <param id="0" name="Unique ID">721</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="978825545100526" type="Puerta" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="173971459665416">
+                            <conditions />
+                            <actions>
+                                <action behavior="Pathfinding" id="4" name="Regenerate obstacle map" sid="299866371573012" type="Inicial" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="238799525994613">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="243802102622393" type="Players">
+                    <param id="0" name="Instance variable">Vidas</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="130792458055503">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="252439166847683" type="System">
+                            <param id="0" name="Variable">ChangedPlayers</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="527683422325495" type="Function">
+                            <param id="0" name="Name">&quot;IntercambiarPlayers&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="401611952787942">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="461846586310198" type="System">
+                            <param id="0" name="First value">Win_P1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="240680909789575" type="System">
+                            <param id="0" name="First value">Win_P2</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="165009430676972" type="System">
+                            <param id="0" name="Layout">&quot;Final&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="162056658634277">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="281932094164426" type="System">
+                            <param id="0" name="First value">Players.UID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">790</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="286751898363268" type="System">
+                            <param id="0" name="Variable">Win_P2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="827899575149066" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="130368815652540">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="431615089972811" type="System">
+                            <param id="0" name="First value">Players.UID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">791</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="711667742908810" type="System">
+                            <param id="0" name="Variable">Win_P1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="786011279845444" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="662984927406311">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="260303853220651" type="Players">
+                    <param id="0" name="Object">end</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="496425134031411">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="959801488338918" type="System">
+                            <param id="0" name="Variable">ChangedPlayers</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="798888059645572" type="Function">
+                            <param id="0" name="Name">&quot;IntercambiarPlayers&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="897365284241094">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="829267792461816" type="System">
+                            <param id="0" name="First value">Win_P1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="313369440389109" type="System">
+                            <param id="0" name="First value">Win_P2</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="104832669704452" type="System">
+                            <param id="0" name="Layout">&quot;Final&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="209819033947991">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="218593756271261" type="System">
+                            <param id="0" name="First value">Players.UID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">790</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="547530580265076" type="System">
+                            <param id="0" name="Variable">Win_P1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="873979615788290" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="995687206355564">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="461988038756005" type="System">
+                            <param id="0" name="First value">Players.UID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">791</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="681463960637642" type="System">
+                            <param id="0" name="Variable">Win_P2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="701277615514212" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
