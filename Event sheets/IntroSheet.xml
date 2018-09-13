@@ -29,12 +29,14 @@
                 <action id="-16" name="Set opacity" sid="317124033611761" type="intro6">
                     <param id="0" name="Opacity">0</param>
                 </action>
-                <action id="7" name="Play (by name)" sid="994167918511660" type="Audio">
-                    <param id="0" name="Folder">1</param>
-                    <param id="1" name="Audio file name">&quot;intro&quot;</param>
-                    <param id="3" name="Loop">1</param>
-                    <param id="4" name="Volume">-10</param>
-                    <param id="2" name="Tag (optional)">&quot;intro&quot;</param>
+                <action id="26" name="Set listener object" sid="994167918511660" type="Audio">
+                    <param id="0" name="Object">bg</param>
+                </action>
+                <action id="0" name="Play" sid="147508100419881" type="Audio">
+                    <param id="0" name="Audio file">intro2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;intro&quot;</param>
                 </action>
                 <action id="-16" name="Wait" sid="581517006952441" type="System">
                     <param id="0" name="Seconds">4</param>
@@ -139,22 +141,64 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="580576870020253" type="System">
-                    <param id="0" name="Layout">Nivel_1</param>
+                <action id="-10" name="Set value" sid="727315736066117" type="anykey">
+                    <param id="0" name="Instance variable">Ready</param>
+                    <param id="1" name="Value">2</param>
                 </action>
             </actions>
         </event-block>
         <event-block sid="371684936886273">
             <conditions>
                 <condition id="1" name="On any key pressed" sid="832482451679924" type="Keyboard" />
-                <condition id="-7" name="Compare instance variable" sid="221869223956713" type="anykey">
+                <condition disabled="1" id="-7" name="Compare instance variable" sid="666024485620470" type="anykey">
                     <param id="0" name="Instance variable">Ready</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="876737142769262" type="System">
+                <action id="-10" name="Set value" sid="421327479847420" type="anykey">
+                    <param id="0" name="Instance variable">Ready</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="672275517280175">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="221869223956713" type="anykey">
+                    <param id="0" name="Instance variable">Ready</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="372880779456338" type="System">
+                    <param id="0" name="Interval (seconds)">0.01</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="18" name="Add gain effect" sid="396323366397566" type="Audio">
+                    <param id="0" name="Tag">&quot;intro&quot;</param>
+                    <param id="1" name="Gain">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="450498688305699">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="499420885442419" type="System">
+                    <param id="0" name="First value">Audio.MasterVolume</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">-60</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="777716001234062" type="anykey">
+                    <param id="0" name="Instance variable">Ready</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="785292799779930" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="236316027364010" type="System">
                     <param id="0" name="Layout">Nivel_1</param>
                 </action>
             </actions>

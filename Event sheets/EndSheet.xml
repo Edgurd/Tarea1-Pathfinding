@@ -3,67 +3,260 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EndSheet</name>
     <events>
-        <event-block sid="507263982379157">
+        <variable constant="0" name="playerWinner" sid="413509485769027" static="0" type="number">1</variable>
+        <event-block sid="368440216403111">
             <conditions>
-                <condition id="-25" name="On loader layout complete" sid="714203809036558" type="System" />
+                <condition id="-2" name="On start of layout" sid="508749879386661" type="System" />
             </conditions>
             <actions>
-                <action id="-16" name="Set opacity" sid="338237376977444" type="fin1">
+                <action id="33" name="Stop all" sid="970973509470348" type="Audio" />
+                <action id="-16" name="Set opacity" sid="599581611856367" type="fin1">
                     <param id="0" name="Opacity">0</param>
                 </action>
-                <action id="-16" name="Set opacity" sid="644690912986927" type="fin2">
+                <action id="-16" name="Set opacity" sid="571263130283786" type="fin2">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="922585342829788" type="flecha2">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="815954422214417" type="flecha">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="0" name="Play" sid="840163956500271" type="Audio">
+                    <param id="0" name="Audio file">intro2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;intro&quot;</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="799307828799143" type="Salir">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="321661021798033" type="Reiniciar">
                     <param id="0" name="Opacity">0</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="893170347175602">
+        <event-block sid="514603435763695">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="703553809672961" type="Player1">
-                    <param id="0" name="Instance variable">win</param>
+                <condition id="-14" name="Compare variable" sid="703553809672961" type="System">
+                    <param id="0" name="Variable">playerWinner</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="246494419809104" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
                 <action behavior="Fade" id="2" name="Set fade-in time" sid="780767480728081" type="fin1">
                     <param id="0" name="Fade-in time">1</param>
                 </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="775953635819809" type="fin1" />
+                <action behavior="Fade" id="1" name="Start fade" sid="901522082867663" type="fin1" />
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="429303868683350" type="flecha">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="168754761772743" type="flecha" />
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="471200103900930" type="Salir">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="709061835357472" type="Salir" />
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="670415741655519" type="Reiniciar">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="527116549632530" type="Reiniciar" />
+                <action id="-16" name="Wait" sid="662082935922450" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="139114380275883" type="bg">
+                    <param id="0" name="Instance variable">ready</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="949423600728307">
             <conditions>
-                <condition id="-7" name="Compare instance variable" sid="925537775765872" type="Player2">
-                    <param id="0" name="Instance variable">win</param>
+                <condition id="-14" name="Compare variable" sid="615717788021125" type="System">
+                    <param id="0" name="Variable">playerWinner</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
             <actions>
+                <action id="-16" name="Wait" sid="111620616150653" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
                 <action behavior="Fade" id="2" name="Set fade-in time" sid="463738951047603" type="fin2">
                     <param id="0" name="Fade-in time">1</param>
                 </action>
-                <action behavior="Fade" id="1" name="Start fade" sid="993917189407934" type="fin2" />
+                <action behavior="Fade" id="1" name="Start fade" sid="360212914245258" type="fin2" />
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="588713249859175" type="flecha">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="630165949739991" type="flecha" />
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="161075987146850" type="Salir">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="555496097936950" type="Salir" />
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="649184565294587" type="Reiniciar">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="769489455325178" type="Reiniciar" />
+                <action id="-16" name="Wait" sid="909034581567153" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="871821972315625" type="bg">
+                    <param id="0" name="Instance variable">ready</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
-        <event-block sid="701146651077616">
+        <event-block sid="739591545064513">
             <conditions>
-                <condition behavior="Fade" id="0" name="On fade-out finished" sid="404087289945064" type="fin1" />
+                <condition id="0" name="On key pressed" sid="753356969179336" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="860363293791665" type="bg">
+                    <param id="0" name="Instance variable">ready</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="972104113320737" type="System">
+                <action id="-16" name="Set opacity" sid="812806615904950" type="flecha">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="384176747275758" type="flecha2">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="771609477320929">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="560860893023104" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="995040466304510" type="bg">
+                    <param id="0" name="Instance variable">ready</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="114289984924994" type="flecha">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="680752930984412" type="flecha2">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="667818039004794">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="582570688774188" type="flecha">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="796782999765794" type="bg">
+                    <param id="0" name="Instance variable">ready</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="821304518275735" type="bg">
+                    <param id="0" name="Instance variable">Opcion</param>
+                    <param id="1" name="Value">&quot;reiniciar&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="226338213333543">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="144060258557695" type="flecha2">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="163400182033900" type="bg">
+                    <param id="0" name="Instance variable">ready</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="112756924105390" type="bg">
+                    <param id="0" name="Instance variable">Opcion</param>
+                    <param id="1" name="Value">&quot;salir&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="889234921976077">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="782173664827125" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="456205136614563" type="bg">
+                    <param id="0" name="Instance variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;reiniciar&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="354583783323520" type="bg">
+                    <param id="0" name="Instance variable">reinicio</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="352134941852976">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="406508476412717" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="313491890491405" type="bg">
+                    <param id="0" name="Instance variable">reinicio</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="18" name="Add gain effect" sid="837507488404326" type="Audio">
+                    <param id="0" name="Tag">&quot;intro&quot;</param>
+                    <param id="1" name="Gain">-1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="530462529514713">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="986577513465653" type="System">
+                    <param id="0" name="First value">Audio.MasterVolume</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">-60</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="980887567464411" type="bg">
+                    <param id="0" name="Instance variable">reinicio</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="212731803826656" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="943633526485092" type="System">
                     <param id="0" name="Layout">Nivel_1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="183845070148047">
+        <event-block sid="674209103490648">
             <conditions>
-                <condition behavior="Fade" id="0" name="On fade-out finished" sid="272898269017980" type="fin2" />
+                <condition id="0" name="On key pressed" sid="450095820314829" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="780316661826268" type="bg">
+                    <param id="0" name="Instance variable">Opcion</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;salir&quot;</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="756389611845778" type="System">
-                    <param id="0" name="Layout">Nivel_1</param>
-                </action>
+                <action id="1" name="Close" sid="238938670767872" type="Browser" />
             </actions>
         </event-block>
     </events>

@@ -310,6 +310,76 @@
         </event-group>
         <event-group description="" sid="464665336914801" title="PowerUPs">
             <sub-events>
+                <event-group description="" sid="763871899741476" title="ControlInvertido-P1">
+                    <sub-events>
+                        <event-block sid="105688167021988">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="461837437233576" type="Player1">
+                                    <param id="0" name="Object">ControlInvertido</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="740567787699662">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="309004692861181" type="Player1">
+                                            <param id="0" name="Instance variable">Control</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="701763211837550" type="Player1">
+                                            <param id="0" name="Instance variable">Control</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="339957218913492" type="ControlInvertido" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="532206292616653">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="373147934870841" type="Keyboard">
+                                    <param id="0" name="Key">82</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="583165447751790" type="Player1">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="498959006348923" type="Player1">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="134091594726305" type="Player2">
+                                    <param id="0" name="Instance variable">invertido</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="599622757524804" type="Player2">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnControlCooldown&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="367791515364348">
+                            <conditions>
+                                <condition behavior="Timer" id="0" name="On timer" sid="284178139624043" type="Player2">
+                                    <param id="0" name="Tag">&quot;OnControlCooldown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="978164979917554" type="Player2">
+                                    <param id="0" name="Instance variable">invertido</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="349636209136945" title="Rayo-P1">
                     <sub-events>
                         <event-block sid="984348495719278">
@@ -341,7 +411,7 @@
                         <event-block sid="376434694122562">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="323862341132186" type="Keyboard">
-                                    <param id="0" name="Key">87</param>
+                                    <param id="0" name="Key">84</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="926619304115589" type="Player1">
                                     <param id="0" name="Instance variable">Rayo</param>
@@ -493,7 +563,7 @@
                         <event-block sid="641800401685842">
                             <conditions>
                                 <condition id="0" name="On key pressed" sid="388858313047458" type="Keyboard">
-                                    <param id="0" name="Key">69</param>
+                                    <param id="0" name="Key">89</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="195495635436132" type="Player1">
                                     <param id="0" name="Instance variable">Tortuga</param>
@@ -525,76 +595,6 @@
                             <actions>
                                 <action behavior="8Direction" id="4" name="Set max speed" sid="449410663055917" type="Player2">
                                     <param id="0" name="Max Speed">100</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
-                <event-group description="" sid="763871899741476" title="ControlInvertido-P1">
-                    <sub-events>
-                        <event-block sid="105688167021988">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="461837437233576" type="Player1">
-                                    <param id="0" name="Object">ControlInvertido</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="740567787699662">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="309004692861181" type="Player1">
-                                            <param id="0" name="Instance variable">Control</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-11" name="Add to" sid="701763211837550" type="Player1">
-                                            <param id="0" name="Instance variable">Control</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="-9" name="Destroy" sid="339957218913492" type="ControlInvertido" />
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="532206292616653">
-                            <conditions>
-                                <condition id="0" name="On key pressed" sid="373147934870841" type="Keyboard">
-                                    <param id="0" name="Key">81</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="583165447751790" type="Player1">
-                                    <param id="0" name="Instance variable">Control</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-12" name="Subtract from" sid="498959006348923" type="Player1">
-                                    <param id="0" name="Instance variable">Control</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-10" name="Set value" sid="134091594726305" type="Player2">
-                                    <param id="0" name="Instance variable">invertido</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action behavior="Timer" id="0" name="Start timer" sid="599622757524804" type="Player2">
-                                    <param id="0" name="Duration">5</param>
-                                    <param id="1" name="Type">0</param>
-                                    <param id="2" name="Tag">&quot;OnControlCooldown&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="367791515364348">
-                            <conditions>
-                                <condition behavior="Timer" id="0" name="On timer" sid="284178139624043" type="Player2">
-                                    <param id="0" name="Tag">&quot;OnControlCooldown&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="978164979917554" type="Player2">
-                                    <param id="0" name="Instance variable">invertido</param>
-                                    <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -656,6 +656,33 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="649524831912703">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="184602768395762" type="Keyboard">
+                                    <param id="0" name="Key">77</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="409662916104301" type="Player2">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="640476868019533" type="Player2">
+                                    <param id="0" name="Instance variable">Control</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="479303883077946" type="Player1">
+                                    <param id="0" name="Instance variable">invertido</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="883733546577322" type="Player1">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnControlCooldown&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="743262439335687">
                             <conditions>
                                 <condition behavior="Timer" id="0" name="On timer" sid="444235753933307" type="Player1">
@@ -666,75 +693,6 @@
                                 <action id="-10" name="Set value" sid="524557453209119" type="Player1">
                                     <param id="0" name="Instance variable">invertido</param>
                                     <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
-                <event-group description="" sid="188489358589640" title="Tortuga-P2">
-                    <sub-events>
-                        <event-block sid="133038470137232">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="214514877498716" type="Player2">
-                                    <param id="0" name="Object">Tortuga</param>
-                                </condition>
-                            </conditions>
-                            <actions />
-                            <sub-events>
-                                <event-block sid="419988712688848">
-                                    <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="308585110642012" type="Player2">
-                                            <param id="0" name="Instance variable">Tortuga</param>
-                                            <param id="1" name="Comparison">3</param>
-                                            <param id="2" name="Value">0</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions>
-                                        <action id="-11" name="Add to" sid="240439022036557" type="Player2">
-                                            <param id="0" name="Instance variable">Tortuga</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
-                                        <action id="-9" name="Destroy" sid="117387996497600" type="Tortuga" />
-                                    </actions>
-                                </event-block>
-                            </sub-events>
-                        </event-block>
-                        <event-block sid="841966597217939">
-                            <conditions>
-                                <condition id="6" name="On button pressed" sid="120174822904325" type="Gamepad">
-                                    <param id="0" name="Gamepad">0</param>
-                                    <param id="1" name="Button">3</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="203006451234734" type="Player2">
-                                    <param id="0" name="Instance variable">Tortuga</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="4" name="Set max speed" sid="124188026172855" type="Player1">
-                                    <param id="0" name="Max Speed">30</param>
-                                </action>
-                                <action id="-12" name="Subtract from" sid="724599965029160" type="Player2">
-                                    <param id="0" name="Instance variable">Tortuga</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action behavior="Timer" id="0" name="Start timer" sid="286181490656655" type="Player1">
-                                    <param id="0" name="Duration">5</param>
-                                    <param id="1" name="Type">0</param>
-                                    <param id="2" name="Tag">&quot;OnTortugaCooldown&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="988737903587081">
-                            <conditions>
-                                <condition behavior="Timer" id="0" name="On timer" sid="404105209093573" type="Player1">
-                                    <param id="0" name="Tag">&quot;OnTortugaCooldown&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action behavior="8Direction" id="4" name="Set max speed" sid="788703835544598" type="Player1">
-                                    <param id="0" name="Max Speed">100</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -841,6 +799,78 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="843394230985226">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="641707590088472" type="Keyboard">
+                                    <param id="0" name="Key">188</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="602306099962824" type="Player2">
+                                    <param id="0" name="Instance variable">Rayo</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="669728134798409" type="Player2">
+                                    <param id="0" name="Instance variable">Rayo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="810650865807216" type="Player1">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnRayoCooldown&quot;</param>
+                                </action>
+                                <action behavior="Bullet" id="0" name="Set speed" sid="903982897834244" type="bird">
+                                    <param id="0" name="Speed">200</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="735697902041780">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="497938534229737" type="Buscador">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Pathfinding" id="7" name="Set max speed" sid="488222350686650" type="Buscador">
+                                            <param id="0" name="Speed">120</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="327963307185985">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="249666219228340" type="Inicial">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="330237376549167" type="Inicial">
+                                            <param id="0" name="Instance variable">SleepTime</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="203257744305681">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="257670031210302" type="Turret">
+                                            <param id="0" name="Instance variable">Sector</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="781687291982593" type="Turret">
+                                            <param id="0" name="Instance variable">TiempoEntreBalas</param>
+                                            <param id="1" name="Value">0.3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
                         <event-block sid="387953385810866">
                             <conditions>
                                 <condition behavior="Timer" id="0" name="On timer" sid="558645246318013" type="Player1">
@@ -898,6 +928,101 @@
                                     </actions>
                                 </event-block>
                             </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="188489358589640" title="Tortuga-P2">
+                    <sub-events>
+                        <event-block sid="133038470137232">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="214514877498716" type="Player2">
+                                    <param id="0" name="Object">Tortuga</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="419988712688848">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="308585110642012" type="Player2">
+                                            <param id="0" name="Instance variable">Tortuga</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-11" name="Add to" sid="240439022036557" type="Player2">
+                                            <param id="0" name="Instance variable">Tortuga</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="117387996497600" type="Tortuga" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="841966597217939">
+                            <conditions>
+                                <condition id="6" name="On button pressed" sid="120174822904325" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="203006451234734" type="Player2">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="124188026172855" type="Player1">
+                                    <param id="0" name="Max Speed">30</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="724599965029160" type="Player2">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="286181490656655" type="Player1">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnTortugaCooldown&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="582007980639719">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="178552181595210" type="Keyboard">
+                                    <param id="0" name="Key">190</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="783748962723629" type="Player2">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="534914030919748" type="Player1">
+                                    <param id="0" name="Max Speed">30</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="373163306125062" type="Player2">
+                                    <param id="0" name="Instance variable">Tortuga</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Timer" id="0" name="Start timer" sid="706126955840592" type="Player1">
+                                    <param id="0" name="Duration">5</param>
+                                    <param id="1" name="Type">0</param>
+                                    <param id="2" name="Tag">&quot;OnTortugaCooldown&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="988737903587081">
+                            <conditions>
+                                <condition behavior="Timer" id="0" name="On timer" sid="404105209093573" type="Player1">
+                                    <param id="0" name="Tag">&quot;OnTortugaCooldown&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="4" name="Set max speed" sid="788703835544598" type="Player1">
+                                    <param id="0" name="Max Speed">100</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>

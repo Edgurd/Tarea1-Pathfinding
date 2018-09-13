@@ -29,6 +29,7 @@
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -41,7 +42,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <first-layout>Nivel_1</first-layout>
+    <first-layout>Introduccion</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -54,7 +55,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">NW.js</prop>
         <prop name="Sampling">Point</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -800,6 +801,27 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Introaudio_listener" sid="492682336566431">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="CustomMovement" sid="235566162215346">
+                        <behavior id="custom" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="344959706333803" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Introaudio_soundemitter" sid="825298671878435">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="823311465847939" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Miscelaneos">
             <object-type name="Function" sid="556681935937973">
@@ -1536,10 +1558,10 @@
                     <animation framecount="1" loop="0" name="dittoWall" pingpong="0" repeatcount="1" repeatto="0" sid="826981933944397" speed="5">
                         <frame duration="1" hotspotX="0.192308" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Sprites\Personajes\ditto\dittowall.png">
                             <collision-poly>
-                                <point x="0.192308" y="0.304348" />
-                                <point x="0.807692" y="0.304348" />
-                                <point x="0.807692" y="1" />
-                                <point x="0.192308" y="1" />
+                                <point x="0.269231" y="0.434783" />
+                                <point x="0.730769" y="0.434783" />
+                                <point x="0.730769" y="0.913043" />
+                                <point x="0.269231" y="0.913043" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -2055,7 +2077,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder name="Hud">
+        <object-folder name="Hud &amp; UI">
             <object-type name="HUD" sid="297157455166856">
                 <plugin id="Sprite" />
                 <animation-folder>
@@ -2157,6 +2179,38 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="flecha" sid="154034390516746">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="766976288700155" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\flecha seleccion.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Reiniciar" sid="501248913897870">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102478248544132" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\Reiniciar.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Salir" sid="385776225318886">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="712311366756363" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\Salir.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="flecha2" sid="681945131909133">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="609491657350457" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.545455" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Hud\flecha seleccion.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Imagenes">
             <object-type name="intro1" sid="749457100807204">
@@ -2225,6 +2279,11 @@
             </object-type>
             <object-type name="bg" sid="306800583082872">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Opcion" sid="309629153412697" type="string" />
+                    <instance-variable name="ready" sid="334716864604779" type="number" />
+                    <instance-variable name="reinicio" sid="730190957999834" type="number" />
+                </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240154912972232" speed="5">
                         <frame duration="1" hotspotX="0" hotspotY="1" original-source="F:\Construct\Tarea1-Pathfinding\Assets\Intro imagenes\bg_IntroFin.png" />
@@ -2456,12 +2515,16 @@
                 <member>anykey</member>
                 <member>fin1</member>
                 <member>fin2</member>
+                <member>flecha</member>
+                <member>flecha2</member>
                 <member>intro1</member>
                 <member>intro2</member>
                 <member>intro3</member>
                 <member>intro4</member>
                 <member>intro5</member>
                 <member>intro6</member>
+                <member>Reiniciar</member>
+                <member>Salir</member>
             </members>
             <behaviors>
                 <behavior-type name="Fade" sid="952992765590800">
@@ -2516,9 +2579,14 @@
         <file name="Damage2.ogg" />
         <file name="DoorClose.ogg" />
         <file name="DoorOpen.ogg" />
+        <file name="intro.m4a" />
     </sounds-folder>
     <music-folder>
         <file name="intro.ogg" />
+        <file name="intro1.m4a" />
+        <file name="intro1.ogg" />
+        <file name="intro2.m4a" />
+        <file name="intro2.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
